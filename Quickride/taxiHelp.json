@@ -1,0 +1,346 @@
+{
+        "taxiHelp": [{
+                "name": "General",
+                "faqList": [{
+                        "question": "Taxi services from Quick Ride  ? How Taxi from Quick Ride will be different from other Operators ",
+                        "answer": "Taxi service from Quick Ride will have the following benefits : \na) Consistent and Affordable fares. The fares of Quick Ride will be consistent ( X to 1.4X at max), unlike other operators where we see 3x-4x when there is a real need of taxi for you.  \nb) We support Scheduled trips.  You can book your trip in advance and have peace of mind ( Taxi will come earlier than pickup time at the fare committed - No last minute surge).\nc) You are matched with Taxi sharing groups and where you have opportunity to share with others on your route and save upto 40% of your fare with a min deviation (Deviation is at max 20% of your route)\nd) Finally, when you take a Taxi from Quick Ride, the driver gets 50% higher net take home. It is possible as we take just 9% compared to 25% in the industry. At the end driver is more happy with Quick Ride and that happiness will come back to you with \"Good customer service\" "
+                    },
+                    {
+                        "question": "Why Quick Ride - A carpooling company start Taxi Service  ",
+                        "answer": "From the beginning our focus is to make commuting easy, affordable and eco-friendly. \nWe see our users want to go to a destination, comes to Quick Ride for a Carpooling option. They are disappointed, when there are no perfect matches. They will have to go to other Taxi/Auto/Bike Taxi applications for their commute. We would like to help our users by bringing these into Quick Ride itself. So when user want to go to a place, he has Carpool, Taxi, Auto and Bike Taxi all in one App."
+                    },
+                    {
+                        "question": "What is Zory and what is the relation with Quick Ride ? ",
+                        "answer": "Both Zory App and Quick Ride app are from the same company \"iDisha Info Labs Pvt Ltd.,\". \nThe customer can book Taxi trips from Quick Ride App. The trips will be accessed and managed by drivers through Zory Driver App."
+                    },
+                    {
+                        "question": "Which all cities, Taxi service from Quick Ride is available ? ",
+                        "answer": "Quick Ride platform can work and operational across India. For outstation taxi requirements, we can support across India for all Tier 1,Tier 2 and Tier 3 cities. For Local Taxi requirements we have our own supply in Bengaluru and Delhi-NCR, and we have vendors who can provide taxi in Hyderabad and Mumbai."
+                    },
+                    {
+                        "question": "What categories of Vehicles Quick Ride can offer",
+                        "answer": "Taxi in the categories of Hatch Back, Sedan, SUV, SUV Luxury and Premium vehicles.\nQuick Ride also provide Auto and Bike Taxi booking."
+                    },
+                    {
+                        "question": "How safe is Taxi from Quick Ride ? ",
+                        "answer": "It is safe to use Taxi services from Quick Ride. The driver partner identity and vehicle documents are thoroughly verified before onboarding them. Drivers are verified Face to Face. The trips are tracked continuously by the system. You will also have an option to share your Trip link to your relatives to live track your trip",
+                        "statusApplicable": [
+                            "Allotted", "Started"
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "Taxi Booking / Scheduled Taxi",
+                "faqList": [{
+                        "question": "How do I book taxi on Quick Ride",
+                        "answer": "Get Quick Ride App (Available on Android and IOS platforms) and complete signup. On Home page, click on the \"Taxi\" Offering. You can update Pickup Point and chose the Destination for the trip. Select time at which you need a taxi, Chose the type of vehicle and click \"Book Taxi\". Quick Ride will update you the driver details to you by notification. You can also view the driver details from \"Ride vide page\" of the booked trip "
+                    },
+                    {
+                        "question": "Can I book the Taxi instantly ?",
+                        "answer": "Yes you can book a Taxi instantly with Quick Ride. It is subject to availability and at times it may 10-12 mins ETA. For Zero waiting time, we advice you to book your taxi atleast 30mins before"
+                    },
+                    {
+                        "question": "Can I schedule my trip in advance ? How Scheduled Taxi works ? ",
+                        "answer": "Yes you can schedule your taxi in advance. As advance as a month early also. Typically we advice you to book Taxi as soon as your travel plans finalized. \nWe strive to ensure high quality Taxi arrive before your pickup time  to ensure zero wait time for you. We confirm the booking and the fare for the Scheduled Taxi is fixed. The exact vehicle and driver details are shared before pickup time (usually 10-30mins before)."
+                    },
+                    {
+                        "question": "I have scheduled the taxi, When will I get the driver details ?\nIt says \"Taxi Booked, Driver will be allotted Soon\", but driver not assigned. When will the driver be assigned",
+                        "answer": "The exact vehicle and driver details are shared before pickup time (usually 10-30mins before). \nIf you are in hurry please feel free to call 080-46810628 to speak to us. ",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    },
+                    {
+                        "question": "I need a taxi immediately. How can Quick Ride help?",
+                        "answer": "The immediate confirmation of the taxi depends upon driver availability within your area. However, we try our level best to support each taxi request whether they are immediate or scheduled. We recommend you to schedule the taxi in advance, we ensure that your taxi demand would be fulfilled."
+                    },
+                    {
+                        "question": "I have scheduled a trip. Will I get Cab for Sure ?",
+                        "answer": "Scheduled trips which are 30mins or more in advance, we assure to provide Taxi in all normal cases except situations beyond our control.  \nIf you are in hurry please feel free to call 080-46810628 to speak to us",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    },
+                    {
+                        "question": "Vehicle not yet assigned for my planned Trip (Scheduled in advance) ?\nWhen will I get the driver details ? ",
+                        "answer": "The exact vehicle and driver details are shared before pickup time (usually 10-30mins before). \nIf you are in hurry please feel free to call 080-46810628 to speak to us.",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cancellation & Compensations",
+                "faqList": [{
+                        "question": "How do I cancel a booked Trip  ?",
+                        "answer": "Once you booked the trip, we recommend you not to cancel. However if your plans are changed and cancellation is inevitable, you can go to Ride view and chose Cancel option and reason for cancellation. There may be  cancellation fees charged to you, depend on time of cancellation and whether any inconvenience caused to the Driver Partners.  The cancellation fees is given to Driver partner as compensation.  ",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    },
+                    {
+                        "question": "Why I am charged a Cancellation Fees ? What are the cancellation Fees ?Who will get this money ?",
+                        "answer": "Cancellation fees is applied to compensate the inconvenience, efforts or missing opportunity of Driver Partners. The fees will be given to Driver partner as compensation.  \n\nCancellation fees is applicable in the following scenarios : \na) Cancelling the instant trip after 3 mins after the driver assigned . Fees is Rs.50; you can cancel within 3mins without any charges. \nb) Cancelling the trip, within 1hr of Scheduled pickup time of a scheduled trip. Fees is Rs. 50;  you can cancel 1hr before without any charges. \nc) Cancelling an outstation trip, within 4hrs of pickup time. Rs. 100 to 20% of the total fare is charged. \n you can cancel 4hrs before pickup time without any charges. ",
+                        "statusApplicable": [
+                            "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "Driver cancelled but I didn't get any compensation why ?",
+                        "answer": "If the driver accepts a trip and cancels after the delay, the customer is paid with compensation for inconvenience by Quick Ride. The number of times such compensation is paid is limited for each customer. ",
+                        "statusApplicable": [
+                            "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "Driver Delayed / Driver asked me to cancel, but I am charged Cancellation Fees ",
+                        "answer": "Please choose relevant Cancellation Reason while cancelling the trip. \nFor support, you can write to support@quickride.in, we shall investigate and do the needful."
+                    }
+                ]
+            },
+            {
+                "name": "Fares and Payments",
+                "faqList": [{
+                        "question": "How do I pay and when to pay ? What are the different ways to make payment ? ",
+                        "answer": "Quick Ride supports online digital payment for your Taxi trips. You will be paying to Quick Ride. Quick Ride will intern pay the applicable amount to Driver partner. \nYou can use any of these mechanisms to pay for Taxi : \na) Standard Wallets such as PayTM, Amazon Pay can be linked and paid as and when the trip completed\nb) UPI Payment, during or on completion of Trip \nc) Credit / Debit Card / Net banking to pay during or on completion of Trip\nd) Use Pay Later options such as Simpl or LazyPay\n\nYour payment any which is directly to Drivers is not recognized and strictly prohibited.  Only in cases of Outstation trips, you are allowed to pay some amount to driver for on trip expenses and the same need to be recorded in the app through Add Payment option. ",
+                        "statusApplicable": [
+                            "Allotted", " Started"
+                        ]
+                    },
+                    {
+                        "question": "How is the Fare system work for Taxi from Quick Ride ? ",
+                        "answer": "It goes by fixed fares with an option of 40% increase during Peak hours of commuting. \nThe fare is shown in advance while booking. \nFor Local and Airport trips, the fare includes toll charges. \nThe fare includes 5% GST, that is to be paid to the Govt."
+                    },
+                    {
+                        "question": "I have not taken a ride, why I am charged the Fare ?",
+                        "answer": "The fare is charged only when the trip is completed by the driver, after starting the trip with OTP given to you. If you have shared OTP but not taken the trip, you may write to support@quickride.in",
+                        "statusApplicable": [
+                            "Completed", "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "Driver collected Toll amount and I see ride fare also include Tolls ",
+                        "answer": "Ride fare includes the Tolls for Local and Airport trips for all recognized Toll gates. You need not pay to Driver. However if driver insist such payment, please call us on Support line or write to support@quickride.in",
+                        "statusApplicable": [
+                            "Started", "Completed", "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "Driver insisted for Cash Payment, and I am charged online aswell by Quick Ride",
+                        "answer": "Quick Ride supports online digital payment only. The Ride fare include GST and Platform fees, which are taken by Quick Ride before settling the driver share.  Direct payments to drivers are not recognized and we strictly recommend you not to pay to the drivers. Incase if you paid directly to driver, reach out to our support line @ 080 4681 0628 or write to us support@quickride.in ",
+                        "statusApplicable": [
+                            "Completed", "Started"
+                        ]
+                    },
+                    {
+                        "question": "Does Quick Ride supports \"Ride Now - Pay Later\" option ? How can I take Ride now and Pay Later ?  ",
+                        "answer": "Quick Ride supports Ride Now and Pay Later in collaboration with \"Simpl\" and \"Lazy Pay\". You can go to your My Account -> Payment options and Link any of these  Simpl / Lazy Pay option. Once they approve your credit, you can take the rides from Quick Ride and pay the amount together later as per the free credit timelines of Simpl/Lazypay.",
+                        "statusApplicable": [
+                            "Allotted", "Started"
+                        ]
+                    },
+                    {
+                        "question": "Can I use my Carpool earned points to make payment to Taxi ?",
+                        "answer": "Yes, you can use the Earned points of Quick Ride for taking Taxi trips.  1 earned point is 1rs worth",
+                        "statusApplicable": [
+                            "Completed", "Started", "Allotted"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Driver Issues",
+                "faqList": [{
+                        "question": "Driver did not arrive for my taxi / Unable to contact the Taxi Driver ",
+                        "answer": "We are sorry to know that the driver did not arrive on-time. We take such issues very seriously and take action to ensure it does not get repeated. Please reach us on support line @ 080 4681 0628 for immediate support and you may also write to us on support@quickride.in ",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    },
+                    {
+                        "question": "I have a complaint on Driver / I have complaint on Vehicle quality ",
+                        "answer": "Please write to us on support@quickride.in\nWe shall investigate and take appropriate action ",
+                        "statusApplicable": [
+                            "Completed", "Started", "Allotted", "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "How do I contact Driver ? ",
+                        "answer": "Open your Trip's Ride View on the Quick Ride App. \nYou can click on Call option near the Driver information card.\nYou may also reach us on support line @ 080 4681 0628",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    },
+                    {
+                        "question": "My Taxi ETA is too long ? Can I get a nearby Taxi",
+                        "answer": "During allocation, we give priority to near by Taxi. Only when there are no nearby Taxis/when the nearby driver didn't accept, we go little further for allocation. \nYou may speak to the driver directly to expedite the pickup. ",
+                        "statusApplicable": [
+                            "Allotted"
+                        ]
+                    },
+                    {
+                        "question": "Vehicle Breakdown, Need help",
+                        "answer": "Sorry to hear this incident. Please reach on support line @ 080 4681 0628. We will try best to arrange alternative vehicle at the earlest.",
+                        "statusApplicable": [
+                            "Started"
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "Outstation ",
+                "faqList": [{
+                        "question": "Can I get an outstation taxi/cab from Quick Ride? ",
+                        "answer": "Yes, we support outstation trips with high quality cabs.  You can either book one way drop or round trip.   You can book Sedan, SUV, SUV Luxury for a comfortable outstation trip"
+                    },
+                    {
+                        "question": " How is Outstation Cab from Quick Ride different ? How are the fares for outstation cabs on Quick Ride ?",
+                        "answer": "Quick Ride fares are very competitive for outstation trips. Typically our fares are atleast 5% lower than other competitors. We will assign cleaner cabs with experienced drivers. We chose the vehicle which is recent and less used"
+                    },
+                    {
+                        "question": "Which are the cities the outstation Cabs/Taxi available from Quick Ride ? ",
+                        "answer": "Quick Ride supports Outstation from all Tier 1, Tier 2 and Tier 3 cities in India. It covers 5000+ Cities"
+                    },
+                    {
+                        "question": "Why do I need to pay advance for Outstation Cab ? What if the Driver don’t turn up ",
+                        "answer": "When you make a booking, we reserve a cab along driver for you. The driver may lose an opportunity incase if you cancel last minute. To avoid this scenario or to compensate drivers, we take advance amount for outstation bookings. \nFor all scheduled Outstation bookings we assure the driver reaches ontime for you, except in very specific cases with reasons which may be beyond our control.\nIn case if the driver is delayed by 30mins or more, or trip is not served due to our reasons, the advance amount will be fully refunded back to you",
+                        "tripTypeApplicable": [
+                            "Outstation"
+                        ]
+                    },
+                    {
+                        "question": "I booked the cab from Quick Ride. Why the cab allocated from Savaari / Meru ? ",
+                        "answer": "To have a bigger fleet and to cover across India, Quick Ride entered partnership with Meru and Savaari. Incase if our own driver is not available, we make sure your scheduled trip is served with the support of our partners. Please be assured we ensure qulaity and  handle your trip management, customer support and payments. ",
+                        "statusApplicable": [
+                            "Allotted"
+                        ],
+                        "tripTypeApplicable": [
+                            "Outstation"
+                        ]
+                    },
+                    {
+                        "question": "What all charges included for Outstation Cab",
+                        "answer": "The inclusions and exclusions vary based on trip and routes. \nPlease refer Inclusions/Exclusions card while booking a trip. This information also available on Ride view of the trip. Typically Tolls  & State Taxes are included for One Way trips and excluded for Round trips.",
+                        "statusApplicable": [
+                            "Allotted", "Started"
+                        ],
+                        "tripTypeApplicable": [
+                            "Outstation"
+                        ]
+                    },
+                    {
+                        "question": "I have made the payment to driver. How do I update in the system for balance updation",
+                        "answer": "Only for outstation trips, to cover incidental expenses by Driver, you are allowed to make some part payments directly to driver. Please record the payments as and when made, with \"Add Payment\" option on the ride view of your trip.",
+                        "statusApplicable": [
+                            "Allotted", "Started"
+                        ],
+                        "tripTypeApplicable": [
+                            "OutStation"
+                        ]
+                    },
+                    {
+                        "question": "My outstation Cab bill came higher than initial estimate. Why ?",
+                        "answer": "The initial estimated bill is for a fixed distance and driver allowance for days.  \nThe final bill includes charges like Tolls, State Taxes, Night driving allownaces , extra kms fare, etc., \nComplete breakup with the details are given in the Invoice.  \nFeel free to discuss with driver for details or write to us at support@quickride.in ",
+                        "statusApplicable": [
+                            "Completed", "Started"
+                        ],
+                        "tripTypeApplicable": [
+                            "OutStation"
+                        ]
+                    },
+                    {
+                        "question": "Want the vehicle assigned for Outation trip to be changed ",
+                        "answer": "You may please reach us on support line @ 080 4681 0628 . We will try our best to provide alternative vehicle ",
+                        "statusApplicable": [
+                            "Allotted"
+                        ],
+                        "tripTypeApplicable": [
+                            "OutStation"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Taxi Pool / Shared Taxi ",
+                "faqList": [{
+                        "question": "How is Taxi share/Taxipool works ? Why should I chose Taxipool ? ",
+                        "answer": "Quick Ride is all about trying feasibility to share commute to reduce vehicles on road. Quick Ride has been pioneer in Carpooling. Now with Taxi service also, Quick Ride want to identify the potential rides which can be shared, there by reducing vehicles and reducing cost.\nOur user can schedule a taxi share for his commute. If there are already anyone else going on that route, we join in to that Taxi share group. They can share one taxi and the fare will be automatically reduced.  Taxi share from Quick Ride comes with max 20% deviation and route & your ETA is know in advance.  With Shared Taxi, you can save from 40% to 60% of ride cost",
+                        "sharing": [
+                            "AnySharing"
+                        ]
+                    },
+                    {
+                        "question": " I have booked Shared Taxi, I have not got any driver details.  Taxipool group is not complete, what shall I do ?",
+                        "answer": "Taxi will be allocated after your Taxi sharing group is complete. Incase if you are fine with Exclusive taxi also, please specific the same on Ride View to convert it to Exclusive taxi trip. You can also take our support team help by calling  @ 080 4681 0628   ",
+                        "statusApplicable": [
+                            "Requested"
+                        ],
+                        "sharing": [
+                            "AnySharing"
+                        ]
+                    },
+                    {
+                        "question": "How is Quick Ride Taxi sharing works compared to other taxi operators ? ",
+                        "answer": "Unlike other taxi operators : \na) Which  work on dynamic on trip sharing, Quick Ride identifies shared options in advance. So you know the total route and ETA clearly. \nb)Where the other partners are strangers, In Quick Ride you can clearly know whare going to be other person sharing your taxi and where is he working, his interests etc., \nc) Where the Detour is unlimited and ETA is unpredictable. In Quick Ride the detour is limited to max 20% of your trip distance and ETA is predictable and transparent. ",
+                        "statusApplicable": [
+                            "Requested"
+                        ],
+                        "sharing": [
+                            "AnySharing"
+                        ]
+                    },
+                    {
+                        "question": "How much detour the Taxipool will have ? Can I have predictability for my ETA ? ",
+                        "answer": "We control the detour to be max 20% of your route. The ETA is transparent and predictable to you. \nThe Taxi share experience with Quick Ride will be much different and better than other Taxi providers",
+                        "statusApplicable": [
+                            "Requested"
+                        ],
+                        "sharing": [
+                            "AnySharing"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Help - Customer Care ",
+                "faqList": [{
+                        "question": "I have a concern, I want to raise a ticket ",
+                        "answer": "You can write to us at support@quickride.in\nIf you need to talk to us urgently, call us @ 080 4681 0628 "
+                    },
+                    {
+                        "question": " I need to talk to Customer Care",
+                        "answer": "You can write to us at support@quickride.in\nIf you need to talk to us urgently, call us @ 080 4681 0628 "
+                    },
+                    {
+                        "question": "Feedback  (Good/Bad) ",
+                        "answer": "Your feedback is very valuable to us. We believe in continuous improvement. \nPlease write to us at support@quickride.in",
+                        "statusApplicable": [
+                            "General", "Completed", "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "Taxi Service was bad. How do I report?",
+                        "answer": "We are sorry that you did not like the services. This is not something that we want to have. Requesting you to write to us at support@quickride.in and we shall get in touch with you to understand the issue to improve.",
+                        "statusApplicable": [
+                            "Completed", "Cancelled"
+                        ]
+                    },
+                    {
+                        "question": "I am on Emergency ",
+                        "answer": "Please choose SOS option on Ride View.  It will notify your emergency contact and our Customer Support team. ",
+                        "statusApplicable": [
+                            "Started"
+                        ]
+                    },
+                    {
+                        "question": "Where can I see complete Help / FAQ about Quick Ride Taxi ? ",
+                        "answer": "For complete help, please check https://quickride.in/quick_ride_taxi.php"
+                    }
+                ]
+            }
+        ]
+}

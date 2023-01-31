@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="FeedbackReasonCollectionViewCell" id="gTV-IL-0wX" customClass="FeedbackReasonCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbN-ly-rSc">
+                        <rect key="frame" x="5" y="5" width="225" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEP-fC-E5y">
+                                <rect key="frame" x="10" y="5" width="205" height="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GEP-fC-E5y" secondAttribute="bottom" constant="5" id="1Qf-5k-2Gl"/>
+                            <constraint firstItem="GEP-fC-E5y" firstAttribute="top" secondItem="DbN-ly-rSc" secondAttribute="top" constant="5" id="2TI-Ia-xoM"/>
+                            <constraint firstAttribute="trailing" secondItem="GEP-fC-E5y" secondAttribute="trailing" constant="10" id="HXR-xS-0uP"/>
+                            <constraint firstItem="GEP-fC-E5y" firstAttribute="leading" secondItem="DbN-ly-rSc" secondAttribute="leading" constant="10" id="dYj-An-rIR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                <color key="value" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DbN-ly-rSc" secondAttribute="trailing" constant="5" id="Nun-Rn-s0G"/>
+                <constraint firstAttribute="bottom" secondItem="DbN-ly-rSc" secondAttribute="bottom" constant="5" id="mGZ-WK-dY0"/>
+                <constraint firstItem="DbN-ly-rSc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="sHq-LY-iRh"/>
+                <constraint firstItem="DbN-ly-rSc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="so6-du-XxQ"/>
+            </constraints>
+            <size key="customSize" width="235" height="67"/>
+            <connections>
+                <outlet property="reasonLabel" destination="GEP-fC-E5y" id="IDU-vc-XQc"/>
+                <outlet property="reasonView" destination="DbN-ly-rSc" id="n7h-oE-tcN"/>
+            </connections>
+            <point key="canvasLocation" x="271.73913043478262" y="88.058035714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

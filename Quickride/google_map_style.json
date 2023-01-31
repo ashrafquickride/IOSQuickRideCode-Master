@@ -1,0 +1,10 @@
+[
+  {
+    "featureType": "transit.line",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+]

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delete Account View ControllerSB-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DeleteAccountViewControllerSB" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DeleteAccountViewControllerSB" customModule="Quickride" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-TU-qRL" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="67" width="375" height="310"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_account_delete" translatesAutoresizingMaskIntoConstraints="NO" id="HMS-A5-9X5">
+                                        <rect key="frame" x="157.66666666666666" y="20" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="om5-xx-N66"/>
+                                            <constraint firstAttribute="height" constant="60" id="u8r-Sb-G9d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxn-5w-Z5K">
+                                        <rect key="frame" x="121.66666666666669" y="90" width="132" height="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.88627450980392153" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHV-0N-fWh">
+                                        <rect key="frame" x="20" y="127" width="335" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eIG-P2-Ijz"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="This will remove your account permanently and this action can not be reversed. If you'd just like to take a break, you can ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="suspend your account">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" instead.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMe-p5-5Lf" userLabel="Suspend View">
+                                        <rect key="frame" x="20" y="217" width="150" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-kG-AZ3">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70980392156862748" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Suspend Account">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="rFY-kG-AZ3" firstAttribute="top" secondItem="cMe-p5-5Lf" secondAttribute="top" id="GZ4-E2-6n4"/>
+                                            <constraint firstAttribute="bottom" secondItem="rFY-kG-AZ3" secondAttribute="bottom" id="OIo-lO-p4i"/>
+                                            <constraint firstAttribute="height" constant="50" id="k9I-rQ-1Q4"/>
+                                            <constraint firstAttribute="trailing" secondItem="rFY-kG-AZ3" secondAttribute="trailing" id="m3p-z9-L8Q"/>
+                                            <constraint firstAttribute="width" constant="150" id="nj8-av-vor"/>
+                                            <constraint firstItem="rFY-kG-AZ3" firstAttribute="leading" secondItem="cMe-p5-5Lf" secondAttribute="leading" id="zYZ-03-44L"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mb-KP-po6" userLabel="Delete View">
+                                        <rect key="frame" x="205" y="217" width="150" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omK-oO-952" userLabel="Delete Account">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Delete Account">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="deleteBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5DC-xF-vfq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="2g7-q3-7Mu"/>
+                                            <constraint firstAttribute="trailing" secondItem="omK-oO-952" secondAttribute="trailing" id="Bei-cr-x7n"/>
+                                            <constraint firstItem="omK-oO-952" firstAttribute="height" secondItem="4Mb-KP-po6" secondAttribute="height" id="GFt-h4-nMo"/>
+                                            <constraint firstAttribute="bottom" secondItem="omK-oO-952" secondAttribute="bottom" id="HNy-Ob-Geu"/>
+                                            <constraint firstItem="omK-oO-952" firstAttribute="top" secondItem="4Mb-KP-po6" secondAttribute="top" id="IKe-ff-azS"/>
+                                            <constraint firstItem="omK-oO-952" firstAttribute="leading" secondItem="4Mb-KP-po6" secondAttribute="leading" id="w4E-hK-ps1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4Mb-KP-po6" firstAttribute="top" secondItem="cMe-p5-5Lf" secondAttribute="top" id="6ar-ym-84g"/>
+                                    <constraint firstAttribute="bottom" secondItem="cMe-p5-5Lf" secondAttribute="bottom" constant="43" id="BDs-yJ-yCj"/>
+                                    <constraint firstItem="HMS-A5-9X5" firstAttribute="centerX" secondItem="HHV-0N-fWh" secondAttribute="centerX" id="F8k-go-9P5"/>
+                                    <constraint firstItem="HMS-A5-9X5" firstAttribute="centerX" secondItem="Bxn-5w-Z5K" secondAttribute="centerX" id="FCf-dl-qiW"/>
+                                    <constraint firstItem="cMe-p5-5Lf" firstAttribute="leading" secondItem="zdB-TU-qRL" secondAttribute="leading" constant="20" id="LTf-fe-3bv"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Mb-KP-po6" secondAttribute="trailing" constant="20" id="UWE-fn-avb"/>
+                                    <constraint firstItem="cMe-p5-5Lf" firstAttribute="top" secondItem="HHV-0N-fWh" secondAttribute="bottom" constant="30" id="WYt-Ek-KkY"/>
+                                    <constraint firstItem="HMS-A5-9X5" firstAttribute="top" secondItem="zdB-TU-qRL" secondAttribute="top" constant="20" id="jOB-qw-9dG"/>
+                                    <constraint firstItem="4Mb-KP-po6" firstAttribute="bottom" secondItem="cMe-p5-5Lf" secondAttribute="bottom" id="jPr-LO-25I"/>
+                                    <constraint firstItem="HHV-0N-fWh" firstAttribute="leading" secondItem="zdB-TU-qRL" secondAttribute="leading" constant="20" id="ol3-in-u31"/>
+                                    <constraint firstItem="Bxn-5w-Z5K" firstAttribute="top" secondItem="HMS-A5-9X5" secondAttribute="bottom" constant="10" id="ry0-mh-vzg"/>
+                                    <constraint firstAttribute="trailing" secondItem="HHV-0N-fWh" secondAttribute="trailing" constant="20" id="vAK-9X-rG1"/>
+                                    <constraint firstItem="HHV-0N-fWh" firstAttribute="top" secondItem="Bxn-5w-Z5K" secondAttribute="bottom" constant="15" id="zqw-st-aRK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zdB-TU-qRL" secondAttribute="trailing" id="Ezd-Cs-dYD"/>
+                            <constraint firstItem="zdB-TU-qRL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="ZEG-Mi-XNl"/>
+                            <constraint firstItem="zdB-TU-qRL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sjo-vU-N7M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="zdB-TU-qRL" id="77c-c4-Opi"/>
+                        <outlet property="deleteAccount" destination="omK-oO-952" id="LwJ-CC-bO7"/>
+                        <outlet property="deleteView" destination="4Mb-KP-po6" id="sEa-qt-2B5"/>
+                        <outlet property="suspendButton" destination="rFY-kG-AZ3" id="iCl-sW-VL8"/>
+                        <outlet property="suspendView" destination="cMe-p5-5Lf" id="ANq-NT-oCU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+        <!--Warning View Controller-->
+        <scene sceneID="DP4-yd-wOp">
+            <objects>
+                <viewController storyboardIdentifier="WarningViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o58-vW-D2H" customClass="WarningViewController" customModule="Quickride" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pT5-Mw-bPM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwe-gx-w7O">
+                                <rect key="frame" x="0.0" y="67" width="375" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert_img" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-B5-M09">
+                                        <rect key="frame" x="157.66666666666666" y="20" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ME3-yH-NTJ"/>
+                                            <constraint firstAttribute="width" constant="60" id="k5Z-K3-DSh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYJ-mP-OdL">
+                                        <rect key="frame" x="147.66666666666666" y="88" width="80" height="21.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="59H-0F-piS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.88627450980392153" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please reconfirm that you want to delete the account. Once delete, you won't be able to recover it" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3n-T5-Bwd">
+                                        <rect key="frame" x="20" y="124.66666666666666" width="335" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="K1y-GC-ZBE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIV-HH-Urq" userLabel="Cancel View">
+                                        <rect key="frame" x="20" y="220.66666666666669" width="150" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPf-io-HO2">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70980392156862748" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cancelAction:" destination="o58-vW-D2H" eventType="touchUpInside" id="FHy-A8-bRV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstItem="YPf-io-HO2" firstAttribute="top" secondItem="gIV-HH-Urq" secondAttribute="top" id="Nk2-O6-zXv"/>
+                                            <constraint firstAttribute="width" constant="150" id="ZGT-Zq-LLb"/>
+                                            <constraint firstAttribute="bottom" secondItem="YPf-io-HO2" secondAttribute="bottom" id="bZa-LB-mGy"/>
+                                            <constraint firstItem="YPf-io-HO2" firstAttribute="leading" secondItem="gIV-HH-Urq" secondAttribute="leading" id="dWR-Rl-546"/>
+                                            <constraint firstAttribute="trailing" secondItem="YPf-io-HO2" secondAttribute="trailing" id="s2r-ne-4vm"/>
+                                            <constraint firstAttribute="height" constant="40" id="udB-pr-GEB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IH7-h9-4PH" userLabel="Delete View">
+                                        <rect key="frame" x="205" y="220.66666666666669" width="150" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUK-Li-sX8">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="deleteAction:" destination="o58-vW-D2H" eventType="touchUpInside" id="Tl9-HV-7wl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UUK-Li-sX8" secondAttribute="trailing" id="MNs-qz-Een"/>
+                                            <constraint firstAttribute="width" constant="150" id="Mcz-4o-gfA"/>
+                                            <constraint firstAttribute="bottom" secondItem="UUK-Li-sX8" secondAttribute="bottom" id="RXK-gV-uTg"/>
+                                            <constraint firstAttribute="height" constant="40" id="Ybz-vR-Dss"/>
+                                            <constraint firstItem="UUK-Li-sX8" firstAttribute="top" secondItem="IH7-h9-4PH" secondAttribute="top" id="eUM-H3-KT1"/>
+                                            <constraint firstItem="UUK-Li-sX8" firstAttribute="leading" secondItem="IH7-h9-4PH" secondAttribute="leading" id="gbn-ec-c8f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="V3n-T5-Bwd" secondAttribute="trailing" constant="20" id="0jo-GB-D73"/>
+                                    <constraint firstItem="V3n-T5-Bwd" firstAttribute="leading" secondItem="Jwe-gx-w7O" secondAttribute="leading" constant="20" id="Dmg-Nm-FO8"/>
+                                    <constraint firstItem="IH7-h9-4PH" firstAttribute="top" secondItem="gIV-HH-Urq" secondAttribute="top" id="FZD-3m-Zfl"/>
+                                    <constraint firstItem="jYJ-mP-OdL" firstAttribute="centerX" secondItem="V3n-T5-Bwd" secondAttribute="centerX" id="GOS-dK-Rao"/>
+                                    <constraint firstItem="jYJ-mP-OdL" firstAttribute="top" secondItem="9bF-B5-M09" secondAttribute="bottom" constant="8" id="ILv-4h-dF2"/>
+                                    <constraint firstItem="gIV-HH-Urq" firstAttribute="leading" secondItem="Jwe-gx-w7O" secondAttribute="leading" constant="20" id="ITe-gC-NX3"/>
+                                    <constraint firstItem="IH7-h9-4PH" firstAttribute="bottom" secondItem="gIV-HH-Urq" secondAttribute="bottom" id="KOd-lT-PmW"/>
+                                    <constraint firstItem="V3n-T5-Bwd" firstAttribute="top" secondItem="jYJ-mP-OdL" secondAttribute="bottom" constant="15" id="ga5-E5-wlU"/>
+                                    <constraint firstAttribute="bottom" secondItem="YPf-io-HO2" secondAttribute="bottom" constant="39.333333333333314" id="jg5-EH-Dwn"/>
+                                    <constraint firstItem="gIV-HH-Urq" firstAttribute="top" secondItem="V3n-T5-Bwd" secondAttribute="bottom" constant="30" id="kGc-Jc-Flm"/>
+                                    <constraint firstAttribute="trailing" secondItem="IH7-h9-4PH" secondAttribute="trailing" constant="20" id="tbd-GI-f32"/>
+                                    <constraint firstItem="9bF-B5-M09" firstAttribute="top" secondItem="Jwe-gx-w7O" secondAttribute="top" constant="20" id="ybT-Tl-BEw"/>
+                                    <constraint firstItem="9bF-B5-M09" firstAttribute="centerX" secondItem="jYJ-mP-OdL" secondAttribute="centerX" id="zm9-xY-3o7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eXi-kg-hvf"/>
+                        <constraints>
+                            <constraint firstItem="Jwe-gx-w7O" firstAttribute="leading" secondItem="eXi-kg-hvf" secondAttribute="leading" id="97B-ov-p0Z"/>
+                            <constraint firstItem="Jwe-gx-w7O" firstAttribute="trailing" secondItem="eXi-kg-hvf" secondAttribute="trailing" id="Gpd-GG-Uml"/>
+                            <constraint firstItem="Jwe-gx-w7O" firstAttribute="top" secondItem="eXi-kg-hvf" secondAttribute="top" constant="20" id="oLE-r8-9Zn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="YPf-io-HO2" id="rQu-q3-g6Y"/>
+                        <outlet property="cancelView" destination="gIV-HH-Urq" id="w0I-4H-t0F"/>
+                        <outlet property="contentView" destination="Jwe-gx-w7O" id="fmx-2g-0Aj"/>
+                        <outlet property="deleteBtn" destination="UUK-Li-sX8" id="ICW-dE-hdS"/>
+                        <outlet property="deleteView" destination="IH7-h9-4PH" id="YBj-bl-tFG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qs9-8y-aAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alert_img" width="16.5" height="14.5"/>
+        <image name="ic_account_delete" width="71.333335876464844" height="92"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

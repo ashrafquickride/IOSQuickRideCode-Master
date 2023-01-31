@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RideEtiquetteHelpImagesCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="320"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="320"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXM-z4-HvN">
+                        <rect key="frame" x="0.0" y="0.0" width="452" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="320" id="ner-jf-KhG"/>
+                            <constraint firstAttribute="width" constant="452" id="uDS-cy-O6B"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WXM-z4-HvN" secondAttribute="trailing" id="2eA-Ap-dul"/>
+                <constraint firstItem="WXM-z4-HvN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kgh-71-gWu"/>
+                <constraint firstItem="WXM-z4-HvN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cIA-vX-hs3"/>
+                <constraint firstAttribute="bottom" secondItem="WXM-z4-HvN" secondAttribute="bottom" id="fX2-3x-3Ec"/>
+            </constraints>
+            <size key="customSize" width="452" height="320"/>
+            <connections>
+                <outlet property="rideEtiquetteCollectionImageView" destination="WXM-z4-HvN" id="auv-Qm-4mz"/>
+            </connections>
+            <point key="canvasLocation" x="428.98550724637687" y="194.86607142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

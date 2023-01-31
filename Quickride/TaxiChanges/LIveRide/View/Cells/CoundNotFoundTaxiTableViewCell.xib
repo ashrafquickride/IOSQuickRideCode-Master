@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="CoundNotFoundTaxiTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxM-9D-22C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry! Couldn't find the Taxi at tis moment. we are still trying" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIN-gO-vb4">
+                                <rect key="frame" x="40" y="8" width="240" height="73.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kli-W5-9Id" userLabel="retryBtn">
+                                <rect key="frame" x="125.5" y="97.5" width="37" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="qLE-Fb-1PJ"/>
+                                    <constraint firstAttribute="height" constant="27" id="ryZ-7t-Whx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ref" title=" "/>
+                                <connections>
+                                    <action selector="retryBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8wA-dG-nJM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k6-Bs-grZ">
+                                <rect key="frame" x="169.5" y="97.5" width="38" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="LeO-VT-mFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4k6-Bs-grZ" firstAttribute="top" secondItem="Kli-W5-9Id" secondAttribute="top" id="7Or-dz-XAw"/>
+                            <constraint firstAttribute="bottom" secondItem="Kli-W5-9Id" secondAttribute="bottom" constant="12.5" id="F3r-g8-a9p"/>
+                            <constraint firstItem="4k6-Bs-grZ" firstAttribute="bottom" secondItem="Kli-W5-9Id" secondAttribute="bottom" id="IDw-F4-CXN"/>
+                            <constraint firstItem="Kli-W5-9Id" firstAttribute="centerX" secondItem="lxM-9D-22C" secondAttribute="centerX" multiplier="0.9" id="NKC-l8-ZyT"/>
+                            <constraint firstItem="DIN-gO-vb4" firstAttribute="leading" secondItem="lxM-9D-22C" secondAttribute="leading" constant="40" id="OlK-27-ayk"/>
+                            <constraint firstItem="4k6-Bs-grZ" firstAttribute="leading" secondItem="Kli-W5-9Id" secondAttribute="trailing" constant="7" id="RWW-KG-Ogf"/>
+                            <constraint firstItem="DIN-gO-vb4" firstAttribute="top" secondItem="lxM-9D-22C" secondAttribute="top" constant="8" id="XSK-Ob-u2P"/>
+                            <constraint firstItem="Kli-W5-9Id" firstAttribute="top" secondItem="DIN-gO-vb4" secondAttribute="bottom" constant="16" id="bvd-tF-AiV"/>
+                            <constraint firstAttribute="trailing" secondItem="DIN-gO-vb4" secondAttribute="trailing" constant="40" id="kq6-Vh-PDo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lxM-9D-22C" secondAttribute="bottom" id="26p-0U-SZx"/>
+                    <constraint firstItem="lxM-9D-22C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KCp-rX-Spk"/>
+                    <constraint firstAttribute="trailing" secondItem="lxM-9D-22C" secondAttribute="trailing" id="ap9-Uf-whV"/>
+                    <constraint firstItem="lxM-9D-22C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hN8-AW-MFC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="retryBtn" destination="Kli-W5-9Id" id="49G-KX-Asb"/>
+                <outlet property="retryTextBtn" destination="4k6-Bs-grZ" id="O5T-6v-aoj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="55.245535714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ref" width="20" height="20"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

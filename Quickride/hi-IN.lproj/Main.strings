@@ -1,0 +1,516 @@
+
+/* Class = "UILabel"; text = "No notification"; ObjectID = "0EP-xE-iB4"; */
+"0EP-xE-iB4.text" = "No notification";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "1W2-k6-sRe"; */
+"1W2-k6-sRe.text" = "0";
+
+/* Class = "UITextField"; placeholder = "Please enter your password"; ObjectID = "1dC-Eb-d6i"; */
+"1dC-Eb-d6i.placeholder" = "Please enter your password";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "1uG-jS-bXh"; */
+"1uG-jS-bXh.text" = "0";
+
+/* Class = "UILabel"; text = "03 Oct 15"; ObjectID = "2TE-en-Ec0"; */
+"2TE-en-Ec0.text" = "03 Oct 15";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "38T-eH-zYg"; */
+"38T-eH-zYg.normalTitle" = "Sign Up";
+
+/* Class = "UIViewController"; title = "SignupViewController"; ObjectID = "3Ov-Yb-cMo"; */
+"3Ov-Yb-cMo.title" = "SignupViewController";
+
+/* Class = "UITextField"; placeholder = "Repeat New Password"; ObjectID = "3e6-4h-Rq8"; */
+"3e6-4h-Rq8.placeholder" = "Repeat New Password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3gg-2k-Qeo"; */
+"3gg-2k-Qeo.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "440-jD-RMD"; */
+"440-jD-RMD.text" = "Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4at-h0-Weh"; */
+"4at-h0-Weh.text" = "Label";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "4fo-oq-rpf"; */
+"4fo-oq-rpf.text" = "0";
+
+/* Class = "UITextField"; placeholder = "Enter Your Name"; ObjectID = "62s-AL-KLr"; */
+"62s-AL-KLr.placeholder" = "Enter Your Name";
+
+/* Class = "UILabel"; text = "Offered Seats"; ObjectID = "6yw-Je-bYZ"; */
+"6yw-Je-bYZ.text" = "Offered Seats";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "7uG-b9-NbN"; */
+"7uG-b9-NbN.text" = "Name";
+
+/* Class = "UILabel"; text = "Let's Start"; ObjectID = "8Xo-zs-7FQ"; */
+"8Xo-zs-7FQ.text" = "Let's Start";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "9Ma-ki-set"; */
+"9Ma-ki-set.normalTitle" = "Edit";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "9ok-wG-lEc"; */
+"9ok-wG-lEc.normalTitle" = "Done";
+
+/* Class = "UITextField"; placeholder = "Enter Current Password"; ObjectID = "9vL-mg-V4f"; */
+"9vL-mg-V4f.placeholder" = "Enter Current Password";
+
+/* Class = "UILabel"; text = "Quick Ride will issue petro card for every ride"; ObjectID = "A0s-Aj-nbz"; */
+"A0s-Aj-nbz.text" = "Quick Ride will issue petro card for every ride";
+
+/* Class = "UITextField"; placeholder = "Enter New Password"; ObjectID = "Anf-wL-nJJ"; */
+"Anf-wL-nJJ.placeholder" = "Enter New Password";
+
+/* Class = "UILabel"; text = "Go ahead and encash your points"; ObjectID = "C27-lI-T9P"; */
+"C27-lI-T9P.text" = "Go ahead and encash your points";
+
+/* Class = "UILabel"; text = "We sent activation code through SMS"; ObjectID = "C6C-wz-018"; */
+"C6C-wz-018.text" = "We sent activation code through SMS";
+
+/* Class = "UILabel"; text = "ID : 92616"; ObjectID = "CBU-Pm-aJ3"; */
+"CBU-Pm-aJ3.text" = "ID : 92616";
+
+/* Class = "UITextField"; placeholder = " Comments"; ObjectID = "Coa-jB-Xyf"; */
+"Coa-jB-Xyf.placeholder" = " Comments";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D61-ee-VkY"; */
+"D61-ee-VkY.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "DiT-q7-ngb"; */
+"DiT-q7-ngb.normalTitle" = "Add";
+
+/* Class = "UIButton"; normalTitle = "Resend activation code"; ObjectID = "Ejb-St-Ext"; */
+"Ejb-St-Ext.normalTitle" = "Resend activation code";
+
+/* Class = "UILabel"; text = "Vehicle Number"; ObjectID = "F84-Gr-hty"; */
+"F84-Gr-hty.text" = "Vehicle Number";
+
+/* Class = "UITextField"; placeholder = "Enter your 10 digit Phone number"; ObjectID = "FKF-Qn-4jk"; */
+"FKF-Qn-4jk.placeholder" = "Enter your 10 digit Phone number";
+
+/* Class = "UINavigationItem"; title = "Feedback"; ObjectID = "Fde-3X-SOG"; */
+"Fde-3X-SOG.title" = "Feedback";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "G4k-Gg-BvX"; */
+"G4k-Gg-BvX.text" = "From";
+
+/* Class = "UINavigationItem"; title = "Sign Up"; ObjectID = "Ggd-B8-pHU"; */
+"Ggd-B8-pHU.title" = "Sign Up";
+
+/* Class = "UILabel"; text = "none"; ObjectID = "Gkr-hw-Xdu"; */
+"Gkr-hw-Xdu.text" = "none";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "HFD-xE-Yof"; */
+"HFD-xE-Yof.title" = "Save";
+
+/* Class = "UILabel"; text = "As Rider"; ObjectID = "HgB-W7-PAX"; */
+"HgB-W7-PAX.text" = "As Rider";
+
+/* Class = "UITabBarItem"; title = "Find Ride"; ObjectID = "I2A-9N-5Ly"; */
+"I2A-9N-5Ly.title" = "Find Ride";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "I59-hu-4zH"; */
+"I59-hu-4zH.text" = "Label";
+
+/* Class = "UILabel"; text = "Company Name"; ObjectID = "IcO-9a-2Eb"; */
+"IcO-9a-2Eb.text" = "Company Name";
+
+/* Class = "UILabel"; text = "69"; ObjectID = "JeT-Xn-qo3"; */
+"JeT-Xn-qo3.text" = "69";
+
+/* Class = "UITextField"; placeholder = "Enter a Secure Password"; ObjectID = "KCm-cr-axj"; */
+"KCm-cr-axj.placeholder" = "Enter a Secure Password";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KCt-A3-UCd"; */
+"KCt-A3-UCd.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Transactions"; ObjectID = "KEj-Oy-ZtN"; */
+"KEj-Oy-ZtN.title" = "Transactions";
+
+/* Class = "UITextField"; placeholder = "  Amount to recharge(Rs.5 - 10000)"; ObjectID = "KTC-MO-OeY"; */
+"KTC-MO-OeY.placeholder" = "  Amount to recharge(Rs.5 - 10000)";
+
+/* Class = "UITabBarItem"; title = "Offer Ride"; ObjectID = "KTp-d0-JIQ"; */
+"KTp-d0-JIQ.title" = "Offer Ride";
+
+/* Class = "UIViewController"; title = "OfferRide Controller"; ObjectID = "Kjt-Mg-FgY"; */
+"Kjt-Mg-FgY.title" = "OfferRide Controller";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password ?"; ObjectID = "Lmq-BR-oKE"; */
+"Lmq-BR-oKE.normalTitle" = "Forgot Password ?";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Lve-76-E9C"; */
+"Lve-76-E9C.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Enter the name"; ObjectID = "M6I-7g-zCB"; */
+"M6I-7g-zCB.placeholder" = "Enter the name";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "M74-xO-igh"; */
+"M74-xO-igh.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "MSu-j3-Kk0"; */
+"MSu-j3-Kk0.normalTitle" = "Edit";
+
+/* Class = "UIViewController"; title = "RegistrationController"; ObjectID = "MTr-ML-1eF"; */
+"MTr-ML-1eF.title" = "RegistrationController";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "McK-Pv-6VJ"; */
+"McK-Pv-6VJ.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "Enter 10 digit Phone number"; ObjectID = "MqI-7s-t0N"; */
+"MqI-7s-t0N.placeholder" = "Enter 10 digit Phone number";
+
+/* Class = "UINavigationItem"; title = "Password"; ObjectID = "Mvo-3P-dmG"; */
+"Mvo-3P-dmG.title" = "Password";
+
+/* Class = "UINavigationItem"; title = "Map View"; ObjectID = "Njw-Ks-sA6"; */
+"Njw-Ks-sA6.title" = "Map View";
+
+/* Class = "UILabel"; text = "Reg No."; ObjectID = "OTB-n0-DIU"; */
+"OTB-n0-DIU.text" = "Reg No.";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "Odx-nq-04e"; */
+"Odx-nq-04e.text" = "Status";
+
+/* Class = "UINavigationItem"; title = "Edit Profile"; ObjectID = "Ox2-Rl-Wq0"; */
+"Ox2-Rl-Wq0.title" = "Edit Profile";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "P3Y-Yp-kXc"; */
+"P3Y-Yp-kXc.text" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "PLx-x5-0fV"; */
+"PLx-x5-0fV.normalTitle" = "Menu";
+
+/* Class = "UIBarButtonItem"; title = "sideButton"; ObjectID = "Pr3-6N-8Mg"; */
+"Pr3-6N-8Mg.title" = "sideButton";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "Prf-If-VNo"; */
+"Prf-If-VNo.title" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Pry-Rz-jrh"; */
+"Pry-Rz-jrh.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "Q8M-xo-n0t"; */
+"Q8M-xo-n0t.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "QA8-eL-bX0"; */
+"QA8-eL-bX0.text" = "to";
+
+/* Class = "UITextField"; placeholder = "  Enter number of points to encash"; ObjectID = "QCf-uC-f7e"; */
+"QCf-uC-f7e.placeholder" = "  Enter number of points to encash";
+
+/* Class = "UIButton"; normalTitle = "Activiate"; ObjectID = "RSI-Po-dCy"; */
+"RSI-Po-dCy.normalTitle" = "Activiate";
+
+/* Class = "UILabel"; text = "Recharge to avail quick rides"; ObjectID = "SRy-or-5g1"; */
+"SRy-or-5g1.text" = "Recharge to avail quick rides";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "T7h-I7-syy"; */
+"T7h-I7-syy.text" = "Label";
+
+/* Class = "UILabel"; text = "Redeem your points at autorized peterol pump"; ObjectID = "TX4-zF-qwY"; */
+"TX4-zF-qwY.text" = "Redeem your points at autorized peterol pump";
+
+/* Class = "UILabel"; text = "Earned from ride offered to Knm Rao"; ObjectID = "VFo-AO-imX"; */
+"VFo-AO-imX.text" = "Earned from ride offered to Knm Rao";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Vrq-AA-lHk"; */
+"Vrq-AA-lHk.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "Submit Feedback"; ObjectID = "Vtr-WI-9aE"; */
+"Vtr-WI-9aE.normalTitle" = "Submit Feedback";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "W0Q-qg-B3b"; */
+"W0Q-qg-B3b.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "W27-V9-Cne"; */
+"W27-V9-Cne.text" = "Label";
+
+/* Class = "UILabel"; text = "Official email id for verified Status"; ObjectID = "WQi-Jx-0Kf"; */
+"WQi-Jx-0Kf.text" = "Official email id for verified Status";
+
+/* Class = "UISegmentedControl"; XEB-ib-EFB.segmentTitles[0] = "Male"; ObjectID = "XEB-ib-EFB"; */
+"XEB-ib-EFB.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; XEB-ib-EFB.segmentTitles[1] = "Female"; ObjectID = "XEB-ib-EFB"; */
+"XEB-ib-EFB.segmentTitles[1]" = "Female";
+
+/* Class = "UILabel"; text = "Vehicle"; ObjectID = "XVK-X8-r9h"; */
+"XVK-X8-r9h.text" = "Vehicle";
+
+/* Class = "UITextField"; placeholder = "Enter your full name"; ObjectID = "XXf-n2-Syf"; */
+"XXf-n2-Syf.placeholder" = "Enter your full name";
+
+/* Class = "UIViewController"; title = "LoginController"; ObjectID = "YET-yd-axD"; */
+"YET-yd-axD.title" = "LoginController";
+
+/* Class = "UIViewController"; title = "Find Ride controller"; ObjectID = "Ybw-nO-fM2"; */
+"Ybw-nO-fM2.title" = "Find Ride controller";
+
+/* Class = "UILabel"; text = "CR"; ObjectID = "ZWG-C9-mIo"; */
+"ZWG-C9-mIo.text" = "CR";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "ZqR-v7-i5o"; */
+"ZqR-v7-i5o.text" = "Phone";
+
+/* Class = "UILabel"; text = "No of Passenger"; ObjectID = "aCd-27-LGO"; */
+"aCd-27-LGO.text" = "No of Passenger";
+
+/* Class = "UILabel"; text = "Fare"; ObjectID = "aYU-PJ-LeC"; */
+"aYU-PJ-LeC.text" = "Fare";
+
+/* Class = "UIViewController"; title = "Left View Controller"; ObjectID = "bQN-4g-gJh"; */
+"bQN-4g-gJh.title" = "Left View Controller";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bVe-l9-Gm5"; */
+"bVe-l9-Gm5.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bWC-AW-8OZ"; */
+"bWC-AW-8OZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Points"; ObjectID = "bvz-uO-D3N"; */
+"bvz-uO-D3N.text" = "Points";
+
+/* Class = "UIButton"; normalTitle = "Ride Later"; ObjectID = "cw2-CQ-bxl"; */
+"cw2-CQ-bxl.normalTitle" = "Ride Later";
+
+/* Class = "UILabel"; text = "Enter activation code"; ObjectID = "cxD-gg-g4A"; */
+"cxD-gg-g4A.text" = "Enter activation code";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "dSe-1z-DKh"; */
+"dSe-1z-DKh.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "PhoneNumber"; ObjectID = "dle-bb-Bbb"; */
+"dle-bb-Bbb.text" = "PhoneNumber";
+
+/* Class = "UILabel"; text = "Vehicle Details"; ObjectID = "drV-0b-a6e"; */
+"drV-0b-a6e.text" = "Vehicle Details";
+
+/* Class = "UIButton"; normalTitle = "Reset Password"; ObjectID = "dwJ-va-J75"; */
+"dwJ-va-J75.normalTitle" = "Reset Password";
+
+/* Class = "UIViewController"; title = "Verify"; ObjectID = "e8P-DU-Oo3"; */
+"e8P-DU-Oo3.title" = "Verify";
+
+/* Class = "UILabel"; text = "No Favorite Locations"; ObjectID = "eF9-LG-nfy"; */
+"eF9-LG-nfy.text" = "No Favorite Locations";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "eeJ-8m-ZnX"; */
+"eeJ-8m-ZnX.title" = "Profile";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fEF-uN-5zd"; */
+"fEF-uN-5zd.text" = "Label";
+
+/* Class = "UISegmentedControl"; fFe-Rp-eRx.segmentTitles[0] = "Account"; ObjectID = "fFe-Rp-eRx"; */
+"fFe-Rp-eRx.segmentTitles[0]" = "Account";
+
+/* Class = "UISegmentedControl"; fFe-Rp-eRx.segmentTitles[1] = "Encash"; ObjectID = "fFe-Rp-eRx"; */
+"fFe-Rp-eRx.segmentTitles[1]" = "Encash";
+
+/* Class = "UIButton"; normalTitle = "Guest"; ObjectID = "fV5-J7-cl7"; */
+"fV5-J7-cl7.normalTitle" = "Guest";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "faz-qn-Ilm"; */
+"faz-qn-Ilm.normalTitle" = "Back";
+
+/* Class = "UIViewController"; title = "Container View Controller"; ObjectID = "fcK-83-Yth"; */
+"fcK-83-Yth.title" = "Container View Controller";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "g8m-gx-2TV"; */
+"g8m-gx-2TV.text" = "Phone";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "g9Y-ff-gTr"; */
+"g9Y-ff-gTr.title" = "Login";
+
+/* Class = "UITextField"; text = "5.0"; ObjectID = "gXf-CA-gqH"; */
+"gXf-CA-gqH.text" = "5.0";
+
+/* Class = "UIButton"; normalTitle = "Add Social Profiles"; ObjectID = "h7u-Wu-bqT"; */
+"h7u-Wu-bqT.normalTitle" = "Add Social Profiles";
+
+/* Class = "UIButton"; normalTitle = "Encash"; ObjectID = "hH2-eq-jOx"; */
+"hH2-eq-jOx.normalTitle" = "Encash";
+
+/* Class = "UILabel"; text = "Designation"; ObjectID = "haK-0T-sEM"; */
+"haK-0T-sEM.text" = "Designation";
+
+/* Class = "UIViewController"; title = "Left View Controller"; ObjectID = "hfw-HK-og6"; */
+"hfw-HK-og6.title" = "Left View Controller";
+
+/* Class = "UIButton"; normalTitle = "Change Password"; ObjectID = "hfx-GG-4uT"; */
+"hfx-GG-4uT.normalTitle" = "Change Password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hkc-xX-HPW"; */
+"hkc-xX-HPW.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "hsh-eh-nDY"; */
+"hsh-eh-nDY.title" = "Profile";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "iCK-Kw-Jbr"; */
+"iCK-Kw-Jbr.text" = "0";
+
+/* Class = "UILabel"; text = "Points"; ObjectID = "iCf-Ht-DfH"; */
+"iCf-Ht-DfH.text" = "Points";
+
+/* Class = "UILabel"; text = "No Rides Found"; ObjectID = "iKc-Ic-4d4"; */
+"iKc-Ic-4d4.text" = "No Rides Found";
+
+/* Class = "UISearchBar"; placeholder = "Enter Location"; ObjectID = "j3z-0G-PwO"; */
+"j3z-0G-PwO.placeholder" = "Enter Location";
+
+/* Class = "UISegmentedControl"; jAO-Hm-gVD.segmentTitles[0] = "Upcoming"; ObjectID = "jAO-Hm-gVD"; */
+"jAO-Hm-gVD.segmentTitles[0]" = "Upcoming";
+
+/* Class = "UISegmentedControl"; jAO-Hm-gVD.segmentTitles[1] = "Completed"; ObjectID = "jAO-Hm-gVD"; */
+"jAO-Hm-gVD.segmentTitles[1]" = "Completed";
+
+/* Class = "UILabel"; text = "Fare"; ObjectID = "jUZ-8d-blL"; */
+"jUZ-8d-blL.text" = "Fare";
+
+/* Class = "UILabel"; text = "Help us to serve you better"; ObjectID = "kZt-Xx-WGt"; */
+"kZt-Xx-WGt.text" = "Help us to serve you better";
+
+/* Class = "UILabel"; text = "By Sign up, I agree to "; ObjectID = "kbe-s9-vXt"; */
+"kbe-s9-vXt.text" = "By Sign up, I agree to ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lwU-Qg-8Km"; */
+"lwU-Qg-8Km.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "mAV-QK-IeR"; */
+"mAV-QK-IeR.normalTitle" = "Back";
+
+/* Class = "UITextField"; placeholder = "Designation"; ObjectID = "mDy-n9-wdC"; */
+"mDy-n9-wdC.placeholder" = "Designation";
+
+/* Class = "UILabel"; text = "Current Password"; ObjectID = "mOb-lC-y4y"; */
+"mOb-lC-y4y.text" = "Current Password";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mPw-yg-wYt"; */
+"mPw-yg-wYt.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Select the gender"; ObjectID = "mYr-hQ-MaQ"; */
+"mYr-hQ-MaQ.text" = "Select the gender";
+
+/* Class = "UINavigationItem"; title = "My Rewards"; ObjectID = "nI4-uL-5bN"; */
+"nI4-uL-5bN.title" = "My Rewards";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "nm8-gz-GH9"; */
+"nm8-gz-GH9.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Pts/km"; ObjectID = "o0Q-Cq-U6r"; */
+"o0Q-Cq-U6r.text" = "Pts/km";
+
+/* Class = "UINavigationItem"; title = "My Rides"; ObjectID = "o9X-QH-7e5"; */
+"o9X-QH-7e5.title" = "My Rides";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "oSB-bF-9r1"; */
+"oSB-bF-9r1.title" = "Back";
+
+/* Class = "UITextField"; placeholder = "Enter offical email Id"; ObjectID = "okj-cc-AVj"; */
+"okj-cc-AVj.placeholder" = "Enter offical email Id";
+
+/* Class = "UILabel"; text = "Points encashed will be credited to your petro card"; ObjectID = "om5-H9-aYF"; */
+"om5-H9-aYF.text" = "Points encashed will be credited to your petro card";
+
+/* Class = "UIButton"; normalTitle = "Recharge"; ObjectID = "pr5-rw-ThY"; */
+"pr5-rw-ThY.normalTitle" = "Recharge";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q7m-X7-KI5"; */
+"q7m-X7-KI5.text" = "Label";
+
+/* Class = "UILabel"; text = "Repeat New Password"; ObjectID = "qWW-vW-fvi"; */
+"qWW-vW-fvi.text" = "Repeat New Password";
+
+/* Class = "UITextField"; placeholder = "Vehicle Number"; ObjectID = "qk1-p0-6b3"; */
+"qk1-p0-6b3.placeholder" = "Vehicle Number";
+
+/* Class = "UIButton"; normalTitle = "Vehicle Type"; ObjectID = "qnf-4u-jT3"; */
+"qnf-4u-jT3.normalTitle" = "Vehicle Type";
+
+/* Class = "UITextField"; placeholder = "Company Name"; ObjectID = "rBQ-oI-EFs"; */
+"rBQ-oI-EFs.placeholder" = "Company Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rFa-sM-zB2"; */
+"rFa-sM-zB2.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Ride Now"; ObjectID = "rjL-Hf-y7p"; */
+"rjL-Hf-y7p.normalTitle" = "Ride Now";
+
+/* Class = "UILabel"; text = "at 04:24 PM"; ObjectID = "ruP-Zl-hCb"; */
+"ruP-Zl-hCb.text" = "at 04:24 PM";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "s0v-3H-TSg"; */
+"s0v-3H-TSg.text" = "Name";
+
+/* Class = "UILabel"; text = "To"; ObjectID = "s3d-LG-GdM"; */
+"s3d-LG-GdM.text" = "To";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "sR6-v8-nry"; */
+"sR6-v8-nry.text" = "Password";
+
+/* Class = "UITextField"; placeholder = "Enter Activation Code"; ObjectID = "sdr-D3-LDG"; */
+"sdr-D3-LDG.placeholder" = "Enter Activation Code";
+
+/* Class = "UILabel"; text = "New Password"; ObjectID = "se6-nd-uzQ"; */
+"se6-nd-uzQ.text" = "New Password";
+
+/* Class = "UINavigationItem"; title = "Share And Earn"; ObjectID = "sw4-GZ-rmx"; */
+"sw4-GZ-rmx.title" = "Share And Earn";
+
+/* Class = "UITextField"; placeholder = "Enter your 10 digit Phone number"; ObjectID = "tH3-Ke-WFL"; */
+"tH3-Ke-WFL.placeholder" = "Enter your 10 digit Phone number";
+
+/* Class = "UILabel"; text = "Total Rides"; ObjectID = "thH-Yl-odQ"; */
+"thH-Yl-odQ.text" = "Total Rides";
+
+/* Class = "UILabel"; text = "Thank you for registering with Quick Ride!"; ObjectID = "thQ-M1-EP7"; */
+"thQ-M1-EP7.text" = "Thank you for registering with Quick Ride!";
+
+/* Class = "UILabel"; text = "Add Favorite"; ObjectID = "uCc-5u-ZVq"; */
+"uCc-5u-ZVq.text" = "Add Favorite";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "uEP-SB-6b2"; */
+"uEP-SB-6b2.text" = "Phone";
+
+/* Class = "UILabel"; text = "Auto confirm for ride matches"; ObjectID = "uOL-Ma-LuB"; */
+"uOL-Ma-LuB.text" = "Auto confirm for ride matches";
+
+/* Class = "UILabel"; text = "Points"; ObjectID = "uPr-tG-EPs"; */
+"uPr-tG-EPs.text" = "Points";
+
+/* Class = "UILabel"; text = "Image Name"; ObjectID = "v0l-SV-4nJ"; */
+"v0l-SV-4nJ.text" = "Image Name";
+
+/* Class = "UILabel"; text = "Same Gender"; ObjectID = "v9w-1u-Lnn"; */
+"v9w-1u-Lnn.text" = "Same Gender";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "wRQ-d3-bRT"; */
+"wRQ-d3-bRT.text" = "0";
+
+/* Class = "UILabel"; text = "As Passenger"; ObjectID = "wgM-sG-7b8"; */
+"wgM-sG-7b8.text" = "As Passenger";
+
+/* Class = "UIButton"; normalTitle = "Ride Preferences"; ObjectID = "xB8-mL-pR3"; */
+"xB8-mL-pR3.normalTitle" = "Ride Preferences";
+
+/* Class = "UILabel"; text = "Same Company "; ObjectID = "xZ1-JW-5iI"; */
+"xZ1-JW-5iI.text" = "Same Company ";
+
+/* Class = "UILabel"; text = "Quick Ride wallet is safe and fully refundable"; ObjectID = "ykE-C6-fW3"; */
+"ykE-C6-fW3.text" = "Quick Ride wallet is safe and fully refundable";
+
+/* Class = "UILabel"; text = "ItemName"; ObjectID = "ysW-ae-9Yv"; */
+"ysW-ae-9Yv.text" = "ItemName";
+
+/* Class = "UIButton"; normalTitle = "Quick Ride Terms"; ObjectID = "yz3-Xy-2Fb"; */
+"yz3-Xy-2Fb.normalTitle" = "Quick Ride Terms";
+
+/* Class = "UIButton"; normalTitle = "Have a Promo Code ?"; ObjectID = "zDS-Hu-nmO"; */
+"zDS-Hu-nmO.normalTitle" = "Have a Promo Code ?";
+
+/* Class = "UITextField"; text = "3"; ObjectID = "zES-MD-SU1"; */
+"zES-MD-SU1.text" = "3";
+
+/* Class = "UIButton"; normalTitle = "Let's Start"; ObjectID = "zvw-LU-kfq"; */
+"zvw-LU-kfq.normalTitle" = "Let's Start";

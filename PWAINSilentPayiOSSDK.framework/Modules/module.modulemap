@@ -1,0 +1,6 @@
+framework module PWAINSilentPayiOSSDK {
+  umbrella header "PWAINSilentPayiOSSDK.h"
+
+  export *
+  module * { export * }
+}

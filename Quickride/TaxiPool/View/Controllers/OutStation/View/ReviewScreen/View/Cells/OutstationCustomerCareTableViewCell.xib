@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="OutstationCustomerCareTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7b4-bb-n52">
+                        <rect key="frame" x="0.0" y="10" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ovu-BL-YYe"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fU4-df-pHf">
+                        <rect key="frame" x="20" y="25" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="0sC-Zc-yDs"/>
+                            <constraint firstAttribute="height" constant="30" id="c32-LO-GVK"/>
+                        </constraints>
+                        <state key="normal" image="call_help"/>
+                        <connections>
+                            <action selector="callButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="q8Y-lM-Swc"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOn-S7-aJr">
+                        <rect key="frame" x="65" y="25" width="235" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1Ft-S6-Jn0"/>
+                        </constraints>
+                        <connections>
+                            <action selector="callButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EYp-02-bpe"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please call us. We would be happy to answer your queries" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8Z-YI-H5R">
+                        <rect key="frame" x="65" y="23.5" width="235" height="33"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" systemColor="linkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="F8Z-YI-H5R" secondAttribute="trailing" constant="20" id="3cD-Bl-eP3"/>
+                    <constraint firstAttribute="trailing" secondItem="7b4-bb-n52" secondAttribute="trailing" id="45m-oj-MIT"/>
+                    <constraint firstItem="F8Z-YI-H5R" firstAttribute="centerY" secondItem="fU4-df-pHf" secondAttribute="centerY" id="CvN-O2-rHh"/>
+                    <constraint firstItem="IOn-S7-aJr" firstAttribute="leading" secondItem="fU4-df-pHf" secondAttribute="trailing" constant="15" id="G0W-uN-n3F"/>
+                    <constraint firstAttribute="bottom" secondItem="fU4-df-pHf" secondAttribute="bottom" constant="16" id="JT8-Fi-WAR"/>
+                    <constraint firstItem="7b4-bb-n52" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="O00-Xp-jwx"/>
+                    <constraint firstAttribute="trailing" secondItem="IOn-S7-aJr" secondAttribute="trailing" constant="20" id="UmF-Db-nLX"/>
+                    <constraint firstItem="7b4-bb-n52" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="V3X-su-sqE"/>
+                    <constraint firstItem="fU4-df-pHf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="d8q-pI-cN1"/>
+                    <constraint firstItem="IOn-S7-aJr" firstAttribute="centerY" secondItem="fU4-df-pHf" secondAttribute="centerY" id="eNd-et-q9t"/>
+                    <constraint firstItem="F8Z-YI-H5R" firstAttribute="leading" secondItem="fU4-df-pHf" secondAttribute="trailing" constant="15" id="gac-oe-gop"/>
+                    <constraint firstItem="fU4-df-pHf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="xmV-4g-AyN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="95.652173913043484" y="68.638392857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="call_help" width="24" height="24"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

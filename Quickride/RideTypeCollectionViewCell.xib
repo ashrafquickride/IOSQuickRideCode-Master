@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RideTypeCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-vQ-lt1">
+                        <rect key="frame" x="5" y="9" width="151" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hka-Pb-VmQ">
+                                <rect key="frame" x="0.0" y="16" width="151" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hka-Pb-VmQ" firstAttribute="leading" secondItem="kIF-vQ-lt1" secondAttribute="leading" id="9dK-Ui-bNa"/>
+                            <constraint firstAttribute="height" constant="32" id="dgk-BK-TAe"/>
+                            <constraint firstItem="hka-Pb-VmQ" firstAttribute="centerX" secondItem="kIF-vQ-lt1" secondAttribute="centerX" id="e4r-SZ-8BJ"/>
+                            <constraint firstItem="hka-Pb-VmQ" firstAttribute="centerY" secondItem="kIF-vQ-lt1" secondAttribute="centerY" id="k5v-ht-qyB"/>
+                            <constraint firstAttribute="trailing" secondItem="hka-Pb-VmQ" secondAttribute="trailing" id="vec-9w-Cbi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kIF-vQ-lt1" secondAttribute="trailing" constant="5" id="PcR-3Q-NFP"/>
+                <constraint firstItem="kIF-vQ-lt1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="aXr-ye-D6W"/>
+                <constraint firstItem="kIF-vQ-lt1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="foY-wx-4uY"/>
+                <constraint firstItem="kIF-vQ-lt1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="w1R-3t-YOa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="161" height="50"/>
+            <connections>
+                <outlet property="rideTypeLabel" destination="hka-Pb-VmQ" id="XAe-AX-5Pl"/>
+                <outlet property="rideTypeView" destination="kIF-vQ-lt1" id="x9X-5E-LyX"/>
+            </connections>
+            <point key="canvasLocation" x="218.11594202898553" y="99.776785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,208 @@
+//
+//  PersonalIdVerificationViewModel.swift
+//  Quickride
+//
+//  Created by Vinutha on 14/09/20.
+//  Copyright © 2014-2020. Quick Ride (www.quickride.in). All rights reserved.
+//  iDisha Info Labs Pvt Ltd. proprietary.
+//
+
+import UIKit
+import HyperSnapSDK
+import ObjectMapper
+
+protocol PersonalIdVerificationViewModelDelegate {
+    func documentCaptureFailed(errorMessage: String?)
+    func documentScanningCompleted(verificationType: String)
+    func faceMatchCallStatus(status: String, errorMessage: String?, verificationType: String)
+    func OCRCallFailed(errorMessage: String?)
+    func OCRCallSucceeded(verificationType: String)
+}
+
+class PersonalIdVerificationViewModel {
+    
+    let personal_id_verification_categories = [PersonalIdDetail.ADHAR, PersonalIdDetail.PAN, PersonalIdDetail.VOTER_ID, PersonalIdDetail.DL]
+    static let FAILED = "FAILED"
+    static let SUCCESS = "SUCCESS"
+    var isFromProfile = false
+    var verificationType: String?
+    
+    //MARK: Properties
+    var delegate : PersonalIdVerificationViewModelDelegate?
+    var frontDocVerificationResultData: PersonalIdVerificationResultData?
+    var backDocVerificationResultData: PersonalIdVerificationResultData?
+    var faceImageUri: String?
+    var frontSideDocImageUri: String?
+    var backSideDocImageUri: String?
+    
+    //MARK: Methods
+    func launchFaceCaptureScreen(verificationType: String, viewController: UIViewController) {
+        let hvFaceConfig = HVFaceConfig()
+        let parameters = ["enableDashboard" : "yes"] as [String:AnyObject]//This facilitates access to QC dashboard and debugging
+        hvFaceConfig.setLivenessAPIParameters(parameters)
+        
+        let completionHandler:(_ error:HVError?,_ result:[String:AnyObject]?,_ headers:[String:String]?, _ viewController:UIViewController)->Void = {error, result, headers, vcNew in
+            vcNew.dismiss(animated: false, completion: nil)
+            if error != nil {
+                self.delegate?.documentCaptureFailed(errorMessage: error!.getErrorMessage())
+            } else {
+                if let result = result, let imageUri = result["imageUri"] as? String {
+                    self.faceImageUri = imageUri
+                    self.launchFrontDocumentCaptureScreen(verificationType: verificationType, presentingVC: viewController)
+                }
+            }
+        }
+        HVFaceViewController.start(viewController, hvFaceConfig: hvFaceConfig, completionHandler: completionHandler)
+        
+    }
+    
+    private func launchFrontDocumentCaptureScreen(verificationType: String, presentingVC: UIViewController) {
+        let hvDocConfig = HVDocConfig()
+        hvDocConfig.setDocumentType(.other)
+        hvDocConfig.textConfig.setDocCaptureSubText("Capture Front Side")
+        if HyperVergeUtils.shared.getDocumentType(verificationType: verificationType) == .other {
+            hvDocConfig.setAspectRatio(HyperVergeUtils.shared.getAspectRatio(verificationType: verificationType))
+        }
+        hvDocConfig.setShouldShowInstructionsPage(false)
+        hvDocConfig.setShouldShowReviewPage(true)
+        
+        let completionHandler:(_ error: HVError?, _ result: [String: AnyObject]?, _ viewController: UIViewController) -> Void = {error, result, vcNew in
+            vcNew.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+            if error != nil {
+                self.delegate?.documentCaptureFailed(errorMessage: error!.getErrorMessage())
+            } else {
+                if let result = result, let imageUri = result["imageUri"] as? String {
+                    self.frontSideDocImageUri = imageUri
+                    self.backSideDocImageUri = nil
+                    if verificationType == PersonalIdDetail.ADHAR || verificationType == PersonalIdDetail.VOTER_ID {
+                        self.launchBackDocumentCaptureScreen(verificationType: verificationType, presentingVC: presentingVC)
+                    } else {
+                        self.delegate?.documentScanningCompleted(verificationType: verificationType)
+                    }
+                }
+            }
+        }
+        HVDocsViewController.start(presentingVC, hvDocConfig: hvDocConfig, completionHandler: completionHandler)
+        
+    }
+    
+    private func launchBackDocumentCaptureScreen(verificationType: String, presentingVC: UIViewController) {
+        let hvDocConfig = HVDocConfig()
+        hvDocConfig.setDocumentType(.other)
+        hvDocConfig.textConfig.setDocCaptureSubText("Capture Back Side")
+        if HyperVergeUtils.shared.getDocumentType(verificationType: verificationType) == .other {
+            hvDocConfig.setAspectRatio(HyperVergeUtils.shared.getAspectRatio(verificationType: verificationType))
+        }
+        hvDocConfig.setShouldShowInstructionsPage(false)
+        hvDocConfig.setShouldShowReviewPage(true)
+        
+        let completionHandler:(_ error: HVError?, _ result: [String: AnyObject]?, _ viewController: UIViewController) -> Void = {error, result, vcNew in
+            vcNew.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+            if error != nil {
+                self.delegate?.documentCaptureFailed(errorMessage: error!.getErrorMessage())
+            } else {
+                if let result = result, let imageUri = result["imageUri"] as? String {
+                    self.backSideDocImageUri = imageUri
+                    self.delegate?.documentScanningCompleted(verificationType: verificationType)
+                }
+            }
+        }
+        HVDocsViewController.start(presentingVC, hvDocConfig: hvDocConfig, completionHandler: completionHandler)
+        
+    }
+    
+    func makeFaceMatchCallForFrontDocImage(verificationType: String) {
+        let parameters = ["enableDashboard" : "yes"] as [String:AnyObject] //This facilitates access to QC dashboard and debugging during POC
+        
+        let completionHandler:(_ error:HVError?,_ result:[String:AnyObject]?,_ headers:[String:String]?)->Void = {error,result, headers in
+            
+            if error != nil {
+                self.delegate?.faceMatchCallStatus(status: PersonalIdVerificationViewModel.FAILED, errorMessage: error!.getErrorMessage(), verificationType: verificationType)
+            } else {
+                self.delegate?.faceMatchCallStatus(status: PersonalIdVerificationViewModel.SUCCESS, errorMessage: nil, verificationType: verificationType)
+            }
+        }
+        HVNetworkHelper.makeFaceMatchCall(endpoint: HyperVergeUtils.shared.getFaceMatchEndpoint(), faceUri: faceImageUri!, documentUri: frontSideDocImageUri!, parameters: parameters, headers: nil, completionHandler: completionHandler)
+    }
+    
+    func makeOCRCallForFrontDoc(verificationType: String) {
+        let parameters = ["enableDashboard" : "yes"] as [String:AnyObject] //This facilitates access to QC dashboard and debugging during POC
+        //Note that for EVN and MRC verification calls, additional parameters are required.
+        
+        let completionHandler:(_ error:HVError?,_ result:[String:AnyObject]?,_ headers:[String:String]?)->Void = {error,result, headers in
+            
+            if error != nil {
+                self.delegate?.OCRCallFailed(errorMessage: error!.getErrorMessage())
+            } else if let result = result, result["status"] as? String == "success", let responseData = Mapper<PersonalIdVerificationResultData>().mapArray(JSONObject: result["result"]), !responseData.isEmpty {
+                self.frontDocVerificationResultData = responseData[0]
+                if let message = self.checkVerificationTypeAndReturnErrorMessage(verificationType: verificationType, responseData: self.frontDocVerificationResultData!) {
+                    self.delegate?.OCRCallFailed(errorMessage: message)
+                } else {
+                    if self.backSideDocImageUri != nil {
+                        self.makeOCRCallForBackDoc(verificationType: verificationType)
+                    } else {
+                        self.delegate?.OCRCallSucceeded(verificationType: verificationType)
+                    }
+                }
+            } else {
+                self.delegate?.OCRCallFailed(errorMessage: Strings.document_not_matching)
+            }
+        }
+        HVNetworkHelper.makeOCRCall(endpoint: HyperVergeUtils.shared.getEndpoint(verificationType: verificationType), documentUri: frontSideDocImageUri!, parameters: parameters, headers: nil, completionHandler: completionHandler)
+        
+    }
+    
+    private func makeOCRCallForBackDoc(verificationType: String) {
+        let parameters = ["enableDashboard" : "yes"] as [String:AnyObject] //This facilitates access to QC dashboard and debugging during POC
+        //Note that for EVN and MRC verification calls, additional parameters are required.
+        
+        let completionHandler:(_ error:HVError?,_ result:[String:AnyObject]?,_ headers:[String:String]?)->Void = {error,result, headers in
+            
+            if error != nil {
+                self.delegate?.OCRCallFailed(errorMessage: error!.getErrorMessage())
+            } else if let result = result, result["status"] as? String == "success", let responseData = Mapper<PersonalIdVerificationResultData>().mapArray(JSONObject: result["result"]), !responseData.isEmpty {
+                self.backDocVerificationResultData = responseData[0]
+                if let message = self.checkVerificationTypeAndReturnErrorMessage(verificationType: verificationType, responseData: self.backDocVerificationResultData!) {
+                    self.delegate?.OCRCallFailed(errorMessage: message)
+                } else {
+                    self.delegate?.OCRCallSucceeded(verificationType: verificationType)
+                }
+            } else {
+                self.delegate?.OCRCallFailed(errorMessage: Strings.document_not_matching)
+            }
+        }
+        HVNetworkHelper.makeOCRCall(endpoint: HyperVergeUtils.shared.getEndpoint(verificationType: verificationType), documentUri: backSideDocImageUri!, parameters: parameters, headers: nil, completionHandler: completionHandler)
+        
+    }
+    
+    private func checkVerificationTypeAndReturnErrorMessage(verificationType: String, responseData: PersonalIdVerificationResultData) -> String? {
+        if verificationType == PersonalIdDetail.ADHAR && (responseData.type.caseInsensitiveCompare(Strings.aadhaar_front_bottom) == ComparisonResult.orderedSame || responseData.type.caseInsensitiveCompare(Strings.aadhaar_back) == ComparisonResult.orderedSame) {
+            return nil
+        } else if verificationType == PersonalIdDetail.PAN && (responseData.type.caseInsensitiveCompare(Strings.pan) == ComparisonResult.orderedSame || responseData.type.caseInsensitiveCompare(Strings.old_pan) == ComparisonResult.orderedSame) {
+            return nil
+        } else if verificationType == PersonalIdDetail.VOTER_ID && (responseData.type.caseInsensitiveCompare(Strings.voterid_front) == ComparisonResult.orderedSame || responseData.type.caseInsensitiveCompare(Strings.voterid_front_new) == ComparisonResult.orderedSame || responseData.type.caseInsensitiveCompare(Strings.voterid_back) == ComparisonResult.orderedSame) {
+            return nil
+        } else if verificationType == PersonalIdDetail.DL && responseData.type.caseInsensitiveCompare(Strings.dl_face) == ComparisonResult.orderedSame {
+            return nil
+        } else {
+            return Strings.document_not_matching
+        }
+    }
+    
+    func getPersonalIdDetailsBasedOnType(verificationType: String) -> PersonalIdDetail? {
+        let frontDocVerificationDetils = frontDocVerificationResultData?.details
+        let backDocVerificationDetils = backDocVerificationResultData?.details
+        switch verificationType {
+        case PersonalIdDetail.ADHAR:
+            return PersonalIdDetail(documentId: frontDocVerificationDetils?.adhaarId?.value, documentType: PersonalIdDetail.ADHAR, name: frontDocVerificationDetils?.nameInAadhar?.value, fatherName: frontDocVerificationDetils?.fatherNameInAadhar?.value, gender: frontDocVerificationDetils?.genderInAadhar?.value, dob: frontDocVerificationDetils?.dobInAadhar?.value, address: backDocVerificationDetils?.addressInAadhar?.value, faceImageUri: faceImageUri, frontSideDocImageUri: frontSideDocImageUri, backSideDocImageUri: backSideDocImageUri, dateOfIssue: nil, age: nil)
+        case PersonalIdDetail.PAN:
+            return PersonalIdDetail(documentId: frontDocVerificationDetils?.pan_no?.value, documentType: PersonalIdDetail.PAN, name: frontDocVerificationDetils?.nameInPan?.value, fatherName: frontDocVerificationDetils?.fatherNameInPan?.value, gender: nil, dob: frontDocVerificationDetils?.dobInPan?.value, address: nil, faceImageUri: faceImageUri, frontSideDocImageUri: frontSideDocImageUri, backSideDocImageUri: backSideDocImageUri, dateOfIssue: frontDocVerificationDetils?.dateOfIssueInPan?.value, age: nil)
+        case PersonalIdDetail.VOTER_ID:
+            return PersonalIdDetail(documentId: frontDocVerificationDetils?.voterid?.value, documentType: PersonalIdDetail.VOTER_ID, name: frontDocVerificationDetils?.nameInVoter?.value, fatherName: frontDocVerificationDetils?.relationInVoter?.value, gender: backDocVerificationDetils?.genderInVoter?.value, dob: backDocVerificationDetils?.dobInVoter?.value, address: backDocVerificationDetils?.addressInVoter?.value, faceImageUri: faceImageUri, frontSideDocImageUri: frontSideDocImageUri, backSideDocImageUri: backSideDocImageUri, dateOfIssue: backDocVerificationDetils?.dateOfIssueInVoter?.value, age: backDocVerificationDetils?.ageInVoter?.value)
+        case PersonalIdDetail.DL:
+            return PersonalIdDetail(documentId: frontDocVerificationDetils?.dl_num?.value, documentType: PersonalIdDetail.DL, name: frontDocVerificationDetils?.nameInDL?.value, fatherName: frontDocVerificationDetils?.swd?.value, gender: nil, dob: frontDocVerificationDetils?.dobInDL?.value, address: frontDocVerificationDetils?.addressInDL?.addressForDL?.value, faceImageUri: faceImageUri, frontSideDocImageUri: frontSideDocImageUri, backSideDocImageUri: backSideDocImageUri, dateOfIssue: frontDocVerificationDetils?.dateOfIssueInDL?.value, age: nil)
+        default:
+            return nil
+        }
+    }
+}

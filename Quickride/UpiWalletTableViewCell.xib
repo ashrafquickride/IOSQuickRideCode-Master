@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="138" id="KGk-i7-Jjw" customClass="UpiWalletTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter UPI ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-YF-Wrn" customClass="UIFloatLabelTextField">
+                        <rect key="frame" x="25" y="11" width="270" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="D6L-pS-Qnz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jC3-tM-t7b">
+                        <rect key="frame" x="25" y="56" width="270" height="1"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dfj-2D-s9G"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-ZT-YY9">
+                        <rect key="frame" x="25" y="82" width="270" height="40"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7Th-Fi-Ah6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
+                        <state key="normal" title="VERIFY">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="verifyUpiTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lDc-GG-dtl"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrJ-Bu-PCm">
+                        <rect key="frame" x="25" y="0.0" width="270" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jgb-ZT-YY9" firstAttribute="top" secondItem="0ni-YF-Wrn" secondAttribute="bottom" constant="11" id="2Iw-If-nSa"/>
+                    <constraint firstItem="FrJ-Bu-PCm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3iD-N3-opw"/>
+                    <constraint firstItem="jC3-tM-t7b" firstAttribute="bottom" secondItem="0ni-YF-Wrn" secondAttribute="bottom" constant="-14" id="82w-7o-3QZ"/>
+                    <constraint firstItem="jC3-tM-t7b" firstAttribute="trailing" secondItem="0ni-YF-Wrn" secondAttribute="trailing" id="HKl-48-b4Q"/>
+                    <constraint firstItem="0ni-YF-Wrn" firstAttribute="top" secondItem="FrJ-Bu-PCm" secondAttribute="bottom" constant="11" id="JUu-Zc-RTw"/>
+                    <constraint firstItem="FrJ-Bu-PCm" firstAttribute="leading" secondItem="0ni-YF-Wrn" secondAttribute="leading" id="Oec-EH-ljj"/>
+                    <constraint firstItem="jC3-tM-t7b" firstAttribute="leading" secondItem="0ni-YF-Wrn" secondAttribute="leading" id="Q3d-o1-H7T"/>
+                    <constraint firstItem="Jgb-ZT-YY9" firstAttribute="leading" secondItem="0ni-YF-Wrn" secondAttribute="leading" id="RAY-ee-QXO"/>
+                    <constraint firstItem="0ni-YF-Wrn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="S13-IN-ra6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Jgb-ZT-YY9" secondAttribute="bottom" constant="5" id="SXm-X7-qbY"/>
+                    <constraint firstItem="Jgb-ZT-YY9" firstAttribute="trailing" secondItem="0ni-YF-Wrn" secondAttribute="trailing" id="W6T-Wf-y4R"/>
+                    <constraint firstItem="FrJ-Bu-PCm" firstAttribute="trailing" secondItem="0ni-YF-Wrn" secondAttribute="trailing" id="YSN-03-XCL"/>
+                    <constraint firstAttribute="trailing" secondItem="0ni-YF-Wrn" secondAttribute="trailing" constant="25" id="eL7-VR-q1w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="upiNumberField" destination="0ni-YF-Wrn" id="Cog-Pj-1Zs"/>
+                <outlet property="verifyBtn" destination="Jgb-ZT-YY9" id="PBh-VY-yUa"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="91.071428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeScreenLoadingAnimationTableViewCell" id="KGk-i7-Jjw" customClass="HomeScreenLoadingAnimationTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="564"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="564"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFL-dl-8pj" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="60" width="200" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="269-E8-46f"/>
+                            <constraint firstAttribute="width" constant="200" id="Fmj-Fr-chD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-qX-R8g" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="110" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="b9z-9s-LaK"/>
+                            <constraint firstAttribute="height" constant="50" id="mGh-S4-M2l"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qi-a3-Qgc" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="135" y="110" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="VYK-R6-vPf"/>
+                            <constraint firstAttribute="height" constant="50" id="qQi-id-nuS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2G7-h1-yjT" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="175" width="50" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="ONZ-2h-eQw"/>
+                            <constraint firstAttribute="height" constant="10" id="erh-iI-KXi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff6-64-0UZ" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="245" y="110" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="FeZ-kB-pDg"/>
+                            <constraint firstAttribute="width" constant="50" id="VnP-0V-DOe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crX-pk-KUi" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="135" y="175" width="50" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Iu0-gj-Z9b"/>
+                            <constraint firstAttribute="height" constant="10" id="Kwa-Rk-e3h"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4d-6v-zJX" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="245" y="175" width="50" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="SWK-jp-7Pw"/>
+                            <constraint firstAttribute="width" constant="50" id="ekc-lh-ZX8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twO-pK-oCb" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="210" width="320" height="10"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="TEu-5y-uBz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVF-6P-Xm9" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="245" width="200" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="YU9-iv-a91"/>
+                            <constraint firstAttribute="height" constant="20" id="khJ-Eu-FS5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qkm-l0-Xa7" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="130" y="285" width="60" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="HNl-zI-Ux8"/>
+                            <constraint firstAttribute="height" constant="30" id="PgC-hx-VFm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-TB-g3d" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="285" width="60" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="eXG-Bd-wIh"/>
+                            <constraint firstAttribute="width" constant="60" id="sgy-eK-KAb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRz-mA-rhZ" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="235" y="285" width="60" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="0as-oO-gSb"/>
+                            <constraint firstAttribute="height" constant="30" id="Bs4-v8-eex"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J33-DE-sZh" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="335" width="125" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="4lU-4S-Xnj"/>
+                            <constraint firstAttribute="height" constant="40" id="kyd-SR-NwA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEn-D4-1f2" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="400" width="320" height="10"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="YAI-M0-ghE"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgq-T0-2bS" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="435" width="250" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="40n-OJ-8zh"/>
+                            <constraint firstAttribute="width" constant="250" id="Ag2-Iv-WwA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQI-ol-DFv" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="25" y="485" width="250" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="cbN-xe-2t4"/>
+                            <constraint firstAttribute="width" constant="250" id="jhX-Mn-q7r"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vO-rS-Q4t" customClass="ShimmerView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="170" y="335" width="125" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="dio-kn-YKz"/>
+                            <constraint firstAttribute="width" constant="125" id="hvj-WP-aSf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4vO-rS-Q4t" firstAttribute="top" secondItem="J33-DE-sZh" secondAttribute="top" id="46W-9s-XoT"/>
+                    <constraint firstAttribute="trailing" secondItem="pEn-D4-1f2" secondAttribute="trailing" id="52S-CE-Azp"/>
+                    <constraint firstItem="crX-pk-KUi" firstAttribute="centerX" secondItem="5qi-a3-Qgc" secondAttribute="centerX" id="5lq-id-gm5"/>
+                    <constraint firstItem="FFL-dl-8pj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="60" id="8Oc-uH-7W9"/>
+                    <constraint firstItem="J33-DE-sZh" firstAttribute="top" secondItem="Qkm-l0-Xa7" secondAttribute="bottom" constant="20" id="ACr-yR-XEM"/>
+                    <constraint firstItem="l4d-6v-zJX" firstAttribute="top" secondItem="crX-pk-KUi" secondAttribute="top" id="BNk-m5-UvS"/>
+                    <constraint firstItem="hVF-6P-Xm9" firstAttribute="top" secondItem="twO-pK-oCb" secondAttribute="bottom" constant="25" id="ByY-q0-bng"/>
+                    <constraint firstItem="2G7-h1-yjT" firstAttribute="top" secondItem="s7Q-qX-R8g" secondAttribute="bottom" constant="15" id="FJ7-Hc-Uxr"/>
+                    <constraint firstItem="FFL-dl-8pj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="GKK-HL-ty7"/>
+                    <constraint firstAttribute="bottom" secondItem="FQI-ol-DFv" secondAttribute="bottom" constant="44" id="GXs-PC-d9Y"/>
+                    <constraint firstItem="twO-pK-oCb" firstAttribute="top" secondItem="crX-pk-KUi" secondAttribute="bottom" constant="25" id="HNx-Fr-18d"/>
+                    <constraint firstItem="twO-pK-oCb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KMQ-RN-BRr"/>
+                    <constraint firstAttribute="trailing" secondItem="Ff6-64-0UZ" secondAttribute="trailing" constant="25" id="M7u-nG-FC2"/>
+                    <constraint firstItem="4vO-rS-Q4t" firstAttribute="trailing" secondItem="dRz-mA-rhZ" secondAttribute="trailing" id="NIk-7r-maF"/>
+                    <constraint firstItem="J33-DE-sZh" firstAttribute="leading" secondItem="2zh-TB-g3d" secondAttribute="leading" id="Pva-RS-3LF"/>
+                    <constraint firstItem="crX-pk-KUi" firstAttribute="top" secondItem="2G7-h1-yjT" secondAttribute="top" id="QiP-nv-CSW"/>
+                    <constraint firstAttribute="trailing" secondItem="twO-pK-oCb" secondAttribute="trailing" id="TrQ-eZ-gT1"/>
+                    <constraint firstItem="hVF-6P-Xm9" firstAttribute="leading" secondItem="s7Q-qX-R8g" secondAttribute="leading" id="VPE-En-em4"/>
+                    <constraint firstItem="hgq-T0-2bS" firstAttribute="leading" secondItem="2zh-TB-g3d" secondAttribute="leading" id="WX3-lK-98w"/>
+                    <constraint firstItem="pEn-D4-1f2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ypg-GP-gUx"/>
+                    <constraint firstItem="2G7-h1-yjT" firstAttribute="centerX" secondItem="s7Q-qX-R8g" secondAttribute="centerX" id="ZC9-E0-eck"/>
+                    <constraint firstItem="5qi-a3-Qgc" firstAttribute="top" secondItem="s7Q-qX-R8g" secondAttribute="top" id="ZHD-C2-o3r"/>
+                    <constraint firstItem="Ff6-64-0UZ" firstAttribute="top" secondItem="5qi-a3-Qgc" secondAttribute="top" id="aFZ-UO-8Hd"/>
+                    <constraint firstItem="Qkm-l0-Xa7" firstAttribute="top" secondItem="2zh-TB-g3d" secondAttribute="top" id="ae0-Fh-gn1"/>
+                    <constraint firstItem="Qkm-l0-Xa7" firstAttribute="top" secondItem="hVF-6P-Xm9" secondAttribute="bottom" constant="20" id="bYX-uS-IdX"/>
+                    <constraint firstItem="s7Q-qX-R8g" firstAttribute="leading" secondItem="FFL-dl-8pj" secondAttribute="leading" id="bsr-c0-jVu"/>
+                    <constraint firstItem="2zh-TB-g3d" firstAttribute="leading" secondItem="hVF-6P-Xm9" secondAttribute="leading" id="c34-mb-rWt"/>
+                    <constraint firstItem="pEn-D4-1f2" firstAttribute="top" secondItem="J33-DE-sZh" secondAttribute="bottom" constant="25" id="epr-ip-gnR"/>
+                    <constraint firstItem="s7Q-qX-R8g" firstAttribute="top" secondItem="FFL-dl-8pj" secondAttribute="bottom" constant="30" id="gNt-ar-wRB"/>
+                    <constraint firstItem="5qi-a3-Qgc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="i9t-lQ-Dlt"/>
+                    <constraint firstItem="FQI-ol-DFv" firstAttribute="leading" secondItem="hgq-T0-2bS" secondAttribute="leading" id="kGg-Lv-RAL"/>
+                    <constraint firstAttribute="trailing" secondItem="dRz-mA-rhZ" secondAttribute="trailing" constant="25" id="kKc-LU-Rxk"/>
+                    <constraint firstItem="Qkm-l0-Xa7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lTC-tc-l6M"/>
+                    <constraint firstItem="l4d-6v-zJX" firstAttribute="centerX" secondItem="Ff6-64-0UZ" secondAttribute="centerX" id="oUA-p5-06s"/>
+                    <constraint firstItem="2zh-TB-g3d" firstAttribute="top" secondItem="dRz-mA-rhZ" secondAttribute="top" id="r2k-vB-vgu"/>
+                    <constraint firstItem="hgq-T0-2bS" firstAttribute="top" secondItem="pEn-D4-1f2" secondAttribute="bottom" constant="25" id="rQ6-gA-N6a"/>
+                    <constraint firstItem="FQI-ol-DFv" firstAttribute="top" secondItem="hgq-T0-2bS" secondAttribute="bottom" constant="25" id="sO6-6j-W17"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="animationView1" destination="FFL-dl-8pj" id="Ss9-2h-H8K"/>
+                <outlet property="animationView10" destination="Qkm-l0-Xa7" id="d4i-jK-VUc"/>
+                <outlet property="animationView11" destination="dRz-mA-rhZ" id="Zkr-cM-iPY"/>
+                <outlet property="animationView12" destination="J33-DE-sZh" id="xWR-4d-zXD"/>
+                <outlet property="animationView13" destination="hgq-T0-2bS" id="zw2-81-f3a"/>
+                <outlet property="animationView14" destination="FQI-ol-DFv" id="01R-tL-cNq"/>
+                <outlet property="animationView15" destination="4vO-rS-Q4t" id="UtF-6Q-sU0"/>
+                <outlet property="animationView2" destination="s7Q-qX-R8g" id="Pdc-aX-qQQ"/>
+                <outlet property="animationView3" destination="2G7-h1-yjT" id="GtE-da-WsV"/>
+                <outlet property="animationView4" destination="5qi-a3-Qgc" id="bku-ZP-aBl"/>
+                <outlet property="animationView5" destination="crX-pk-KUi" id="WgV-Rv-83a"/>
+                <outlet property="animationView6" destination="Ff6-64-0UZ" id="rn2-yB-FJQ"/>
+                <outlet property="animationView7" destination="l4d-6v-zJX" id="Ym9-hm-5ov"/>
+                <outlet property="animationView8" destination="hVF-6P-Xm9" id="ATF-Pw-O45"/>
+                <outlet property="animationView9" destination="2zh-TB-g3d" id="8mM-EO-gnV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="281.91964285714283"/>
+        </tableViewCell>
+    </objects>
+</document>

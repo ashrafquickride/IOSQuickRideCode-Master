@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CancelTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="CancelTableViewCell" rowHeight="46" id="KGk-i7-Jjw" customClass="CancelTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-Re-re9">
+                        <rect key="frame" x="0.0" y="12" width="320" height="54"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oon-im-bue">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="TGD-M5-ybi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb8-78-0gm">
+                                <rect key="frame" x="0.0" y="4" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tiS-oR-l2g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Cancel Ride">
+                                    <color key="titleColor" red="0.8862745098" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtnTApped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AOU-IX-M3G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hb8-78-0gm" secondAttribute="trailing" id="Ase-Lr-1Ar"/>
+                            <constraint firstItem="Hb8-78-0gm" firstAttribute="leading" secondItem="vd6-Re-re9" secondAttribute="leading" id="CTp-xd-cSe"/>
+                            <constraint firstItem="Hb8-78-0gm" firstAttribute="trailing" secondItem="oon-im-bue" secondAttribute="trailing" id="Djn-BN-Juz"/>
+                            <constraint firstItem="Hb8-78-0gm" firstAttribute="leading" secondItem="oon-im-bue" secondAttribute="leading" id="IXp-wa-aqT"/>
+                            <constraint firstAttribute="bottom" secondItem="Hb8-78-0gm" secondAttribute="bottom" id="WUD-XY-FWJ"/>
+                            <constraint firstAttribute="height" constant="54" id="abd-CR-ryD"/>
+                            <constraint firstItem="oon-im-bue" firstAttribute="top" secondItem="vd6-Re-re9" secondAttribute="top" constant="-1" id="hW5-IQ-hTl"/>
+                            <constraint firstItem="Hb8-78-0gm" firstAttribute="top" secondItem="oon-im-bue" secondAttribute="bottom" constant="4" id="saM-ar-y5G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vd6-Re-re9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="U7f-8F-rr3"/>
+                    <constraint firstAttribute="bottom" secondItem="vd6-Re-re9" secondAttribute="bottom" id="f1K-FU-fCc"/>
+                    <constraint firstAttribute="trailing" secondItem="vd6-Re-re9" secondAttribute="trailing" id="kiI-7L-Dod"/>
+                    <constraint firstItem="vd6-Re-re9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="vst-LO-ZhN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.8840579710145" y="83.035714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

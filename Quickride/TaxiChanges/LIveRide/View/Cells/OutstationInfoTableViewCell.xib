@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="OutstationInfoTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cry-Ay-uhn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzV-Iz-D8h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hye-dO-dYt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you pay anything to the driver directly during the journey, add it below. It will be ­­­adjusted in the final bill" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuY-BD-aDh">
+                                <rect key="frame" x="64" y="15" width="236" height="65.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payments_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-b8-DNp">
+                                <rect key="frame" x="20" y="15" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hGZ-1U-DPa"/>
+                                    <constraint firstAttribute="width" constant="24" id="j9h-IH-TIv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlT-gS-tgW">
+                                <rect key="frame" x="64" y="95.5" width="85" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Add Payment"/>
+                                <connections>
+                                    <action selector="addHereTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j3b-Kg-AoH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SlT-gS-tgW" firstAttribute="leading" secondItem="nuY-BD-aDh" secondAttribute="leading" id="0w6-bk-Sja"/>
+                            <constraint firstItem="nuY-BD-aDh" firstAttribute="leading" secondItem="JJ1-b8-DNp" secondAttribute="trailing" constant="20" id="GL2-xR-cHO"/>
+                            <constraint firstItem="IzV-Iz-D8h" firstAttribute="top" secondItem="cry-Ay-uhn" secondAttribute="top" id="Jff-1P-VpP"/>
+                            <constraint firstItem="SlT-gS-tgW" firstAttribute="top" secondItem="nuY-BD-aDh" secondAttribute="bottom" constant="15" id="RUC-Ol-EjA"/>
+                            <constraint firstAttribute="trailing" secondItem="IzV-Iz-D8h" secondAttribute="trailing" id="TD4-YJ-Tcx"/>
+                            <constraint firstItem="nuY-BD-aDh" firstAttribute="top" secondItem="JJ1-b8-DNp" secondAttribute="top" id="YWL-9C-jfh"/>
+                            <constraint firstAttribute="trailing" secondItem="nuY-BD-aDh" secondAttribute="trailing" constant="20" id="fMY-IA-uIa"/>
+                            <constraint firstAttribute="bottom" secondItem="SlT-gS-tgW" secondAttribute="bottom" constant="15" id="m03-V5-SwH"/>
+                            <constraint firstItem="JJ1-b8-DNp" firstAttribute="top" secondItem="cry-Ay-uhn" secondAttribute="top" constant="15" id="nGU-Iw-ocf"/>
+                            <constraint firstItem="IzV-Iz-D8h" firstAttribute="leading" secondItem="cry-Ay-uhn" secondAttribute="leading" id="t4P-DO-QA2"/>
+                            <constraint firstItem="JJ1-b8-DNp" firstAttribute="leading" secondItem="cry-Ay-uhn" secondAttribute="leading" constant="20" id="w7J-oK-Aaa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cry-Ay-uhn" secondAttribute="trailing" id="F7y-hc-48h"/>
+                    <constraint firstAttribute="bottom" secondItem="cry-Ay-uhn" secondAttribute="bottom" constant="0.5" id="JUZ-e5-PjP"/>
+                    <constraint firstItem="cry-Ay-uhn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WoH-HF-4xM"/>
+                    <constraint firstItem="cry-Ay-uhn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vFa-JI-C00"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="payments_icon" width="37" height="33"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

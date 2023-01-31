@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="HobbiesAndSkillsFooterCollectionReusableView" id="U6b-Vx-4bR" customClass="HobbiesAndSkillsFooterCollectionReusableView" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sp6-lP-IjC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                    <subviews>
+                        <label opaque="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not listing above? Add below" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3e-3d-V7Z">
+                            <rect key="frame" x="0.0" y="20" width="320" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jF-02-9ac">
+                            <rect key="frame" x="0.0" y="54" width="232" height="28"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                        </textField>
+                        <view opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNw-er-JEX">
+                            <rect key="frame" x="0.0" y="82" width="232" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="iPV-yc-NS1"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqp-o5-8yA">
+                            <rect key="frame" x="242" y="52" width="78" height="32"/>
+                            <color key="backgroundColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="78" id="bSJ-EE-R81"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
+                            <state key="normal" title="+ ADD">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addButtonClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="3H4-hR-ixt"/>
+                            </connections>
+                        </button>
+                        <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hb-vc-T0P">
+                            <rect key="frame" x="0.0" y="108" width="320" height="14"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="ciQ-Nj-L7W"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="0jF-02-9ac" firstAttribute="top" secondItem="f3e-3d-V7Z" secondAttribute="bottom" constant="15" id="995-z0-Iny"/>
+                        <constraint firstItem="4Hb-vc-T0P" firstAttribute="leading" secondItem="Sp6-lP-IjC" secondAttribute="leading" id="GhN-hE-Wtv"/>
+                        <constraint firstItem="4Hb-vc-T0P" firstAttribute="top" secondItem="sNw-er-JEX" secondAttribute="bottom" constant="25" id="NBA-z9-r9n"/>
+                        <constraint firstItem="0jF-02-9ac" firstAttribute="leading" secondItem="f3e-3d-V7Z" secondAttribute="leading" id="NVq-BO-e2j"/>
+                        <constraint firstItem="lqp-o5-8yA" firstAttribute="centerY" secondItem="0jF-02-9ac" secondAttribute="centerY" id="Ni0-l4-rws"/>
+                        <constraint firstAttribute="bottom" secondItem="4Hb-vc-T0P" secondAttribute="bottom" id="Qxr-oM-BKk"/>
+                        <constraint firstItem="sNw-er-JEX" firstAttribute="leading" secondItem="f3e-3d-V7Z" secondAttribute="leading" id="buZ-Ts-NOW"/>
+                        <constraint firstItem="lqp-o5-8yA" firstAttribute="leading" secondItem="sNw-er-JEX" secondAttribute="trailing" constant="10" id="eHe-9c-CFW"/>
+                        <constraint firstAttribute="trailing" secondItem="f3e-3d-V7Z" secondAttribute="trailing" id="gAZ-vC-Hyk"/>
+                        <constraint firstItem="sNw-er-JEX" firstAttribute="top" secondItem="0jF-02-9ac" secondAttribute="bottom" id="kJy-g5-CVf"/>
+                        <constraint firstItem="f3e-3d-V7Z" firstAttribute="leading" secondItem="Sp6-lP-IjC" secondAttribute="leading" id="kgw-bI-l2N"/>
+                        <constraint firstAttribute="trailing" secondItem="4Hb-vc-T0P" secondAttribute="trailing" id="ttw-AL-44N"/>
+                        <constraint firstAttribute="trailing" secondItem="lqp-o5-8yA" secondAttribute="trailing" id="vAj-zl-x03"/>
+                        <constraint firstItem="lqp-o5-8yA" firstAttribute="leading" secondItem="0jF-02-9ac" secondAttribute="trailing" constant="10" id="w1Z-Ue-hBb"/>
+                        <constraint firstItem="f3e-3d-V7Z" firstAttribute="top" secondItem="Sp6-lP-IjC" secondAttribute="top" constant="20" id="wTq-bh-PxO"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-YO-CVZ">
+                    <rect key="frame" x="0.0" y="59" width="320" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ALo-Ah-GTN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addOrEditButtonClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="skm-EE-Utc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="bTp-YO-CVZ" secondAttribute="trailing" id="1DL-5x-dtk"/>
+                <constraint firstItem="Sp6-lP-IjC" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="3OA-ZT-Lls"/>
+                <constraint firstItem="bTp-YO-CVZ" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="15" id="BnA-Oy-Oco"/>
+                <constraint firstAttribute="trailing" secondItem="Sp6-lP-IjC" secondAttribute="trailing" id="QFb-ja-WQq"/>
+                <constraint firstAttribute="bottom" secondItem="Sp6-lP-IjC" secondAttribute="bottom" id="QeV-hx-Pjk"/>
+                <constraint firstItem="bTp-YO-CVZ" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="U3r-Fr-IsB"/>
+                <constraint firstItem="Sp6-lP-IjC" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="WxT-D4-dUu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="addButton" destination="lqp-o5-8yA" id="eRU-SN-xT7"/>
+                <outlet property="addHobbyOrSkillView" destination="Sp6-lP-IjC" id="Rcm-Uj-4ZS"/>
+                <outlet property="addOrEditButton" destination="bTp-YO-CVZ" id="8cX-k7-SJc"/>
+                <outlet property="anchorViewPosition" destination="f3e-3d-V7Z" id="1vR-YO-PUu"/>
+                <outlet property="hobbyOrSkilltextField" destination="0jF-02-9ac" id="vb4-li-YHd"/>
+                <outlet property="seperatorView" destination="4Hb-vc-T0P" id="k1d-aO-qMb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="LoadMoreTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWP-aZ-NeT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have shown best matches." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KX-Vh-nGd">
+                                <rect key="frame" x="35" y="10" width="250" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="6hw-0z-m1l"/>
+                                    <constraint firstAttribute="width" constant="250" id="jFK-zA-2Cg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCH-2Q-Zbe">
+                                <rect key="frame" x="87.5" y="20" width="145" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="9D5-Dj-DRb"/>
+                                    <constraint firstAttribute="width" constant="145" id="Yrv-0p-jFp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jic-Bv-Ji6" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                                <rect key="frame" x="70" y="43" width="180" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="lL6-q3-FHt"/>
+                                    <constraint firstAttribute="width" constant="180" id="zYo-yo-atY"/>
+                                </constraints>
+                                <state key="normal" title="Load More">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loadMoreTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KwX-WB-8DV"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="poq-jP-oCJ">
+                                <rect key="frame" x="150" y="44.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="22U-mY-w4p"/>
+                                    <constraint firstAttribute="height" constant="20" id="IKp-aU-izm"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="85" id="75K-HM-9Kg"/>
+                            <constraint firstItem="eCH-2Q-Zbe" firstAttribute="centerX" secondItem="wWP-aZ-NeT" secondAttribute="centerX" id="Jpu-Yj-IwB"/>
+                            <constraint firstItem="5KX-Vh-nGd" firstAttribute="top" secondItem="wWP-aZ-NeT" secondAttribute="top" constant="10" id="bmQ-tS-yOf"/>
+                            <constraint firstItem="poq-jP-oCJ" firstAttribute="centerY" secondItem="wWP-aZ-NeT" secondAttribute="centerY" constant="12" id="dC5-MH-4dv"/>
+                            <constraint firstItem="5KX-Vh-nGd" firstAttribute="centerX" secondItem="wWP-aZ-NeT" secondAttribute="centerX" id="gIb-nd-qTE"/>
+                            <constraint firstItem="Jic-Bv-Ji6" firstAttribute="centerX" secondItem="wWP-aZ-NeT" secondAttribute="centerX" id="kaV-sp-std"/>
+                            <constraint firstItem="eCH-2Q-Zbe" firstAttribute="top" secondItem="wWP-aZ-NeT" secondAttribute="top" constant="20" id="p5s-90-EAm"/>
+                            <constraint firstItem="Jic-Bv-Ji6" firstAttribute="top" secondItem="eCH-2Q-Zbe" secondAttribute="bottom" constant="5" id="tiF-Ac-cqP"/>
+                            <constraint firstItem="poq-jP-oCJ" firstAttribute="centerX" secondItem="wWP-aZ-NeT" secondAttribute="centerX" id="tpy-1T-oGx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wWP-aZ-NeT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1IO-Qa-vWK"/>
+                    <constraint firstAttribute="trailing" secondItem="wWP-aZ-NeT" secondAttribute="trailing" id="div-8i-arI"/>
+                    <constraint firstItem="wWP-aZ-NeT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fjF-80-Byf"/>
+                    <constraint firstAttribute="bottom" secondItem="wWP-aZ-NeT" secondAttribute="bottom" constant="1" id="nOj-aE-Crs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="loadMoreButton" destination="Jic-Bv-Ji6" id="rIG-fK-6MX"/>
+                <outlet property="loadingIndicator" destination="poq-jP-oCJ" id="euc-Ra-ZEW"/>
+                <outlet property="loadingResults" destination="eCH-2Q-Zbe" id="IrK-rH-9Dp"/>
+                <outlet property="weShownBestMathesLabel" destination="5KX-Vh-nGd" id="cv0-0p-flc"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </tableViewCell>
+    </objects>
+</document>

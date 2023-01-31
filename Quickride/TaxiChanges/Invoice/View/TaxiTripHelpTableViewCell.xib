@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="TaxiTripHelpTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cr-6S-uPL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEED HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwY-C2-rpA">
+                                <rect key="frame" x="20" y="34" width="79" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMv-1e-9Iv">
+                                <rect key="frame" x="20" y="66" width="27" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="Scp-TN-dEG"/>
+                                    <constraint firstAttribute="height" constant="27" id="tmy-6R-0vd"/>
+                                </constraints>
+                                <state key="normal" image="email_black"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYu-vy-WE7">
+                                <rect key="frame" x="59" y="70" width="41" height="19.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnf-bX-kHw">
+                                <rect key="frame" x="20" y="64.5" width="80" height="30"/>
+                                <connections>
+                                    <action selector="emailTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KVn-BU-qQb"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-kC-RDL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="JNr-qM-NhC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rnf-bX-kHw" firstAttribute="trailing" secondItem="EYu-vy-WE7" secondAttribute="trailing" id="2cA-SC-exM"/>
+                            <constraint firstAttribute="trailing" secondItem="hG7-kC-RDL" secondAttribute="trailing" id="6l4-57-Keh"/>
+                            <constraint firstItem="EYu-vy-WE7" firstAttribute="leading" secondItem="AMv-1e-9Iv" secondAttribute="trailing" constant="12" id="Gn2-Lp-t2T"/>
+                            <constraint firstItem="Rnf-bX-kHw" firstAttribute="centerY" secondItem="AMv-1e-9Iv" secondAttribute="centerY" id="JAk-A2-4Y8"/>
+                            <constraint firstItem="hG7-kC-RDL" firstAttribute="top" secondItem="7cr-6S-uPL" secondAttribute="top" id="NCe-OJ-g9U"/>
+                            <constraint firstAttribute="bottom" secondItem="AMv-1e-9Iv" secondAttribute="bottom" constant="29" id="NsK-PB-EGp"/>
+                            <constraint firstItem="hG7-kC-RDL" firstAttribute="leading" secondItem="7cr-6S-uPL" secondAttribute="leading" id="g71-c0-njJ"/>
+                            <constraint firstItem="AMv-1e-9Iv" firstAttribute="top" secondItem="AwY-C2-rpA" secondAttribute="bottom" constant="15" id="gzF-9w-Ig3"/>
+                            <constraint firstItem="AwY-C2-rpA" firstAttribute="top" secondItem="hG7-kC-RDL" secondAttribute="bottom" constant="20" id="iw1-KI-vVv"/>
+                            <constraint firstItem="AMv-1e-9Iv" firstAttribute="leading" secondItem="AwY-C2-rpA" secondAttribute="leading" id="mUg-ub-uKF"/>
+                            <constraint firstItem="EYu-vy-WE7" firstAttribute="centerY" secondItem="AMv-1e-9Iv" secondAttribute="centerY" id="qJ9-3b-gpL"/>
+                            <constraint firstItem="AwY-C2-rpA" firstAttribute="leading" secondItem="7cr-6S-uPL" secondAttribute="leading" constant="20" id="z9p-xF-UDn"/>
+                            <constraint firstItem="Rnf-bX-kHw" firstAttribute="leading" secondItem="AMv-1e-9Iv" secondAttribute="leading" id="zfu-zd-rOP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7cr-6S-uPL" secondAttribute="trailing" id="UDU-MG-lDy"/>
+                    <constraint firstItem="7cr-6S-uPL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uqg-nm-ACh"/>
+                    <constraint firstItem="7cr-6S-uPL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XdX-Jt-oU0"/>
+                    <constraint firstAttribute="bottom" secondItem="7cr-6S-uPL" secondAttribute="bottom" id="sIl-HE-29m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="AwY-C2-rpA" id="dDU-3U-JVY"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="149.33035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="email_black" width="40.5" height="40.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

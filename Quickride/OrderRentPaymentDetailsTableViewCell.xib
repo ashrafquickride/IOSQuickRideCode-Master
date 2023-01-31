@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="219" id="KGk-i7-Jjw" customClass="OrderRentPaymentDetailsTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="PAYMENT DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBx-RC-C8b">
+                        <rect key="frame" x="20" y="15" width="143.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uTY-91-eDa">
+                        <rect key="frame" x="0.0" y="44.5" width="320" height="172.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZn-MH-VTx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Paid" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haq-mI-2Tt">
+                                        <rect key="frame" x="20" y="0.0" width="32" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnh-FV-An8">
+                                        <rect key="frame" x="291" y="0.5" width="9" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Booking amount will be refunded to your payment method if you cancel or didn't receive the item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBJ-eV-hQM">
+                                        <rect key="frame" x="20" y="29.5" width="250" height="42"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CZ-vJ-qU4">
+                                        <rect key="frame" x="0.0" y="85.5" width="320" height="1"/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Wuy-ca-StV"/>
+                                        </constraints>
+                                    </view>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEf-EB-vhe" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="0.0" width="60" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Ckk-GX-t2V"/>
+                                            <constraint firstAttribute="width" constant="60" id="lmi-s4-x9F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <state key="normal" title="Pay Now">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="payAdvanceTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TTD-jn-QSf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7CZ-vJ-qU4" secondAttribute="trailing" id="0IR-ub-Vxf"/>
+                                    <constraint firstItem="7CZ-vJ-qU4" firstAttribute="top" secondItem="rBJ-eV-hQM" secondAttribute="bottom" constant="14" id="25s-oF-0nb"/>
+                                    <constraint firstItem="rBJ-eV-hQM" firstAttribute="leading" secondItem="haq-mI-2Tt" secondAttribute="leading" id="AWM-BR-6fK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bnh-FV-An8" secondAttribute="trailing" constant="20" id="Gz7-bw-YHx"/>
+                                    <constraint firstAttribute="trailing" secondItem="rBJ-eV-hQM" secondAttribute="trailing" constant="50" id="LkA-Of-txm"/>
+                                    <constraint firstItem="7CZ-vJ-qU4" firstAttribute="leading" secondItem="LZn-MH-VTx" secondAttribute="leading" id="Pgt-hj-Kib"/>
+                                    <constraint firstItem="rBJ-eV-hQM" firstAttribute="top" secondItem="haq-mI-2Tt" secondAttribute="bottom" constant="10" id="QNI-nf-ODR"/>
+                                    <constraint firstItem="qEf-EB-vhe" firstAttribute="centerY" secondItem="haq-mI-2Tt" secondAttribute="centerY" id="RV4-It-Q7R"/>
+                                    <constraint firstItem="qEf-EB-vhe" firstAttribute="leading" secondItem="haq-mI-2Tt" secondAttribute="trailing" constant="10" id="Rao-oS-Si2"/>
+                                    <constraint firstAttribute="bottom" secondItem="rBJ-eV-hQM" secondAttribute="bottom" constant="15" id="RqE-cF-aqx"/>
+                                    <constraint firstItem="haq-mI-2Tt" firstAttribute="leading" secondItem="LZn-MH-VTx" secondAttribute="leading" constant="20" id="WBo-nq-Fp1"/>
+                                    <constraint firstItem="Bnh-FV-An8" firstAttribute="centerY" secondItem="haq-mI-2Tt" secondAttribute="centerY" id="jN1-iE-TOq"/>
+                                    <constraint firstAttribute="bottom" secondItem="7CZ-vJ-qU4" secondAttribute="bottom" id="oUj-Y2-tww"/>
+                                    <constraint firstItem="haq-mI-2Tt" firstAttribute="top" secondItem="LZn-MH-VTx" secondAttribute="top" id="pWL-5D-uWp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvG-sG-e4a">
+                                <rect key="frame" x="0.0" y="86.5" width="320" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB5-bC-98b">
+                                        <rect key="frame" x="20" y="20" width="58" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.8862745098" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLS-F6-NC7">
+                                        <rect key="frame" x="291" y="20" width="9" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.8862745098" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance amount should be paid at the time of item collection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq9-6w-fEe">
+                                        <rect key="frame" x="20" y="42" width="280" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ur-cz-nhq" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="19.5" width="60" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="DTS-uQ-fyu"/>
+                                            <constraint firstAttribute="width" constant="60" id="Rhy-qg-tzN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <state key="normal" title="Pay Now">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="payBalanceTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nO3-2K-aYL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Pq9-6w-fEe" secondAttribute="bottom" constant="15.5" id="9pm-Rp-Asp"/>
+                                    <constraint firstItem="Pq9-6w-fEe" firstAttribute="top" secondItem="AB5-bC-98b" secondAttribute="bottom" constant="3" id="AWs-SE-YpL"/>
+                                    <constraint firstItem="Pq9-6w-fEe" firstAttribute="leading" secondItem="AB5-bC-98b" secondAttribute="leading" id="F8P-zy-Zvv"/>
+                                    <constraint firstItem="AB5-bC-98b" firstAttribute="top" secondItem="jvG-sG-e4a" secondAttribute="top" constant="20" id="Hlb-3f-6ta"/>
+                                    <constraint firstItem="AB5-bC-98b" firstAttribute="leading" secondItem="jvG-sG-e4a" secondAttribute="leading" constant="20" id="VfR-VZ-VH7"/>
+                                    <constraint firstItem="hLS-F6-NC7" firstAttribute="centerY" secondItem="AB5-bC-98b" secondAttribute="centerY" id="YiJ-vc-G2N"/>
+                                    <constraint firstItem="Pq9-6w-fEe" firstAttribute="trailing" secondItem="hLS-F6-NC7" secondAttribute="trailing" id="ZVb-2P-Dt7"/>
+                                    <constraint firstItem="2Ur-cz-nhq" firstAttribute="centerY" secondItem="AB5-bC-98b" secondAttribute="centerY" id="a7r-Pp-uag"/>
+                                    <constraint firstAttribute="trailing" secondItem="hLS-F6-NC7" secondAttribute="trailing" constant="20" id="gDG-WF-p0i"/>
+                                    <constraint firstItem="AB5-bC-98b" firstAttribute="baseline" secondItem="hLS-F6-NC7" secondAttribute="baseline" id="gEl-bV-P7T"/>
+                                    <constraint firstItem="2Ur-cz-nhq" firstAttribute="leading" secondItem="AB5-bC-98b" secondAttribute="trailing" constant="10" id="pkf-7c-0YF"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-lK-8i5">
+                                <rect key="frame" x="0.0" y="172.5" width="320" height="40.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Paid" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3X-Ky-lXC">
+                                        <rect key="frame" x="20" y="20.5" width="73" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 650" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiI-pk-paA">
+                                        <rect key="frame" x="260" y="11" width="40" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pX2-wN-SOE">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="kQl-Aw-Q7S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="jiI-pk-paA" firstAttribute="centerY" secondItem="q3X-Ky-lXC" secondAttribute="centerY" id="3hr-09-Msl"/>
+                                    <constraint firstAttribute="trailing" secondItem="pX2-wN-SOE" secondAttribute="trailing" id="6bk-1x-FtG"/>
+                                    <constraint firstItem="q3X-Ky-lXC" firstAttribute="top" secondItem="pX2-wN-SOE" secondAttribute="bottom" constant="19.5" id="8Xg-0R-ETa"/>
+                                    <constraint firstItem="q3X-Ky-lXC" firstAttribute="leading" secondItem="2Vl-lK-8i5" secondAttribute="leading" constant="20" id="APt-6q-IqT"/>
+                                    <constraint firstAttribute="bottom" secondItem="q3X-Ky-lXC" secondAttribute="bottom" constant="20" id="BF4-JJ-Ky3"/>
+                                    <constraint firstAttribute="trailing" secondItem="jiI-pk-paA" secondAttribute="trailing" constant="20" id="IbK-8n-xBt"/>
+                                    <constraint firstItem="pX2-wN-SOE" firstAttribute="top" secondItem="2Vl-lK-8i5" secondAttribute="top" id="OVz-nI-JOv"/>
+                                    <constraint firstItem="pX2-wN-SOE" firstAttribute="leading" secondItem="2Vl-lK-8i5" secondAttribute="leading" id="fwM-X7-r90"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyx-dI-PHU">
+                                <rect key="frame" x="0.0" y="172.5" width="320" height="50.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refund" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzS-sR-0uW">
+                                        <rect key="frame" x="20" y="20" width="53.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 650" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEH-S3-u1R">
+                                        <rect key="frame" x="260" y="10.5" width="40" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfV-qf-ptV">
+                                        <rect key="frame" x="20" y="35" width="280" height="0.0"/>
+                                        <string key="text">We have initiated the security deposit refund. It can take up to 7 days to amount credited in your account. Please write to us at support@quickshare.in if you do not receive payment even after 7 days.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-vk-Ml8">
+                                        <rect key="frame" x="81.5" y="9" width="105" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refund Initiated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgZ-FO-uo9">
+                                                <rect key="frame" x="10" y="4" width="85" height="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.14901960780000001" green="0.66666666669999997" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="wgZ-FO-uo9" firstAttribute="centerX" secondItem="0yN-vk-Ml8" secondAttribute="centerX" id="GHw-w9-WPi"/>
+                                            <constraint firstAttribute="width" constant="105" id="RaF-Fa-y8H"/>
+                                            <constraint firstItem="wgZ-FO-uo9" firstAttribute="centerY" secondItem="0yN-vk-Ml8" secondAttribute="centerY" id="dv5-b2-3hn"/>
+                                            <constraint firstAttribute="height" constant="22" id="w75-gC-Tua"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQn-Xf-Bi6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ghV-MT-fsc"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security deposite and extra paid rent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-Mb-Iyp">
+                                        <rect key="frame" x="20" y="23" width="280" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UfV-qf-ptV" secondAttribute="bottom" constant="15.5" id="789-ok-puU"/>
+                                    <constraint firstItem="0yN-vk-Ml8" firstAttribute="leading" secondItem="IzS-sR-0uW" secondAttribute="trailing" constant="8" id="DLe-AT-1oa"/>
+                                    <constraint firstItem="UfV-qf-ptV" firstAttribute="trailing" secondItem="WEH-S3-u1R" secondAttribute="trailing" id="Kay-Pq-UBz"/>
+                                    <constraint firstItem="kQn-Xf-Bi6" firstAttribute="top" secondItem="Kyx-dI-PHU" secondAttribute="top" id="LIf-dU-98V"/>
+                                    <constraint firstItem="WEH-S3-u1R" firstAttribute="centerY" secondItem="IzS-sR-0uW" secondAttribute="centerY" id="LaT-fK-oAy"/>
+                                    <constraint firstAttribute="trailing" secondItem="WEH-S3-u1R" secondAttribute="trailing" constant="20" id="QSU-S1-nd7"/>
+                                    <constraint firstItem="UfV-qf-ptV" firstAttribute="leading" secondItem="IzS-sR-0uW" secondAttribute="leading" id="Qd3-aO-xes"/>
+                                    <constraint firstItem="IzS-sR-0uW" firstAttribute="leading" secondItem="Kyx-dI-PHU" secondAttribute="leading" constant="20" id="cyr-eM-Qxg"/>
+                                    <constraint firstItem="IzS-sR-0uW" firstAttribute="top" secondItem="Kyx-dI-PHU" secondAttribute="top" constant="20" id="fGg-ZZ-suS"/>
+                                    <constraint firstItem="dJi-Mb-Iyp" firstAttribute="trailing" secondItem="WEH-S3-u1R" secondAttribute="trailing" id="gIA-w0-3NY"/>
+                                    <constraint firstItem="0yN-vk-Ml8" firstAttribute="centerY" secondItem="IzS-sR-0uW" secondAttribute="centerY" id="grz-Gf-Zzy"/>
+                                    <constraint firstItem="UfV-qf-ptV" firstAttribute="top" secondItem="dJi-Mb-Iyp" secondAttribute="bottom" constant="12" id="l54-04-LSY"/>
+                                    <constraint firstAttribute="trailing" secondItem="kQn-Xf-Bi6" secondAttribute="trailing" id="ntn-Lm-ISO"/>
+                                    <constraint firstItem="kQn-Xf-Bi6" firstAttribute="leading" secondItem="Kyx-dI-PHU" secondAttribute="leading" id="p3C-CY-hxw"/>
+                                    <constraint firstItem="dJi-Mb-Iyp" firstAttribute="leading" secondItem="IzS-sR-0uW" secondAttribute="leading" id="tDO-t8-Vgp"/>
+                                    <constraint firstItem="dJi-Mb-Iyp" firstAttribute="top" secondItem="IzS-sR-0uW" secondAttribute="bottom" constant="3" id="yrO-jY-l4f"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jvG-sG-e4a" firstAttribute="top" secondItem="LZn-MH-VTx" secondAttribute="bottom" id="jgb-31-0dl"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uTY-91-eDa" secondAttribute="trailing" id="GCh-11-a7C"/>
+                    <constraint firstItem="uTY-91-eDa" firstAttribute="top" secondItem="eBx-RC-C8b" secondAttribute="bottom" constant="10" id="KEe-zw-Lz2"/>
+                    <constraint firstAttribute="bottom" secondItem="uTY-91-eDa" secondAttribute="bottom" id="aWS-CX-Ur9"/>
+                    <constraint firstItem="uTY-91-eDa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eik-p4-fZW"/>
+                    <constraint firstItem="eBx-RC-C8b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lQh-E0-BcG"/>
+                    <constraint firstItem="eBx-RC-C8b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="n5r-OU-Cbj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adavanceAmountLabel" destination="Bnh-FV-An8" id="wmx-UH-Pap"/>
+                <outlet property="adavanceInfo" destination="rBJ-eV-hQM" id="lCY-0B-kpC"/>
+                <outlet property="advanceTextLabel" destination="haq-mI-2Tt" id="hZs-tm-YkC"/>
+                <outlet property="balanceAmountLabel" destination="hLS-F6-NC7" id="sGO-mO-cIx"/>
+                <outlet property="balanceInfo" destination="Pq9-6w-fEe" id="Gfn-oi-01Q"/>
+                <outlet property="balanceOrBalancePaidLabel" destination="AB5-bC-98b" id="oFD-gp-aHU"/>
+                <outlet property="balanceView" destination="jvG-sG-e4a" id="iJ7-SB-j22"/>
+                <outlet property="payAdvanceButton" destination="qEf-EB-vhe" id="IS9-or-TKR"/>
+                <outlet property="payBalanceButton" destination="2Ur-cz-nhq" id="2mW-NF-zqq"/>
+                <outlet property="refundAmountLabel" destination="WEH-S3-u1R" id="z1c-5z-F8k"/>
+                <outlet property="refundInitiatedView" destination="0yN-vk-Ml8" id="rOu-no-9B9"/>
+                <outlet property="refundOrRefundCompletedLabel" destination="IzS-sR-0uW" id="fmA-n6-zbw"/>
+                <outlet property="refundSubTextLabel" destination="UfV-qf-ptV" id="sMc-nM-mJL"/>
+                <outlet property="refundView" destination="Kyx-dI-PHU" id="AWP-bD-tZO"/>
+                <outlet property="refundingTypesLabel" destination="dJi-Mb-Iyp" id="UIP-de-L1e"/>
+                <outlet property="totalAmountLabel" destination="jiI-pk-paA" id="dG6-cH-5m7"/>
+                <outlet property="totalView" destination="2Vl-lK-8i5" id="ldb-pF-oqT"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="206.58482142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

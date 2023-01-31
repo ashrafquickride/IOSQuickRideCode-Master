@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaxiNotFoundTableViewCell" rowHeight="145" id="KGk-i7-Jjw" customClass="TaxiNotFoundTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxM-9D-22C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry! Couldn't find the Taxi at this movement. we are still trying" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIN-gO-vb4">
+                                <rect key="frame" x="40" y="8" width="240" height="73.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kli-W5-9Id" userLabel="retryBtn">
+                                <rect key="frame" x="107" y="96.5" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ryZ-7t-Whx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ref" title="  Retry "/>
+                                <connections>
+                                    <action selector="retryBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8wA-dG-nJM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kli-W5-9Id" firstAttribute="centerX" secondItem="lxM-9D-22C" secondAttribute="centerX" multiplier="0.95" id="NKC-l8-ZyT"/>
+                            <constraint firstItem="DIN-gO-vb4" firstAttribute="leading" secondItem="lxM-9D-22C" secondAttribute="leading" constant="40" id="OlK-27-ayk"/>
+                            <constraint firstItem="DIN-gO-vb4" firstAttribute="top" secondItem="lxM-9D-22C" secondAttribute="top" constant="8" id="XSK-Ob-u2P"/>
+                            <constraint firstItem="Kli-W5-9Id" firstAttribute="top" secondItem="DIN-gO-vb4" secondAttribute="bottom" constant="15" id="bvd-tF-AiV"/>
+                            <constraint firstAttribute="trailing" secondItem="DIN-gO-vb4" secondAttribute="trailing" constant="40" id="kq6-Vh-PDo"/>
+                            <constraint firstAttribute="bottom" secondItem="Kli-W5-9Id" secondAttribute="bottom" constant="8.5" id="zZo-g3-mDs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lxM-9D-22C" secondAttribute="bottom" id="26p-0U-SZx"/>
+                    <constraint firstItem="lxM-9D-22C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KCp-rX-Spk"/>
+                    <constraint firstAttribute="trailing" secondItem="lxM-9D-22C" secondAttribute="trailing" id="ap9-Uf-whV"/>
+                    <constraint firstItem="lxM-9D-22C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hN8-AW-MFC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="retryBtn" destination="Kli-W5-9Id" id="49G-KX-Asb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="57.924107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ref" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="17B48" minimumToolsVersion="Automatic">
+    <entity name="Account" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="reserved" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Contact" syncable="YES">
+        <attribute name="contactGender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactImageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactNo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="contactType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="refreshedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="supportCall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Conversation" syncable="YES">
+        <attribute name="chatTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="destId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="msgType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sourceId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sourceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EventService" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupChatMessage" syncable="YES">
+        <attribute name="chatTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="groupchatmessgeid" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonenumber" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RideRoute" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fromLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fromLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="overviewPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="routeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="toLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="." syncable="YES">
+        <attribute name="clientUniqueDeviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="referralCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" defaultValueString="&quot;&quot;" syncable="YES"/>
+    </entity>
+    <entity name="UserNotification" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconUri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActionRequired" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isActionTaken" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isBigPictureRequired" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="msgClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgObjectJson" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notificationId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="UserProfile" syncable="YES">
+        <attribute name="aboutMe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmType" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailforcommunication" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchCompanyConstraint" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="matchGenderConstraint" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="numberOfRidesAsPassenger" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numberOfRidesAsRider" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="profession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rideMatchPercentageAsPassenger" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="rideMatchPercentageAsRider" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="supportCall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verificationStatus" optional="YES" attributeType="Integer 32" syncable="YES"/>
+    </entity>
+    <entity name="UserRecentLocation" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recentAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentAddressName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentLocationId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Vehicle" syncable="YES">
+        <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fare" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="registrationNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="333" positionY="333" width="128" height="105"/>
+        <element name="Contact" positionX="333" positionY="333" width="128" height="180"/>
+        <element name="Conversation" positionX="288" positionY="162" width="128" height="210"/>
+        <element name="EventService" positionX="288" positionY="162" width="128" height="75"/>
+        <element name="GroupChatMessage" positionX="342" positionY="243" width="128" height="135"/>
+        <element name="RideRoute" positionX="315" positionY="315" width="128" height="195"/>
+        <element name="User" positionX="324" positionY="324" width="128" height="165"/>
+        <element name="UserNotification" positionX="279" positionY="162" width="128" height="285"/>
+        <element name="UserProfile" positionX="315" positionY="279" width="128" height="390"/>
+        <element name="UserRecentLocation" positionX="288" positionY="162" width="128" height="120"/>
+        <element name="Vehicle" positionX="342" positionY="342" width="128" height="165"/>
+    </elements>
+</model>

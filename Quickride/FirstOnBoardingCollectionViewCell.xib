@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FirstOnBoardingCollectionViewCell" id="gTV-IL-0wX" customClass="FirstOnBoardingCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="573"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="573"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-t1-Ehr" colorLabel="IBBuiltInLabel-Red">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="573"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dts-3P-knD" userLabel="QR View">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon_with_label" translatesAutoresizingMaskIntoConstraints="NO" id="Mgc-hW-FKZ">
+                                        <rect key="frame" x="0.0" y="50" width="382" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="uIU-j0-2mE"/>
+                                            <constraint firstAttribute="width" constant="382" id="wYa-AC-Vay"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Mgc-hW-FKZ" firstAttribute="top" secondItem="Dts-3P-knD" secondAttribute="top" constant="50" id="QED-wI-gOz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mgc-hW-FKZ" secondAttribute="bottom" constant="20" id="T9V-n7-A4L"/>
+                                    <constraint firstItem="Mgc-hW-FKZ" firstAttribute="centerX" secondItem="Dts-3P-knD" secondAttribute="centerX" id="shf-tX-8rz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-b2-t9a" userLabel="Carpool View">
+                                <rect key="frame" x="0.0" y="320" width="382" height="135"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-hq-yNZ">
+                                        <rect key="frame" x="20" y="27" width="172" height="81"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carpool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-XF-7dS">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="MD4-hK-2Pd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKB-eg-4gj">
+                                                <rect key="frame" x="0.0" y="35" width="172" height="46"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Carpool/Bikepool for daily commuting ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpool_onboard" translatesAutoresizingMaskIntoConstraints="NO" id="v6i-dq-mfL">
+                                        <rect key="frame" x="212" y="27.5" width="150" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="CZM-uw-GR1"/>
+                                            <constraint firstAttribute="width" constant="150" id="Kq8-hR-Pgk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.9754185060254571" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="v6i-dq-mfL" firstAttribute="leading" secondItem="0yY-hq-yNZ" secondAttribute="trailing" constant="20" id="0jN-ge-U2M"/>
+                                    <constraint firstAttribute="height" constant="135" id="7y3-7r-lMo"/>
+                                    <constraint firstAttribute="trailing" secondItem="v6i-dq-mfL" secondAttribute="trailing" constant="20" id="EbW-pY-AX1"/>
+                                    <constraint firstItem="v6i-dq-mfL" firstAttribute="centerY" secondItem="3cO-b2-t9a" secondAttribute="centerY" id="XTu-Md-14i"/>
+                                    <constraint firstItem="0yY-hq-yNZ" firstAttribute="leading" secondItem="3cO-b2-t9a" secondAttribute="leading" constant="20" id="aPS-Ll-Fx3"/>
+                                    <constraint firstItem="0yY-hq-yNZ" firstAttribute="centerY" secondItem="3cO-b2-t9a" secondAttribute="centerY" id="m1D-K0-ATm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LQ-pj-3y5" userLabel="Taxipool View">
+                                <rect key="frame" x="0.0" y="455" width="382" height="145"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AIJ-Ke-ccz">
+                                        <rect key="frame" x="20" y="22" width="172" height="101"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayi-Ne-IwR">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="iYy-yS-YQ7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07G-6J-ahP">
+                                                <rect key="frame" x="0.0" y="30" width="168.5" height="71"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Affordable fares for local, outstation and airport taxi">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxi_onboard" translatesAutoresizingMaskIntoConstraints="NO" id="bib-AQ-j9h">
+                                        <rect key="frame" x="212" y="32.5" width="150" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="C0e-aQ-hoj"/>
+                                            <constraint firstAttribute="height" constant="80" id="OWF-MM-fvH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bib-AQ-j9h" firstAttribute="leading" secondItem="AIJ-Ke-ccz" secondAttribute="trailing" constant="20" id="07C-Uu-tY7"/>
+                                    <constraint firstItem="AIJ-Ke-ccz" firstAttribute="centerY" secondItem="9LQ-pj-3y5" secondAttribute="centerY" id="5FW-We-rTQ"/>
+                                    <constraint firstAttribute="height" constant="145" id="FkK-8J-iyV"/>
+                                    <constraint firstItem="AIJ-Ke-ccz" firstAttribute="leading" secondItem="9LQ-pj-3y5" secondAttribute="leading" constant="20" id="H1W-St-Lzr"/>
+                                    <constraint firstAttribute="trailing" secondItem="bib-AQ-j9h" secondAttribute="trailing" constant="20" id="Sky-rs-UT4"/>
+                                    <constraint firstItem="bib-AQ-j9h" firstAttribute="centerY" secondItem="9LQ-pj-3y5" secondAttribute="centerY" id="jVg-tq-zdf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9LQ-pj-3y5" secondAttribute="bottom" constant="20" id="2Vc-19-t1s"/>
+                            <constraint firstItem="9LQ-pj-3y5" firstAttribute="top" secondItem="3cO-b2-t9a" secondAttribute="bottom" id="4iq-lP-kMY"/>
+                            <constraint firstAttribute="trailing" secondItem="3cO-b2-t9a" secondAttribute="trailing" id="DVJ-cg-uSC"/>
+                            <constraint firstItem="9LQ-pj-3y5" firstAttribute="leading" secondItem="MxT-t1-Ehr" secondAttribute="leading" id="Pvd-bE-PED"/>
+                            <constraint firstItem="3cO-b2-t9a" firstAttribute="top" secondItem="Dts-3P-knD" secondAttribute="bottom" id="Q7Q-iZ-uK1"/>
+                            <constraint firstItem="3cO-b2-t9a" firstAttribute="leading" secondItem="MxT-t1-Ehr" secondAttribute="leading" id="WN9-ho-QYj"/>
+                            <constraint firstItem="Dts-3P-knD" firstAttribute="top" secondItem="MxT-t1-Ehr" secondAttribute="top" id="XYq-AG-pt8"/>
+                            <constraint firstItem="Dts-3P-knD" firstAttribute="leading" secondItem="MxT-t1-Ehr" secondAttribute="leading" id="fE1-iJ-D7y"/>
+                            <constraint firstAttribute="trailing" secondItem="Dts-3P-knD" secondAttribute="trailing" id="mBm-46-n4a"/>
+                            <constraint firstAttribute="trailing" secondItem="9LQ-pj-3y5" secondAttribute="trailing" id="msA-EA-O13"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="top" secondItem="MxT-t1-Ehr" secondAttribute="top" id="1wr-Hc-957"/>
+                <constraint firstAttribute="trailing" secondItem="Dts-3P-knD" secondAttribute="trailing" id="Ee1-DI-eYJ"/>
+                <constraint firstItem="MxT-t1-Ehr" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="TRp-mD-gOF"/>
+                <constraint firstItem="MxT-t1-Ehr" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="XPs-Mb-u1Q"/>
+                <constraint firstItem="Dts-3P-knD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i2d-up-bar"/>
+                <constraint firstAttribute="leading" secondItem="MxT-t1-Ehr" secondAttribute="leading" id="xfm-mb-quC"/>
+            </constraints>
+            <size key="customSize" width="382" height="620"/>
+            <point key="canvasLocation" x="375.36231884057975" y="340.51339285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="app_icon_with_label" width="468" height="361"/>
+        <image name="carpool_onboard" width="190.5" height="136"/>
+        <image name="taxi_onboard" width="152" height="125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

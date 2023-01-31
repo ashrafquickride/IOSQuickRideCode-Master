@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddPhotosCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Of9-Bl-coR" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="90" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_photo" translatesAutoresizingMaskIntoConstraints="NO" id="wtT-Dg-Hp8">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="60"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wtT-Dg-Hp8" secondAttribute="bottom" id="OpE-0L-sJ7"/>
+                            <constraint firstItem="wtT-Dg-Hp8" firstAttribute="top" secondItem="Of9-Bl-coR" secondAttribute="top" id="VTW-CK-xBl"/>
+                            <constraint firstAttribute="height" constant="60" id="jCL-na-DkH"/>
+                            <constraint firstItem="wtT-Dg-Hp8" firstAttribute="leading" secondItem="Of9-Bl-coR" secondAttribute="leading" id="lun-R9-ofi"/>
+                            <constraint firstAttribute="width" constant="90" id="oMj-Pi-z9S"/>
+                            <constraint firstAttribute="trailing" secondItem="wtT-Dg-Hp8" secondAttribute="trailing" id="uXn-Vy-KWb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZZ-iz-tjC">
+                        <rect key="frame" x="-1" y="-1" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="H8m-xv-h2W"/>
+                            <constraint firstAttribute="height" constant="24" id="sFX-2T-hKl"/>
+                        </constraints>
+                        <state key="normal" image="remove"/>
+                        <connections>
+                            <action selector="removePhotoClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lz0-Ok-rHd"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Of9-Bl-coR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="4aC-pL-WCc"/>
+                <constraint firstAttribute="bottom" secondItem="Of9-Bl-coR" secondAttribute="bottom" id="MHb-es-ii6"/>
+                <constraint firstItem="Of9-Bl-coR" firstAttribute="leading" secondItem="tZZ-iz-tjC" secondAttribute="trailing" constant="-18" id="SdX-nk-rGG"/>
+                <constraint firstAttribute="trailing" secondItem="Of9-Bl-coR" secondAttribute="trailing" id="bnd-AE-LRz"/>
+                <constraint firstItem="Of9-Bl-coR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="gQj-No-7Ap"/>
+                <constraint firstItem="Of9-Bl-coR" firstAttribute="top" secondItem="tZZ-iz-tjC" secondAttribute="bottom" constant="-18" id="lnO-D7-djj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="96" height="66"/>
+            <connections>
+                <outlet property="cancelButton" destination="tZZ-iz-tjC" id="EX4-BZ-rMx"/>
+                <outlet property="productImage" destination="wtT-Dg-Hp8" id="laX-sL-uzv"/>
+            </connections>
+            <point key="canvasLocation" x="133.33333333333334" y="81.026785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="no_photo" width="19.5" height="16"/>
+        <image name="remove" width="24" height="24"/>
+    </resources>
+</document>

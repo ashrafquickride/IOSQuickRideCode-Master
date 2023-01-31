@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarpoolFirstOnBoardingCollectionViewCell" id="TwN-8q-MH4" customClass="CarpoolFirstOnBoardingCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXB-cU-6P1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpool_first_onboarding_img" translatesAutoresizingMaskIntoConstraints="NO" id="Jzl-W3-Gio">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ilN-xx-xeZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBM-zv-qp9">
+                                <rect key="frame" x="50" y="300" width="118" height="77"/>
+                                <string key="text">Offer
+Carpool</string>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="32"/>
+                                <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X35-vW-pSF">
+                                <rect key="frame" x="50" y="386" width="48" height="6"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.63921568630000003" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="g5O-q4-wxP"/>
+                                    <constraint firstAttribute="width" constant="48" id="m6G-wV-6Up"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuX-I9-bdz">
+                                <rect key="frame" x="50" y="412" width="295" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KuX-I9-bdz" secondAttribute="height" multiplier="295:68" id="I8H-7I-2RD"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Share car empty seats on your route &amp; your time with verified professionals and save upto ₹14,000/month">
+                                        <attributes>
+                                            <color key="NSColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jzl-W3-Gio" firstAttribute="leading" secondItem="FXB-cU-6P1" secondAttribute="leading" id="1r9-Eh-mmi"/>
+                            <constraint firstItem="jBM-zv-qp9" firstAttribute="top" secondItem="Jzl-W3-Gio" secondAttribute="bottom" id="2H9-LP-CSl"/>
+                            <constraint firstItem="X35-vW-pSF" firstAttribute="leading" secondItem="jBM-zv-qp9" secondAttribute="leading" id="8ZV-h2-ctq"/>
+                            <constraint firstItem="KuX-I9-bdz" firstAttribute="top" secondItem="X35-vW-pSF" secondAttribute="bottom" constant="20" id="KAi-eE-i5z"/>
+                            <constraint firstItem="jBM-zv-qp9" firstAttribute="leading" secondItem="FXB-cU-6P1" secondAttribute="leading" constant="50" id="LJa-rb-YpG"/>
+                            <constraint firstAttribute="bottom" secondItem="KuX-I9-bdz" secondAttribute="bottom" constant="20" id="UUE-yo-ONB"/>
+                            <constraint firstAttribute="trailing" secondItem="KuX-I9-bdz" secondAttribute="trailing" constant="30" id="g6M-fN-6YM"/>
+                            <constraint firstItem="Jzl-W3-Gio" firstAttribute="top" secondItem="FXB-cU-6P1" secondAttribute="top" id="j4y-ca-43g"/>
+                            <constraint firstItem="X35-vW-pSF" firstAttribute="top" secondItem="jBM-zv-qp9" secondAttribute="bottom" constant="9" id="mwC-Bi-COK"/>
+                            <constraint firstItem="KuX-I9-bdz" firstAttribute="leading" secondItem="jBM-zv-qp9" secondAttribute="leading" id="nwS-5Y-rKx"/>
+                            <constraint firstAttribute="trailing" secondItem="Jzl-W3-Gio" secondAttribute="trailing" id="vyI-tl-e82"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="I4C-RI-Ea4"/>
+            <constraints>
+                <constraint firstItem="FXB-cU-6P1" firstAttribute="leading" secondItem="TwN-8q-MH4" secondAttribute="leading" id="15K-24-zWO"/>
+                <constraint firstItem="FXB-cU-6P1" firstAttribute="top" secondItem="TwN-8q-MH4" secondAttribute="top" id="Tly-Yy-Owy"/>
+                <constraint firstAttribute="trailing" secondItem="FXB-cU-6P1" secondAttribute="trailing" id="cBw-8r-IGc"/>
+                <constraint firstAttribute="bottom" secondItem="FXB-cU-6P1" secondAttribute="bottom" id="gLI-uU-DEF"/>
+            </constraints>
+            <size key="customSize" width="375" height="500"/>
+            <point key="canvasLocation" x="16.666666666666668" y="144.64285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="carpool_first_onboarding_img" width="540" height="495"/>
+    </resources>
+</document>

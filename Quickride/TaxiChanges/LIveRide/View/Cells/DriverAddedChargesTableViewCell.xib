@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="DriverAddedChargesTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiR-mJ-riG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toll Tax - 3 May, 12:13 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIh-sw-aTw">
+                                <rect key="frame" x="20" y="15" width="165" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="`120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyb-87-9cz">
+                                <rect key="frame" x="273" y="15" width="27" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bandipur Reserve Forest Barrier, Mel Kamanahalli, Karnataka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvn-WD-VqW">
+                                <rect key="frame" x="37" y="39" width="183" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_black" translatesAutoresizingMaskIntoConstraints="NO" id="Qhy-tl-CSW">
+                                <rect key="frame" x="20" y="39" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="5me-mV-6za"/>
+                                    <constraint firstAttribute="width" constant="12" id="by9-Oe-OKc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecy-KT-cef">
+                                <rect key="frame" x="258" y="41" width="42" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Dispute"/>
+                                <connections>
+                                    <action selector="DisputeTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ff8-Ob-lDv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xvn-WD-VqW" firstAttribute="leading" secondItem="Qhy-tl-CSW" secondAttribute="trailing" constant="5" id="7ML-jr-1tH"/>
+                            <constraint firstItem="vyb-87-9cz" firstAttribute="centerY" secondItem="aIh-sw-aTw" secondAttribute="centerY" id="8kv-iK-Fyz"/>
+                            <constraint firstAttribute="bottom" secondItem="Ecy-KT-cef" secondAttribute="bottom" constant="15" id="C3g-Q3-3OT"/>
+                            <constraint firstAttribute="trailing" secondItem="Xvn-WD-VqW" secondAttribute="trailing" constant="100" id="SlH-6D-hYG"/>
+                            <constraint firstItem="aIh-sw-aTw" firstAttribute="leading" secondItem="FiR-mJ-riG" secondAttribute="leading" constant="20" id="U0P-Cm-4zr"/>
+                            <constraint firstItem="Qhy-tl-CSW" firstAttribute="leading" secondItem="aIh-sw-aTw" secondAttribute="leading" id="UDg-U9-0fV"/>
+                            <constraint firstAttribute="trailing" secondItem="vyb-87-9cz" secondAttribute="trailing" constant="20" id="Uhd-MC-a79"/>
+                            <constraint firstItem="aIh-sw-aTw" firstAttribute="top" secondItem="FiR-mJ-riG" secondAttribute="top" constant="15" id="WC5-Jc-dod"/>
+                            <constraint firstItem="Qhy-tl-CSW" firstAttribute="top" secondItem="aIh-sw-aTw" secondAttribute="bottom" constant="7" id="dNX-DY-aas"/>
+                            <constraint firstItem="Xvn-WD-VqW" firstAttribute="top" secondItem="Qhy-tl-CSW" secondAttribute="top" id="euX-2C-Bsi"/>
+                            <constraint firstAttribute="trailing" secondItem="Ecy-KT-cef" secondAttribute="trailing" constant="20" id="hqA-kN-VTK"/>
+                            <constraint firstAttribute="height" constant="82" id="shH-tf-5e2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FiR-mJ-riG" secondAttribute="bottom" id="KOs-hG-Ylp"/>
+                    <constraint firstAttribute="trailing" secondItem="FiR-mJ-riG" secondAttribute="trailing" id="VHq-Qi-NQI"/>
+                    <constraint firstItem="FiR-mJ-riG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gdy-4t-77a"/>
+                    <constraint firstItem="FiR-mJ-riG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sGe-bd-52B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="vyb-87-9cz" id="1on-wK-LFu"/>
+                <outlet property="backView" destination="FiR-mJ-riG" id="Z2x-xl-NMA"/>
+                <outlet property="disputeButton" destination="Ecy-KT-cef" id="Twm-rh-Egh"/>
+                <outlet property="locationLabel" destination="Xvn-WD-VqW" id="jcF-Yu-95j"/>
+                <outlet property="titleLabel" destination="aIh-sw-aTw" id="onA-p5-IaP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location_black" width="16" height="19"/>
+    </resources>
+</document>

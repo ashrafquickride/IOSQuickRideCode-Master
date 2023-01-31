@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaxiPoolBillFeedBackTableViewCell" rowHeight="257" id="KGk-i7-Jjw" customClass="TaxiPoolBillFeedBackTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="257"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAA-25-rVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="384" height="5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="sfI-pB-z8H"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Was Your TaxiPool Experience?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-gI-8pI">
+                        <rect key="frame" x="77.5" y="25" width="229.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="oDr-hX-hpR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AEs-Kw-kbD">
+                        <rect key="frame" x="86" y="60" width="212.5" height="34"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjX-ZI-2oM">
+                                <rect key="frame" x="0.0" y="0.0" width="34.5" height="34"/>
+                                <state key="normal" image="ic_ratingbar_star_dark"/>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="k5f-EW-yxn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATu-bK-lwP">
+                                <rect key="frame" x="44.5" y="0.0" width="34.5" height="34"/>
+                                <state key="normal" image="ic_ratingbar_star_dark"/>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FcM-yA-zRA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTK-ya-6uc">
+                                <rect key="frame" x="89" y="0.0" width="34.5" height="34"/>
+                                <state key="normal" image="ic_ratingbar_star_dark"/>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Geo-gf-cuk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YO-j8-7D2">
+                                <rect key="frame" x="133.5" y="0.0" width="34.5" height="34"/>
+                                <state key="normal" image="ic_ratingbar_star_dark"/>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xNq-yh-3b2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-GA-W4f">
+                                <rect key="frame" x="178" y="0.0" width="34.5" height="34"/>
+                                <state key="normal" image="ic_ratingbar_star_dark"/>
+                                <connections>
+                                    <action selector="ratingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="umx-dZ-Vjw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="pr2-it-fp6"/>
+                        </constraints>
+                    </stackView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGv-OS-WhA">
+                        <rect key="frame" x="25" y="114" width="334" height="130"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us know how we can improve the service" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pv-CW-QT5">
+                                <rect key="frame" x="10" y="0.0" width="314" height="14"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P3Q-CO-Dy7">
+                                <rect key="frame" x="10" y="19" width="314" height="68"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="4Fm-oZ-n8d"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKh-5B-2Ra" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                                <rect key="frame" x="10" y="95" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.70980392160000005" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KC2-R8-PTZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="eWu-pp-ML5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Uu-AR-5T5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1pv-CW-QT5" secondAttribute="trailing" constant="10" id="1YH-2q-KMb"/>
+                            <constraint firstItem="P3Q-CO-Dy7" firstAttribute="leading" secondItem="HGv-OS-WhA" secondAttribute="leading" constant="10" id="8Zt-uT-7mp"/>
+                            <constraint firstItem="kKh-5B-2Ra" firstAttribute="top" secondItem="P3Q-CO-Dy7" secondAttribute="bottom" constant="8" id="Ah4-hz-HqE"/>
+                            <constraint firstItem="P3Q-CO-Dy7" firstAttribute="top" secondItem="1pv-CW-QT5" secondAttribute="bottom" constant="5" id="ClI-N7-tcA"/>
+                            <constraint firstAttribute="height" constant="130" id="LOK-Xj-ucL"/>
+                            <constraint firstItem="1pv-CW-QT5" firstAttribute="leading" secondItem="HGv-OS-WhA" secondAttribute="leading" constant="10" id="Uix-Zs-y2C"/>
+                            <constraint firstItem="1pv-CW-QT5" firstAttribute="top" secondItem="HGv-OS-WhA" secondAttribute="top" id="d4z-NV-AcK"/>
+                            <constraint firstAttribute="trailing" secondItem="P3Q-CO-Dy7" secondAttribute="trailing" constant="10" id="eTR-P9-vHV"/>
+                            <constraint firstItem="kKh-5B-2Ra" firstAttribute="leading" secondItem="P3Q-CO-Dy7" secondAttribute="leading" id="gjE-wN-yBX"/>
+                            <constraint firstAttribute="bottom" secondItem="kKh-5B-2Ra" secondAttribute="bottom" constant="5" id="omm-MF-fnp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HGv-OS-WhA" secondAttribute="bottom" constant="10" id="Msr-07-aaX"/>
+                    <constraint firstItem="sgk-gI-8pI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NmY-wS-j1H"/>
+                    <constraint firstAttribute="trailing" secondItem="qAA-25-rVZ" secondAttribute="trailing" id="PGC-52-mBR"/>
+                    <constraint firstItem="qAA-25-rVZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="b1Q-cK-X8M"/>
+                    <constraint firstAttribute="trailing" secondItem="HGv-OS-WhA" secondAttribute="trailing" constant="25" id="jDG-pA-XZ7"/>
+                    <constraint firstItem="HGv-OS-WhA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="oz4-z6-Gyk"/>
+                    <constraint firstItem="qAA-25-rVZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pc5-RS-nce"/>
+                    <constraint firstItem="HGv-OS-WhA" firstAttribute="top" secondItem="AEs-Kw-kbD" secondAttribute="bottom" constant="20" id="uBl-1x-Umj"/>
+                    <constraint firstItem="AEs-Kw-kbD" firstAttribute="top" secondItem="sgk-gI-8pI" secondAttribute="bottom" constant="15" id="uLP-pr-bp8"/>
+                    <constraint firstItem="AEs-Kw-kbD" firstAttribute="centerX" secondItem="sgk-gI-8pI" secondAttribute="centerX" id="vnM-XH-JGo"/>
+                    <constraint firstItem="sgk-gI-8pI" firstAttribute="top" secondItem="qAA-25-rVZ" secondAttribute="bottom" constant="20" id="ygB-jW-t5V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomFeedBackViewHeightConstraint" destination="LOK-Xj-ucL" id="rw3-Sz-8ww"/>
+                <outlet property="feedBackTextView" destination="P3Q-CO-Dy7" id="TOu-rU-xjS"/>
+                <outlet property="feedBackView" destination="HGv-OS-WhA" id="pEQ-gn-mG2"/>
+                <outlet property="fiveRatingBtn" destination="b4h-GA-W4f" id="7AN-oU-x9x"/>
+                <outlet property="fourRatingBtn" destination="1YO-j8-7D2" id="o7B-uE-r7d"/>
+                <outlet property="oneRatingBtn" destination="jjX-ZI-2oM" id="yTG-MQ-x3s"/>
+                <outlet property="submitBtn" destination="kKh-5B-2Ra" id="5nW-Yc-Iqi"/>
+                <outlet property="threeRatingBtn" destination="NTK-ya-6uc" id="DnC-0r-hEi"/>
+                <outlet property="twoRatingBtn" destination="ATu-bK-lwP" id="WxA-FX-V7p"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="152.34375"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="kKh-5B-2Ra">
+            <size key="intrinsicContentSize" width="46" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_ratingbar_star_dark" width="34.5" height="32.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

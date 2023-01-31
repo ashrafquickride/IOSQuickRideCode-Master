@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="RentPeriodTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RENT PERIOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1D-o0-3qx">
+                        <rect key="frame" x="20" y="15" width="107.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-SB-RnG">
+                        <rect key="frame" x="20" y="44.5" width="0.0" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="a7a-pk-zbd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8G-nM-J9X">
+                        <rect key="frame" x="265" y="36.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="hAi-yg-61U"/>
+                            <constraint firstAttribute="height" constant="35" id="p4d-vt-FEh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <state key="normal" title="Edit"/>
+                        <connections>
+                            <action selector="EditButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QBU-5F-hnS"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2b7-SB-RnG" firstAttribute="top" secondItem="m1D-o0-3qx" secondAttribute="bottom" constant="10" id="8s4-mg-0Ga"/>
+                    <constraint firstItem="2b7-SB-RnG" firstAttribute="leading" secondItem="m1D-o0-3qx" secondAttribute="leading" id="ETZ-eH-BWm"/>
+                    <constraint firstAttribute="trailing" secondItem="t8G-nM-J9X" secondAttribute="trailing" constant="20" id="MUm-EU-YwS"/>
+                    <constraint firstItem="m1D-o0-3qx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="csz-Vc-89t"/>
+                    <constraint firstItem="m1D-o0-3qx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="tfv-PZ-tnT"/>
+                    <constraint firstItem="t8G-nM-J9X" firstAttribute="centerY" secondItem="2b7-SB-RnG" secondAttribute="centerY" id="zFV-FG-4yD"/>
+                    <constraint firstAttribute="bottom" secondItem="2b7-SB-RnG" secondAttribute="bottom" constant="26.5" id="zVC-7D-jYh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editButton" destination="t8G-nM-J9X" id="UyJ-Il-hWR"/>
+                <outlet property="rentalDaysLabel" destination="2b7-SB-RnG" id="nsb-jl-abb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="165.40178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

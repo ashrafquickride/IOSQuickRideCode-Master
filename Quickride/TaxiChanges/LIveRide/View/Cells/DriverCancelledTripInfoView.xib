@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DriverCancelledTripInfoView" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-d3-BNN" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAX-bG-PcP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="sqZ-Wd-HZ3"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-6E-DhR" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                            <rect key="frame" x="304" y="67" width="90" height="26"/>
+                            <color key="backgroundColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="OeL-3H-KzQ"/>
+                                <constraint firstAttribute="height" constant="26" id="tAE-3h-7ES"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
+                            <state key="normal" title="DISMISS">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="gotItButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="STd-kQ-lK3"/>
+                            </connections>
+                        </button>
+                        <view hidden="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiE-t3-cCH">
+                            <rect key="frame" x="304" y="67" width="0.0" height="26"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="kC6-uk-2iy"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver_cancel_image" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-R8-lbx">
+                            <rect key="frame" x="20" y="15" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="3UE-Df-Kgg"/>
+                                <constraint firstAttribute="width" constant="46" id="f0X-OS-fIy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvz-23-ofh">
+                            <rect key="frame" x="81" y="19.999999999999996" width="313" height="35.666666666666657"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Unfortunately, your driver had to cancel the trip. We will assign the new driver shortly">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="FAX-bG-PcP" secondAttribute="trailing" id="9tM-fb-Pke"/>
+                        <constraint firstItem="FAX-bG-PcP" firstAttribute="top" secondItem="aZA-d3-BNN" secondAttribute="top" id="EcU-FY-N6B"/>
+                        <constraint firstAttribute="height" constant="105" id="G6u-2p-6at"/>
+                        <constraint firstItem="Uvz-23-ofh" firstAttribute="top" secondItem="5Sy-R8-lbx" secondAttribute="top" constant="5" id="KJU-Eq-shC"/>
+                        <constraint firstAttribute="trailing" secondItem="YIh-6E-DhR" secondAttribute="trailing" constant="20" id="Lyc-QD-PVW"/>
+                        <constraint firstAttribute="trailing" secondItem="Uvz-23-ofh" secondAttribute="trailing" constant="20" id="MgY-9b-BbC"/>
+                        <constraint firstItem="5Sy-R8-lbx" firstAttribute="leading" secondItem="aZA-d3-BNN" secondAttribute="leading" constant="20" id="WVw-Hn-NeN"/>
+                        <constraint firstItem="5Sy-R8-lbx" firstAttribute="top" secondItem="aZA-d3-BNN" secondAttribute="top" constant="15" id="Y9b-gR-WJW"/>
+                        <constraint firstItem="Uvz-23-ofh" firstAttribute="leading" secondItem="5Sy-R8-lbx" secondAttribute="trailing" constant="15" id="Yjh-7W-7ro"/>
+                        <constraint firstItem="FAX-bG-PcP" firstAttribute="leading" secondItem="aZA-d3-BNN" secondAttribute="leading" id="elV-zk-bIm"/>
+                        <constraint firstItem="NiE-t3-cCH" firstAttribute="leading" secondItem="YIh-6E-DhR" secondAttribute="leading" id="mWf-xf-U2A"/>
+                        <constraint firstItem="NiE-t3-cCH" firstAttribute="bottom" secondItem="YIh-6E-DhR" secondAttribute="bottom" id="q7F-aM-tET"/>
+                        <constraint firstItem="NiE-t3-cCH" firstAttribute="top" secondItem="YIh-6E-DhR" secondAttribute="top" id="wpf-a8-yA9"/>
+                        <constraint firstAttribute="bottom" secondItem="YIh-6E-DhR" secondAttribute="bottom" constant="12" id="xt7-y2-58s"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aZA-d3-BNN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ro1-Re-l04"/>
+                <constraint firstItem="aZA-d3-BNN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YTB-3T-F9C"/>
+                <constraint firstAttribute="bottom" secondItem="aZA-d3-BNN" secondAttribute="bottom" id="kVP-hR-TxR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aZA-d3-BNN" secondAttribute="trailing" id="qRa-ve-l6N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationViewWidthConstraint" destination="kC6-uk-2iy" id="MkV-IC-lZK"/>
+                <outlet property="contentView" destination="aZA-d3-BNN" id="f1S-fD-Q4t"/>
+                <outlet property="dismissAnimationView" destination="NiE-t3-cCH" id="Fub-M1-pQx"/>
+                <outlet property="dismissButton" destination="YIh-6E-DhR" id="D3E-G8-ItE"/>
+                <outlet property="messageLabel" destination="Uvz-23-ofh" id="gBc-XW-Rr2"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-203.80434782608697"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="YIh-6E-DhR">
+            <size key="intrinsicContentSize" width="48" height="29"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="driver_cancel_image" width="61.333332061767578" height="61.333332061767578"/>
+    </resources>
+</document>

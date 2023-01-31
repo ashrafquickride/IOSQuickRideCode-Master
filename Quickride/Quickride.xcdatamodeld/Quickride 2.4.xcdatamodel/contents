@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Conversation" syncable="YES">
+        <attribute name="chatTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="destId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="msgType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sourceId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sourceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EventService" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupChatMessage" syncable="YES">
+        <attribute name="chatTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="groupchatmessgeid" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonenumber" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserNotification" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconUri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActionRequired" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isActionTaken" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isBigPictureRequired" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="msgClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgObjectJson" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notificationId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserRecentLocation" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recentAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentAddressName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentLocationId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Conversation" positionX="288" positionY="162" width="128" height="210"/>
+        <element name="EventService" positionX="288" positionY="162" width="128" height="75"/>
+        <element name="UserNotification" positionX="279" positionY="162" width="128" height="255"/>
+        <element name="UserRecentLocation" positionX="288" positionY="162" width="128" height="120"/>
+        <element name="GroupChatMessage" positionX="342" positionY="243" width="128" height="135"/>
+    </elements>
+</model>

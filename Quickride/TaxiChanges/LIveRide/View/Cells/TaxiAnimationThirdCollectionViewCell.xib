@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TaxiAnimationThirdCollectionViewCell" id="gTV-IL-0wX" customClass="TaxiAnimationThirdCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtQ-xH-6cw">
+                        <rect key="frame" x="7" y="3" width="254" height="148"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxiFare_img" translatesAutoresizingMaskIntoConstraints="NO" id="aeo-X5-htK">
+                                <rect key="frame" x="134" y="20" width="112" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="0rq-DW-yy2"/>
+                                    <constraint firstAttribute="width" constant="112" id="NeM-CO-JmA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why Quick Ride Taxi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faq-Md-QFl">
+                                <rect key="frame" x="20" y="20" width="94" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With Quick Ride you get 5% flat off on outstation taxi booking. Assured good quality vehicles and great drivers." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXU-NP-YNt">
+                                <rect key="frame" x="20" y="44" width="94" height="90"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.023529411764705882" alpha="0.91995256309999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tXU-NP-YNt" firstAttribute="leading" secondItem="faq-Md-QFl" secondAttribute="leading" id="7bf-Aw-hpe"/>
+                            <constraint firstItem="faq-Md-QFl" firstAttribute="leading" secondItem="XtQ-xH-6cw" secondAttribute="leading" constant="20" id="8Nc-Bz-VAW"/>
+                            <constraint firstItem="aeo-X5-htK" firstAttribute="trailing" secondItem="XtQ-xH-6cw" secondAttribute="trailingMargin" id="8Rk-RD-iWq"/>
+                            <constraint firstItem="aeo-X5-htK" firstAttribute="leading" secondItem="faq-Md-QFl" secondAttribute="trailing" constant="20" id="LUX-jD-cxp"/>
+                            <constraint firstItem="tXU-NP-YNt" firstAttribute="top" secondItem="faq-Md-QFl" secondAttribute="bottom" constant="5" id="Nxy-OM-eJL"/>
+                            <constraint firstItem="aeo-X5-htK" firstAttribute="centerY" secondItem="XtQ-xH-6cw" secondAttribute="centerY" id="e9F-pO-CIm"/>
+                            <constraint firstItem="aeo-X5-htK" firstAttribute="top" secondItem="faq-Md-QFl" secondAttribute="top" id="fst-Bd-va5"/>
+                            <constraint firstItem="tXU-NP-YNt" firstAttribute="trailing" secondItem="faq-Md-QFl" secondAttribute="trailing" id="lnK-Dq-Ruw"/>
+                            <constraint firstItem="faq-Md-QFl" firstAttribute="top" secondItem="XtQ-xH-6cw" secondAttribute="top" constant="20" id="nnP-TO-MyX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XtQ-xH-6cw" secondAttribute="bottom" constant="3" id="J6M-Ff-wyQ"/>
+                <constraint firstItem="XtQ-xH-6cw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="cFF-OV-V56"/>
+                <constraint firstItem="XtQ-xH-6cw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="eVz-tu-mPE"/>
+                <constraint firstAttribute="trailing" secondItem="XtQ-xH-6cw" secondAttribute="trailing" constant="7" id="k8p-aN-fCs">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="ke" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+            </constraints>
+            <size key="customSize" width="268" height="154"/>
+            <point key="canvasLocation" x="160.86956521739131" y="96.428571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="taxiFare_img" width="40" height="28.5"/>
+    </resources>
+</document>

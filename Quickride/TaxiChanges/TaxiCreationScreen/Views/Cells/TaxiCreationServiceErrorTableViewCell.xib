@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="288" id="KGk-i7-Jjw" customClass="TaxiCreationServiceErrorTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="288"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="288"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxi_service_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-Dc-kPN">
+                        <rect key="frame" x="62" y="5" width="250" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="9Zm-Qn-Fa6"/>
+                            <constraint firstAttribute="width" constant="250" id="RqY-73-PUm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops! we can't give you instant confirmation on this route" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKe-pg-hqn">
+                        <rect key="frame" x="30" y="135" width="314" height="38.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please call customer support  team to get more information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuN-GC-TqK">
+                        <rect key="frame" x="30" y="183.5" width="314" height="33"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9G-or-lfC" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="62" y="231.5" width="250" height="40"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="VLB-43-SK5"/>
+                            <constraint firstAttribute="height" constant="40" id="zOL-8m-Zeg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="22"/>
+                        <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="callButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DFa-4f-R7N"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ride_match_call_icon" translatesAutoresizingMaskIntoConstraints="NO" id="BWd-Bp-uqO">
+                        <rect key="frame" x="97" y="241.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3F1-2t-uq2"/>
+                            <constraint firstAttribute="height" constant="20" id="a9K-YM-vIh"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6hQ-Dc-kPN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2rQ-45-Fmi"/>
+                    <constraint firstItem="p9G-or-lfC" firstAttribute="centerX" secondItem="QuN-GC-TqK" secondAttribute="centerX" id="7si-hR-eIp"/>
+                    <constraint firstAttribute="bottom" secondItem="p9G-or-lfC" secondAttribute="bottom" constant="16.5" id="FPV-UR-5tV"/>
+                    <constraint firstItem="QuN-GC-TqK" firstAttribute="leading" secondItem="XKe-pg-hqn" secondAttribute="leading" id="Fgh-F5-spN"/>
+                    <constraint firstItem="QuN-GC-TqK" firstAttribute="top" secondItem="XKe-pg-hqn" secondAttribute="bottom" constant="10" id="Nn9-tY-shr"/>
+                    <constraint firstItem="QuN-GC-TqK" firstAttribute="trailing" secondItem="XKe-pg-hqn" secondAttribute="trailing" id="Qxv-xh-ne9"/>
+                    <constraint firstAttribute="trailing" secondItem="XKe-pg-hqn" secondAttribute="trailing" constant="30" id="REt-Oe-325"/>
+                    <constraint firstItem="6hQ-Dc-kPN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="W16-sF-J0f"/>
+                    <constraint firstItem="XKe-pg-hqn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="eFZ-BF-757"/>
+                    <constraint firstItem="p9G-or-lfC" firstAttribute="top" secondItem="QuN-GC-TqK" secondAttribute="bottom" constant="15" id="eSL-DU-XXv"/>
+                    <constraint firstItem="p9G-or-lfC" firstAttribute="leading" secondItem="BWd-Bp-uqO" secondAttribute="trailing" constant="-55" id="rVa-1W-Ce8"/>
+                    <constraint firstItem="BWd-Bp-uqO" firstAttribute="centerY" secondItem="p9G-or-lfC" secondAttribute="centerY" id="u8Z-Je-Ya9"/>
+                    <constraint firstItem="XKe-pg-hqn" firstAttribute="top" secondItem="6hQ-Dc-kPN" secondAttribute="bottom" constant="10" id="zTL-UP-6wY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="callButton" destination="p9G-or-lfC" id="Gko-Tg-dWu"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="197.54464285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="p9G-or-lfC">
+            <size key="intrinsicContentSize" width="30" height="43"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ride_match_call_icon" width="14" height="14"/>
+        <image name="taxi_service_icon" width="190.5" height="110"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

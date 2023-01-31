@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="SwitchRiderTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-Q3-APc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMb-E9-Ce8">
+                                <rect key="frame" x="20" y="0.0" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p1R-4a-I2e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Switch Ride Giver">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchRideTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3U5-66-aAh"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QBm-D9-hyj" userLabel="passengersCollectionView">
+                                <rect key="frame" x="20" y="50" width="300" height="94"/>
+                                <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="hVi-WW-Pwa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="9vV-nD-5pM">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QBm-D9-hyj" firstAttribute="top" secondItem="VMb-E9-Ce8" secondAttribute="bottom" id="8tq-w1-2bA"/>
+                            <constraint firstAttribute="bottom" secondItem="QBm-D9-hyj" secondAttribute="bottom" id="dTQ-GX-ZwF"/>
+                            <constraint firstItem="VMb-E9-Ce8" firstAttribute="top" secondItem="Dec-Q3-APc" secondAttribute="top" id="e3d-LF-c2y"/>
+                            <constraint firstItem="VMb-E9-Ce8" firstAttribute="leading" secondItem="Dec-Q3-APc" secondAttribute="leading" constant="20" id="mlQ-xo-La9"/>
+                            <constraint firstItem="QBm-D9-hyj" firstAttribute="trailing" secondItem="VMb-E9-Ce8" secondAttribute="trailing" id="uMO-rW-uaD"/>
+                            <constraint firstAttribute="trailing" secondItem="VMb-E9-Ce8" secondAttribute="trailing" id="ugc-wG-OkL"/>
+                            <constraint firstItem="QBm-D9-hyj" firstAttribute="leading" secondItem="VMb-E9-Ce8" secondAttribute="leading" id="wkF-iG-Jrr"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHg-cO-iFh">
+                        <rect key="frame" x="0.0" y="164" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="ewQ-Bl-Alu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cHg-cO-iFh" secondAttribute="trailing" id="3HZ-mp-Lse"/>
+                    <constraint firstAttribute="bottom" secondItem="cHg-cO-iFh" secondAttribute="bottom" id="ATf-Nr-RKp"/>
+                    <constraint firstItem="Dec-Q3-APc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dq5-YD-j4Q"/>
+                    <constraint firstItem="cHg-cO-iFh" firstAttribute="top" secondItem="Dec-Q3-APc" secondAttribute="bottom" constant="20" id="bko-dD-QnQ"/>
+                    <constraint firstItem="cHg-cO-iFh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fKd-9q-Qzp"/>
+                    <constraint firstItem="Dec-Q3-APc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xA1-YJ-fHA"/>
+                    <constraint firstAttribute="trailing" secondItem="Dec-Q3-APc" secondAttribute="trailing" id="xyf-cE-vwF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="switchRiderCollectionView" destination="QBm-D9-hyj" id="LGQ-MA-eu2"/>
+                <outlet property="switchRiderCollectionViewHeightConstraint" destination="hVi-WW-Pwa" id="JuT-NO-uvh"/>
+                <outlet property="switchRiderView" destination="Dec-Q3-APc" id="Q5E-67-FJ8"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="118.19196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="BillRideTakersTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46 Points Earned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZz-UK-bDX">
+                        <rect key="frame" x="20" y="11" width="127" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTm-yW-FF1">
+                        <rect key="frame" x="20" y="31" width="40" height="29"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <state key="normal" title="paytm"/>
+                        <connections>
+                            <action selector="riderWalletButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0dG-Sn-TyA"/>
+                            <action selector="viewfarePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="z8C-64-S7r"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyp-fE-sn7">
+                        <rect key="frame" x="250" y="0.0" width="125" height="64"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoc-a1-emM">
+                                <rect key="frame" x="30" y="3.5" width="49" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="93h-8S-0Zm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title=" Breakup"/>
+                                <connections>
+                                    <action selector="viewfarePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bcK-Kh-oxG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow_blue" translatesAutoresizingMaskIntoConstraints="NO" id="3Ha-4H-Vzq">
+                                <rect key="frame" x="87" y="13" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="2kQ-yt-jwA"/>
+                                    <constraint firstAttribute="height" constant="16" id="k0w-FH-Nrc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ha-4H-Vzq" firstAttribute="centerY" secondItem="hoc-a1-emM" secondAttribute="centerY" id="5jK-Lz-f6X"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ha-4H-Vzq" secondAttribute="trailing" constant="22" id="YoJ-D4-5Vv"/>
+                            <constraint firstAttribute="width" constant="125" id="iOa-Yz-J3E"/>
+                            <constraint firstItem="3Ha-4H-Vzq" firstAttribute="leading" secondItem="hoc-a1-emM" secondAttribute="trailing" constant="8" symbolic="YES" id="m1b-tl-h4J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IZz-UK-bDX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Q39-LN-9yx"/>
+                    <constraint firstItem="wyp-fE-sn7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y98-Fg-Lg9"/>
+                    <constraint firstAttribute="bottom" secondItem="HTm-yW-FF1" secondAttribute="bottom" constant="4" id="YaU-cB-qKU"/>
+                    <constraint firstItem="hoc-a1-emM" firstAttribute="centerY" secondItem="IZz-UK-bDX" secondAttribute="centerY" id="aty-ya-m9w"/>
+                    <constraint firstItem="IZz-UK-bDX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lDy-EY-ygh"/>
+                    <constraint firstItem="IZz-UK-bDX" firstAttribute="leading" secondItem="HTm-yW-FF1" secondAttribute="leading" id="obp-4q-A04"/>
+                    <constraint firstAttribute="trailing" secondItem="wyp-fE-sn7" secondAttribute="trailing" id="vtU-d1-EPL"/>
+                    <constraint firstItem="HTm-yW-FF1" firstAttribute="top" secondItem="IZz-UK-bDX" secondAttribute="bottom" id="ypT-Mi-hU8"/>
+                    <constraint firstAttribute="bottom" secondItem="wyp-fE-sn7" secondAttribute="bottom" id="z3H-2c-LpM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dragDownAndUpImageView" destination="3Ha-4H-Vzq" id="3sk-ca-1bB"/>
+                <outlet property="pointsShowingLabel" destination="IZz-UK-bDX" id="c4G-Uz-wrh"/>
+                <outlet property="riderWalletButton" destination="HTm-yW-FF1" id="qRy-Fd-auL"/>
+                <outlet property="viewFareBreakUpBtn" destination="hoc-a1-emM" id="hlT-hV-Bli"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down_arrow_blue" width="8" height="8"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

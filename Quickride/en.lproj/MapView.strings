@@ -1,0 +1,129 @@
+
+/* Class = "UILabel"; text = "12 seats"; ObjectID = "6Hy-dK-CHi"; */
+"6Hy-dK-CHi.text" = "12 seats";
+
+/* Class = "UILabel"; text = "Fare/Km"; ObjectID = "6Ti-oc-jfr"; */
+"6Ti-oc-jfr.text" = "Fare/Km";
+
+/* Class = "UILabel"; text = "Make & Category"; ObjectID = "6pU-G7-sGV"; */
+"6pU-G7-sGV.text" = "Make & Category";
+
+/* Class = "UILabel"; text = "Model"; ObjectID = "8BQ-CN-hKK"; */
+"8BQ-CN-hKK.text" = "Model";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "9Cx-xV-cwa"; */
+"9Cx-xV-cwa.text" = "30";
+
+/* Class = "UILabel"; text = "Enter start Address"; ObjectID = "EsA-MT-GfH"; */
+"EsA-MT-GfH.text" = "Enter start Address";
+
+/* Class = "UILabel"; text = "5 (444)"; ObjectID = "FSj-I2-EFu"; */
+"FSj-I2-EFu.text" = "5 (444)";
+
+/* Class = "UILabel"; text = "Seats"; ObjectID = "G74-ke-3DI"; */
+"G74-ke-3DI.text" = "Seats";
+
+/* Class = "UINavigationItem"; title = "New Ride"; ObjectID = "H0J-JF-G1b"; */
+"H0J-JF-G1b.title" = "New Ride";
+
+/* Class = "UITextField"; placeholder = "Ex. Toyota Etios"; ObjectID = "L2d-LA-zgq"; */
+"L2d-LA-zgq.placeholder" = "Ex. Toyota Etios";
+
+/* Class = "UILabel"; text = "Points"; ObjectID = "LGW-y9-equ"; */
+"LGW-y9-equ.text" = "Points";
+
+/* Class = "UINavigationItem"; title = "New Ride"; ObjectID = "LeB-vJ-H6e"; */
+"LeB-vJ-H6e.title" = "New Ride";
+
+/* Class = "UILabel"; text = "Seats required for this ride"; ObjectID = "Ole-a5-ume"; */
+"Ole-a5-ume.text" = "Seats required for this ride";
+
+/* Class = "UILabel"; text = "Started"; ObjectID = "P5f-yd-y7F"; */
+"P5f-yd-y7F.text" = "Started";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "PjF-hC-ZV2"; */
+"PjF-hC-ZV2.normalTitle" = "CANCEL";
+
+/* Class = "UILabel"; text = "No sharing options?"; ObjectID = "QJO-W0-8Ly"; */
+"QJO-W0-8Ly.text" = "No sharing options?";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Qir-2y-HXg"; */
+"Qir-2y-HXg.normalTitle" = "CANCEL";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "REK-dX-lsI"; */
+"REK-dX-lsI.text" = "From";
+
+/* Class = "UIButton"; normalTitle = "Create Ride"; ObjectID = "RLd-L0-11t"; */
+"RLd-L0-11t.normalTitle" = "Create Ride";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "SEA-Sj-l9c"; */
+"SEA-Sj-l9c.text" = "5";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "SWN-C2-KKy"; */
+"SWN-C2-KKy.normalTitle" = "CONFIRM";
+
+/* Class = "UILabel"; text = "Seats"; ObjectID = "SXc-us-HXl"; */
+"SXc-us-HXl.text" = "Seats";
+
+/* Class = "UISegmentedControl"; Sob-00-bNr.segmentTitles[0] = "Offer Ride"; ObjectID = "Sob-00-bNr"; */
+"Sob-00-bNr.segmentTitles[0]" = "Offer Ride";
+
+/* Class = "UISegmentedControl"; Sob-00-bNr.segmentTitles[1] = "Find Ride"; ObjectID = "Sob-00-bNr"; */
+"Sob-00-bNr.segmentTitles[1]" = "Find Ride";
+
+/* Class = "UILabel"; text = "Reg No"; ObjectID = "YCZ-S9-H63"; */
+"YCZ-S9-H63.text" = "Reg No";
+
+/* Class = "UILabel"; text = "AM"; ObjectID = "bLX-Ng-X3Q"; */
+"bLX-Ng-X3Q.text" = "AM";
+
+/* Class = "UILabel"; text = "Enter end address"; ObjectID = "bQE-zM-9nU"; */
+"bQE-zM-9nU.text" = "Enter end address";
+
+/* Class = "UILabel"; text = "To"; ObjectID = "e9P-5m-nCP"; */
+"e9P-5m-nCP.text" = "To";
+
+/* Class = "UILabel"; text = "Model"; ObjectID = "fAu-X2-WuL"; */
+"fAu-X2-WuL.text" = "Model";
+
+/* Class = "UIButton"; normalTitle = "Edit Route"; ObjectID = "g4y-wd-Nkg"; */
+"g4y-wd-Nkg.normalTitle" = "Edit Route";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gFg-MO-0r6"; */
+"gFg-MO-0r6.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Enter end address"; ObjectID = "iih-qB-IWx"; */
+"iih-qB-IWx.text" = "Enter end address";
+
+/* Class = "UILabel"; text = "12:00"; ObjectID = "ikP-gS-1rP"; */
+"ikP-gS-1rP.text" = "12:00";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "j6o-nb-2SO"; */
+"j6o-nb-2SO.normalTitle" = "CONFIRM";
+
+/* Class = "UILabel"; text = "Select route"; ObjectID = "qem-ry-R1l"; */
+"qem-ry-R1l.text" = "Select route";
+
+/* Class = "UILabel"; text = "Enter start Address"; ObjectID = "qra-JT-P78"; */
+"qra-JT-P78.text" = "Enter start Address";
+
+/* Class = "UIButton"; normalTitle = "Ride Now"; ObjectID = "rJt-Hd-C2g"; */
+"rJt-Hd-C2g.normalTitle" = "POST RIDE";
+
+/* Class = "UILabel"; text = "12"; ObjectID = "v6Q-6l-rWe"; */
+"v6Q-6l-rWe.text" = "12";
+
+/* Class = "UILabel"; text = "Reg No."; ObjectID = "v8Q-jW-r2I"; */
+"v8Q-jW-r2I.text" = "Reg No.";
+
+/* Class = "UILabel"; text = "Fare/Km"; ObjectID = "vXo-wx-wOE"; */
+"vXo-wx-wOE.text" = "Fare/Km";
+
+/* Class = "UILabel"; text = "Find Ride"; ObjectID = "wO9-cD-a7U"; */
+"wO9-cD-a7U.text" = "Find Ride";
+
+/* Class = "UILabel"; text = "Post your ride to let others find you"; ObjectID = "xW5-50-G5A"; */
+"xW5-50-G5A.text" = "Post your ride to let others find you";
+
+/* Class = "UILabel"; text = "Offer Ride"; ObjectID = "ydw-YP-1AD"; */
+"ydw-YP-1AD.text" = "Offer Ride";

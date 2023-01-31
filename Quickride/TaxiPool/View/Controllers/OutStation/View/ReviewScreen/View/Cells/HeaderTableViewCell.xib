@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderTableViewCell" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-pJ-nFf">
+                        <rect key="frame" x="20" y="10" width="270" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="0HB-SE-ghX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPt-zl-msr">
+                        <rect key="frame" x="300" y="22.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnl-Fe-XKr">
+                        <rect key="frame" x="20" y="40" width="280" height="9"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" white="0.4099252340676901" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EPt-zl-msr" firstAttribute="leading" secondItem="n0g-pJ-nFf" secondAttribute="trailing" constant="10" id="5EH-ze-ceC"/>
+                    <constraint firstItem="Tnl-Fe-XKr" firstAttribute="top" secondItem="n0g-pJ-nFf" secondAttribute="bottom" constant="5" id="A8o-3u-jmS"/>
+                    <constraint firstItem="n0g-pJ-nFf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FDU-2S-Pia"/>
+                    <constraint firstItem="Tnl-Fe-XKr" firstAttribute="trailing" secondItem="EPt-zl-msr" secondAttribute="trailing" id="OyK-VS-wkT"/>
+                    <constraint firstAttribute="trailing" secondItem="EPt-zl-msr" secondAttribute="trailing" constant="20" id="Pz1-eR-GJO"/>
+                    <constraint firstItem="EPt-zl-msr" firstAttribute="centerY" secondItem="n0g-pJ-nFf" secondAttribute="centerY" id="TOS-Qi-Eyc"/>
+                    <constraint firstItem="Tnl-Fe-XKr" firstAttribute="leading" secondItem="n0g-pJ-nFf" secondAttribute="leading" id="vt7-nz-9gO"/>
+                    <constraint firstAttribute="bottom" secondItem="Tnl-Fe-XKr" secondAttribute="bottom" constant="5" id="vvb-sI-hbi"/>
+                    <constraint firstItem="n0g-pJ-nFf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xM8-PH-H7g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentview" destination="H2p-sc-9uM" id="Ul4-Ul-fgk"/>
+                <outlet property="headerRightDetailLabel" destination="EPt-zl-msr" id="GwH-AZ-7VP"/>
+                <outlet property="headerTitleLabel" destination="n0g-pJ-nFf" id="6lx-CD-oLu"/>
+                <outlet property="subtitleLabel" destination="Tnl-Fe-XKr" id="w9r-8q-8PH"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="99.107142857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

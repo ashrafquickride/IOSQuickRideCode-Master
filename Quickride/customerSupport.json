@@ -1,0 +1,400 @@
+{
+  "customerSupportElement": {
+    "tittle": "Help",
+    "customerSupportElement": [
+      {
+        "tittle": "Signing Up, Account  & Login",
+        "customerSupportElement": [
+          {
+            "tittle": "How to sign-up for Quick Ride App?",
+            "message": "Download the Quick Ride App from Google Play store or iOS store depending on your device.\n\nCreating a Quick Ride account requires a mobile number and a valid email address\n\nComplete the remaining signup process with your personal and professional details.\n\nOnce you’ve entered all the required details\n\n● We send a text SMS to verify your mobile number\n\nNow you are ready to use Quick Ride with default settings.\n\nFor a quick tour through the app, you can check our Demo Videos.\n\nHappy Quick Riding "
+          },
+          {
+            "tittle": "Activation Code not received",
+            "message": "Please make sure you do the following:\n\n● You entered your number correctly. Do not put any extra 0’s before your number.\n● Check your SMS credits and payments. Confirm with your service provider that you are\nable to receive SMS messages and/or phone calls.\n● Try the resend option\n● Wait till you receive SMS. This may take up to five minutes, so please be patient.\n\nIf you still haven’t received the code please write to support@quickride.in and we will send the activation code."
+          },
+          {
+            "tittle": "I am not able to Log in",
+            "message": "If you can't sign in to your account, check for these common problems:\n\n● Is your mobile number entered correctly on the sign in page? Check for errors and try again.\n● Did you enter the correct password?\n\nIf none of the above mentioned helps you logging in, then, please write an e-mail to support@quickride.in with your registered email address.\n\nOur support executives will get back to you.\n"
+          },
+          {
+            "tittle": "Where should I enter the referral code?",
+            "message": "Right after you download Quick Ride you will be asked to register.\n\nWhile signing up - on the first page, click I have a promo code.\n\nShare the details of the user who referred you to Quick Ride.\n\nReferral/promo code can only be entered while registering for the app.\n\nYou cannot add the promo code after the registration or at any other stage."
+          },
+          {
+            "tittle": "My Account has been suspended",
+            "message": "Your account can be suspended from Quick Ride network for below-mentioned reasons:\n\n● Complaints received from your peers\n● Continuous low rating received for your rides\n\nThese decisions are always taken after careful consideration of all information available to us.\n\nIf however, you do not agree with this decision, you can provide further information at\nsupport@quickride.in\n\nWe will review this and reactivate your account."
+          },
+          {
+            "tittle": "How do I update my Contact Number",
+            "message": "To update your phone number for Quick Ride account:\n\n1. Select SETTINGS in the main app menu\n2. Click ACCOUNT under the Settings option\n3. Click on CHANGE against Contact Number\n4. Enter your new number and click on CONFIRM\n\nYour account data including balance and contacts will be automatically available on the updated number.\n\nYou can now log in with the new mobile number\n\nNOTE:\nThe new mobile number should not be already registered with Quick Ride.\n\nIf it is already registered for a separate account, you then cannot update your contact number.\n\nWe cannot merge two separate Quick Ride accounts."
+          },
+          {
+            "tittle": "I want to Deactivate /Suspend my account",
+            "message": "We are disappointed to learn that you have decided to deactivate your Quick Ride account.\n\nPlease do let us know in case you have any service related. We can work in resolving the issue that you have faced.\n\nIn case you still want to deactivate/suspend your account, please follow the below steps:\n\n● Go to SETTINGS and click on ACCOUNT option\n● Click on SUSPEND ACCOUNT\n● Enter the reason and click on CONFIRM"
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Profile",
+        "customerSupportElement": [
+          {
+            "tittle": "Why is the verification required? ",
+            "message": "Verifying your identity is crucial as it helps build mutual trust with the co-passengers.\nThey are aware of your organization and have the freedom to access your working profile shared with Quick Ride.\n\nSteps to complete your user profile:\n\nAfter sign up, you are expected to complete your User Profile\n\nThis includes updating a formal Profile Picture, Designation & Organisation Email ID.\n\nEnter the official Email ID of the registered domain of your company.\n\nA verification link is sent to the official Email ID, click on the VERIFY NOW hyperlink to complete the verification process."
+          },
+          {
+            "tittle": "Why do I need to share my official email id for verification?",
+            "message": "Verifying you against your official mail ID helps to ensure your safety and that of fellow Quick Riders.\n\nThis level of verification is purely intended to ensure that you belong to a legit professional network.\n\nYou can rest assured that the details you share with us will remain private since we are bound by our privacy policy.\n\nWe assure you complete confidentiality. This app does not allow general communications/offers to your official email id.\n\nYour official email id is sourced purely for verification purpose."
+          },
+          {
+            "tittle": "I do not have a professional email address. How do I verify?",
+            "message": "Quick Ride allows users to verify with Aadhar card too. You can follow the below mentioned steps for verification using the Aadhar card:\n\n● Go to your PROFILE\n● Click on ‘VERIFY NOW’\n● Select ‘VERFIY AADHAAR’\n● Accept the Terms and Conditions and click START\n● You can either select Mobile number or Email id\n● Click on Proceed\n● Enter the OTP received through the channel selected (Mobile or Email)\n● Select Aadhar\n● You can select from the following option\n    ○ Using Offline Aadhar\n    ○ Scan the Aadhar QR Code\n    ○ Scan full Aadhar Card\n● Depending upon the option selected, you can continue with the verification\n● Follow the instructions for the selected choice"
+          },
+          {
+            "tittle": "Why should I set my formal picture for verification?",
+            "message": "Profile picture helps build mutual trust with the co-passengers\n\nUsers with a profile picture can be trusted than the profiles which do not contain one.\n\nWe request you to get yourselves verified by setting your formal picture and organization mail ID.\n\nYou can be rest assured that the details you share with us will be safe and we are bound by the privacy policy.\n\nWe do not share any personal information provided by our users with third-party sources/channels."
+          },
+          {
+            "tittle": "How do I change my personal as well as professional profile details? How do I update my new company details on the app? ",
+            "message": "In case you have switched your organization or there is a change in the designation, you can update these changes in the app:\n\n● Go to your PROFILE\n● Click on EDIT\n● Update the current changes/information\n● Click SAVE once you are done"
+          },
+          {
+            "tittle": "I have already verified my official email ID why do I need to re-verify?",
+            "message": "Considering employees change jobs and professions, we conduct frequent verifications.\n\nTo keep our verification status in sync, we organize re-verification periodically typically once in 6 months.\n\nIf the user fails to re-verify on-time, he/she will lose verification status.\n\nThe re-verification reminder is sent to your official email ID much before the expiry date."
+          },
+          {
+            "tittle": "I did not receive the verification email reminder",
+            "message": "Ensure that the organizational details entered are correct\n\nCheck the email ID to confirm whether the domain is a registered company domain.\n\nIf you still haven’t received the reminder, it might be due to one of the following reasons\n\n1. Sometimes the mail might have gone into your spam folder. Please check the junk/spam folders.\n2. If your company domain is not present in the predefined list, then the details will be verified and registered. This verification may take 48 hours, so please be patient.\n3. Generic or group email ID or email ID from domains like Yahoo, Rediff, Gmail, etc instead of your company domain will not be considered for the verification process.\n4. Check with your company IT Team, if they are filtering out emails from @quickride.in. You can request your IT Team to remove us from the blocked domain list."
+          },
+          {
+            "tittle": "Verification Link not working/External Links blocked in my organization",
+            "message": "If the link shared on the organizational mail, please follow these steps.\n\n● Enter the OTP shared in the e-mail by following the below process to get verified\n● Click on your PROFILE\n● Select VERIFY NOW\n● ENTER THE OTP"
+          },
+          {
+            "tittle": "I don’t have an official email id, how to verify my profile?",
+            "message": "Currently, we rely on an organization email ID for profile verification.\n\nWe have however initiated Aadhaar based verification. You can verify against your Aadhar details.\n\nKindly wait till then to get your profile verified.\n\nMeanwhile, you can continue using Quick Ride as an unverified user."
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Payments",
+        "customerSupportElement": [
+          {
+            "tittle": "How is ride fare calculated",
+            "message": "Fare is calculated for the distance between pick up to drop point.\n\nPick up and drop points of ride taker are always on Riders route.\n\nFare = Distance * Fare per KM set by Rider (Rider can set fare between 0-5 points per km, Default is 3.5 pts per km)\n\nThere is a long distance discount of 10% for travel > 10 Kms in slabs of 10 Kms (the long distance\nis calculated in the slab of 10 KM)\n\nSince different rides have set different points per KM, you may get varying points for the same distance.\n\nHowever, the fare is shown before joining the ride."
+          },
+          {
+            "tittle": "My amount got deducted for a ride not taken",
+            "message": "If you have changed your mind but the ride is confirmed, we request you to cancel the ride proactively to avoid charges.\n\nFor the already charged ride, you can use the following steps\n\n● Click on REFUND in your app\n● Select ‘My Rides’\n● Go to ‘Completed Rides’\n● Select the particular ride for which you have been charged\n● Rider details would be visible under this section\n● Choose REFUND option from the top right menu.\n\nYour Refund status depends upon the Ride Giver. He/she needs to approve your Refund request.\n\nIn case you do not receive your refund within 2 days of sending refund request, you can write to us at support@quickride.in"
+          },
+          {
+            "tittle": "Higher amount deducted than the usual fare",
+            "message": "The fare is calculated based on the distance between pickup and drop point chosen at the time of planning/confirming the ride.\n\nThe fare is displayed in advance before confirmation.\n\nRequest you to edit as required before joining the ride.\n\nFor the already charged ride, you can use the following option\n\nFor the already charged ride, you can use the following steps\n\n● Select ‘My Rides’\n● Go to ‘Completed Rides’\n● Select the particular ride for which you have been charged\n● Rider details would be visible under this section\n● Choose REFUND option from the top right menu.\n\nYour Refund status depends upon the Ride Giver. He/she needs to approve your Refund request.\n\nIn case you do not receive your refund within 2 days of sending refund request, you can write to us at support@quickride.in"
+          },
+          {
+            "tittle": "Missed to Pay for a Ride",
+            "message": "In case you missed the payment post ride completion you can pay using the following steps.\n\n● Select ‘My Payments’ option\n● Choose ‘Pay For a Ride’ from the top right\n● Enter the contact number of the Ride giver \n● Enter the decided fare under ‘Enter Fuel Points’\n● Brief explanation - What's this for?\n● Select ‘Transfer’"
+          },
+          {
+            "tittle": "Didn't receive payment for ride offered",
+            "message": "To process the payment automatically, we need to confirm that ride is happening as per plan.\n\nEither of the following options confirms the ride for billing:\n\n1. Rider (Vehicle owner) can say Picked up, by tapping ride takers photo in the ride view\n2. Ride taker can Check-In on the App - ride view\n\nIn the current case, you can initiate the transfer request to Ride taker by following steps\n\n● Select ‘My Payments’\n● Choose ‘Pay For a Ride’ from the top right \n● Select radio Button - RECEIVE\n● Enter/select Quick Ride registered mobile no. from list\n● Enter Amount\n● Brief explanation - What's this for?\n● Click on REQUEST & click on OK.\nA notification is sent to the user & once he/she clicks on APPROVE, the points are immediately transferred to your wallet.\n\nIn case you do not receive your refund within 2 days of sending refund request, you can write to us at support@quickride.in"
+          },
+          {
+            "tittle": "Require bill for completed rides",
+            "message": "Quick Ride enables invoice of the payment via email. You can select this setting by following steps:\n\n● Click on ‘Settings’\n● Select ‘Communication’\n● Enable receive ride trip reports\n\nFor already completed rides, you can get the bill by email through the following option:\n\n● Select ‘My Rides’\n● Click ‘Completed Rides’\n● Tap on the particular ride.\n● Choose ‘Send by Email’"
+          },
+          {
+            "tittle": "Recharged amount not credited to Quick Ride account",
+            "message": "At times it might take a few minutes to receive information from the Payment Gateway to reflect the credited amount.\n\nPlease wait for 2 hours to verify the payment status.\n\nAlso, in some cases, money might get debited from the bank but due to broken network connectivity, the payment gateway may not be able to complete the transaction fully.\n\nIn this case, the amount will be tallied and refunded by payment gateway directly to your bank account within 2-3 days.If the refund has not been processed and Quick Ride account was not credited, please send a mail to support@quickride.in along with Order ID of the transaction.\n\nWe shall check with the payment gateway dashboard and credit the amount to your account.\n\nWe assure you that all the financial transactions on Quick Ride are safe and at no point will the amount be lost.\n\nIn case of payment failure, please check your email to know about the status of the refund."
+          },
+          {
+            "tittle": "My Rider is asking for cash payment / Paytm - What should I do?",
+            "message": "Quick Ride has implemented a very professional payment system, where users need not discuss or bother about physical payments.\n\nThe application takes care of the transactions automatically.\n\nCash payment and Direct Paytm payments are strictly prohibited. We do not encourage any kind of cash or direct transactions.\nPlease pay exclusively through Quick Ride points which are fully redeemable.\n\nYou can also report such rider details to support@quickride.in and get rewarded.\n\nQuick Ride has the policy to maintain such information and the provider anonymous"
+          },
+          {
+            "tittle": "I received less than expected/normal fare",
+            "message": "There might be one or combined reasons for less payment. Please follow below:\n\n1. The difference in the pick-up or drop point: Please ensure the pickup and drop point chosen for the ride is the same as the usual point and is on the route map of the ride-giver. Please verify before accepting.\n2. You have accepted a reduced fare requested by the seeker. Both the fares are displayed on the screen to help you make an informed decision.\n3. Slab discount for long distance travel after 10 Kms.\n4. Re-check the points per km that are available in the SETTINGS."
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Redemptions",
+        "customerSupportElement": [
+          {
+            "tittle": "How do I Redeem the ride-sharing Points?",
+            "message": "We provide multiple redemption options. You can redeem the ride-sharing points through any of the desired partners from a variety of options available.\n\nTo redeem, you can follow these steps:\n\n● Go to MY PAYMENTS then Click EARNED\n● Enter the number of points you want to redeem (minimum 100 points)\n● Choose from the available redemption options \n● Enter the number of pints to redeem\n● Click CONFIRM\n\nFor a new FUEL CARD, below is the procedure:\n\nFor a TMW card\n● You can apply directly through the TMW app.\nFor an HP Card\n● Select the HP option, enter your details.\n● Click SUBMIT\n● Once the request is submitted, within 5-7 workings the days, the user will be emailed with the virtual card id\n● User needs to carry the quick ride registered mobile number, as there will be an OTP generated to confirm the transaction.\n\nNOTE:\nAll subsequent redemptions to petro card will be credited to the same petro card. A fresh petro card will not be issued for different redemptions.\n\nFor Paytm, below is the procedure:\n\n● Click for self-declaration and confirm the Paytm number.\n● The points will get redeemed to your Paytm Wallet account instantly.\n\nNOTE:\nIn a few cases, the transaction may not be picked by system for immediate processing. For such cases, we process them manually which takes around 4-5 working days.\n\nPaytm Charges 1% as service charge for redemptions. So the credited amount will be 1% less than the redeemed amount. "
+          },
+          {
+            "tittle": "How to get a Fuel Card?",
+            "message": "Petro Card is a fuel card provided to Quick Ride users for all redemption requests.\n\nYou’re eligible for a Fuel Card based on your verification status which is as follows\n\n● You’re a Verified User and have 100 Earned Points for redemption\n● You’re a Unverified User and have 500 Earned Points for redemption\nTo get your own FUEL CARD below is the procedure:\n\nFor a TMW card\n● You can apply directly through the TMW app.\nFor an HP Card\n● Select the HP option, enter your details.\n● Click SUBMIT\n● Once the request is submitted, within 5-7 workings the days, the user will be emailed with the virtual card id\n● User needs to carry the quick ride registered mobile number, as there will be an OTP generated to confirm the transaction.\n\nNOTE:\nAll subsequent redemptions to petro card will be credited to the same petro card. A fresh petro card will not be issued for different redemptions.\n\nTo redeem through Fuel Card below is the procedure:\n\n● Go to MY WALLET then Click REDEEM\n● Enter the number of points you want to redeem (minimum 100 points)\n● Choose from the available redemption options i.e Fuel Card or Paytm\n● Enter the number of pints to redeem\n● Click CONFIRM\n\nIn addition to HP and Shell, we also have paid card options from IOC.\n\n● Rs. 150 will be charged for these cards.\n● To redeem to IOC card, you can submit redemption request by choosing any existing option and send a specific request mail to support@quickride.in mentioning your preference."
+          },
+          {
+            "tittle": "Please help me with HP Fuel card Usage Instructions?",
+            "message": "For HP Fuel card usage, please follow the below instructions:\nQuick Ride provides a virtual HP card which gets linked with your registered mobile number( as shared with Quick Ride).\nYou can use the virtual card at any HPCL Retail outlet across India.\nNOTE:\nA physical HP card is not available. This is a virtual card and it provides you a cardless experience at the petrol station. We do not have an option to provide you a physical card.\n\nTo use the virtual card at the petrol station: \nYou can make the payment at the petrol station selecting the below options:\n●Cardless menu(Green Button) >> Sale >>  Product(petrol/diesel) >>CARD SALE(Not CCMS Sale) >>Mobile number(Number linked to Virtual card) >>Amount(Value of Purchase which should be lesser or equal to the card balance) >> Enter OTP(received on the mobile) >> Payment successful.\n\nNOTE:\nPlease inform the terminal operator that it is Card Sale, not CCMS sale, as the cash is already loaded to the card\n\nTo check balance:\nYou can check the balance at the petrol station only using the following options in the terminal they have\n ●Cardless menu(Green Button) >> Balance Enquiry >>  Mobile number(Number linked to Virtual card) >> Enter OTP(received on the mobile) >> Balance would be displayed and can be printed too.\n\nList of all HP Outlets that accept HP Fuel cards can be found at   https://hproroute.hpcl.co.in/ROAlongRoute/index.jsp\n\nAt HP Petrol bunk, at the Drive Track Plus Terminal, if the person does not understand, please ask for the manager at the outlet for help."
+          },
+          {
+            "tittle": "Why is my Redemption to Fuel Card not processed yet? ",
+            "message": "Quick Ride processes all Fuel card redemptions once in a week as they involve manual processing currently.\n\nIt generally takes 5 working days to reflect the balance.\n\nWe normally process all fuel card redemption requests on weekends.\n\nKindly bear with us for 1 week and if it is still not processed, you can write to support@quickride.in"
+          },
+          {
+            "tittle": "Why is my Redemption to Paytm not processed yet?",
+            "message": "Please be informed that some of the Paytm Redemption requests are not picked by the system for automatic processing.\n\nSuch redemption requests require manual processing after a review which takes up to 7 working days.\n\nThese are generally less than 1%.\n\nWe generally process all such requests on weekends after manual review.\n\nKindly bear with us for 1 week and if they are still not processed, you can write to\nsupport@quickride.in"
+          },
+          {
+            "tittle": "Please help me with Shell Fuel Card Usage Instructions?",
+            "message": "To set PIN for Shell Card?\n\n● Visit petrol station where the site staff will help you in setting the password.\n● The OTP/PIN would be sent on your mobile number.\n● Please call Shell helpdesk for any issues at petrol station.\n\nHow can I view details of my Shell card on portal?\n\n● Please go to https://shell.in.worldline.com/SHELLPortal/shellLogin\n● Select “CASH CARD CORP” in first drop down\n● Provide your mobile number in Mobile Number Field\n● Provide password\n\nHow do I connect with Shell customer care?\n\n● For any query or issue at petrol station, please call Shell customer care on:1800 42503000 (toll free)"
+          },
+          {
+            "tittle": "How to check Redemption Status?",
+            "message": "You can check your redemption status through the following steps:\n\n● Go to MY WALLET\n● Select REDEEM\n● Now, click on REDEMPTION\n\nIf your redemption status is in the processed stage then your points are already added to your fuel card."
+          },
+          {
+            "tittle": "How to register my existing fuel card?",
+            "message": "Initially, we had this facility available for Shell Fuel cards.\n\nHowever, since Shell has migrated to a new system as a result of which, a pre-owned card cannot be registered and the amount cannot be loaded to it.\n\nWe may not be able to issue you a new Shell Card as Shell does not allow more than 1 card to be registered under the same mobile number.\n\nWe, thus, recommend applying for a TMW card."
+          },
+          {
+            "tittle": "I have recharged by mistake. Can I get a refund?",
+            "message": "No refund is applicable in such a scenario. You will have to take/give rides to redeem the points."
+          },
+          {
+            "tittle": "I’m shifting to a new location. Can I redeem?",
+            "message": "You will have to take/give rides to redeem the points. Quick Ride is available in all mjor metro cities - Banaglore, Hyderabad, Chennai, Kolkata, Chennai, Pune, Delhi NCR , Kerala and Mumbai.\n\nWe are sure you will find a Quick Ride wherever you go!"
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Ride Sharing",
+        "customerSupportElement": [
+          {
+            "tittle": "How to share a ride? How to find a ride?",
+            "message": "For ridesharing, you could either find or offer a ride through the following process:\n\n● Go to NEW RIDE\n● Select FIND/OFFER as per your requirement\n● Enter TO and FROM Locations\n● Mention TIME and DATE\n● POST your requirements\n● Choose the best-suited option from the MATCHING OPTIONS\n\nYour ride is confirmed only when ride invite has been accepted.\n\nRide seeker needs to CHECK IN to the ride upon boarding the vehicle and CHECK OUT while deboarding\n\nAlternatively, the ride-giver could also tap PICKED UP and DROPPED OFF by tapping on the particular ride seekers profile details for the points(ride fare) to transfer to the ride giver’s wallet.\n\nOnce your Ride is confirmed, the Ride Giver then needs to START the ride by swiping START RIDE."
+          },
+          {
+            "tittle": "How to set a recurring ride?",
+            "message": "For the regular home to office and office to home travels, it is suggested to set up recurring rides.\n\nRecurring ride feature allows users to automatically create rides for their frequent route.\n\nThe feature also allows the flexibility to cancel or reschedule your ride for a particular day.\n\nTo set recurring ride:\n\n● Go to My Rides \n● Select Recurring \n● Select the ride that your want to amke your recurring ride\n● Tap ‘Create Recurring Ride’, Tap on ‘Find Ride’ or ‘Offer Ride’, Enter Start Location, End Locationa and Start time for each \n\n Tap on ‘Post Recurring Ride’."
+          },
+          {
+            "tittle": "Route Customization",
+            "message": "You can choose the route you would like to travel with on Quick Ride.\n\nUsers have the flexibility to select alternative routes as displayed by Quick Ride or define their own route as well.\n\nYou can create a customized route by following these simple steps:\n\n1. Select NEW RIDE\n2. Enter the ‘Start’ and ‘End’ location\n3. Select the ‘Date’ and ‘Time’\n4. Click on the map icon\n\nA. Option 1\n● Click on the + symbol and move the map so the pointer points to the\ndesired location.\n● Click on the + symbol and expand the map to its full capacity. This will help you select the exact location\n● Once the + sign is on the selected location, save the place.\n\nB. Option 2\n● Alternatively, you can click on the Add via points in the right order\n● Enter the location or Select the location on the MAP to get a specific location.\n● Then enter the next desired location.\n● Repeat the steps until the map is complete.\n\nNOTE:\nMake sure to carefully enter the location in the correct route sequence.\n\n    ● Click on SAVE to create the ride\n    ● Click CONTINUE to proceed\n    ● Click on POST RIDE.\n\nYou can create a recurring ride for a ride with a customized route, to avoid repeating these steps every time."
+          },
+          {
+            "tittle": "Ride fares are very high / How can I get a ride for the lesser fare?",
+            "message": "Riders are given the flexibility to set the fare between 0-6 pts/km.\nThese are almost 1/5th of cab fares.\n\nIf ride seeker still feels that the fare is higher for a particular ride, he/she can suggest a different fare and send an invite.\n\nTo bid for your own fare, follow the below steps:\n\n● Please click on Fare (when displayed in blue color) in ride match options\n● Enter your preferred fare\n● Send an invite\n\nNOTE:\n\nThe Ride Giver has the flexibility to disable Ride negotiations. If he/she has disabled the ride negotiation, ride taker in such case cannot bid for the fare."
+          },
+          {
+            "tittle": "How to change the fare for a particular ride?",
+            "message": "Ride Giver can change the fare for a particular ride before posting the ride.\n\n● Click on Vehicle details\n● Set Fuel Points/Km.\n● Enter the expected fare in the POP-up screen\n● Click on CONFIRM\n\nNOTE\n\nPlease note keeping Fuel points more than 4.0 Points/km may affect the opportunity to share the ride."
+          },
+          {
+            "tittle": "How to contact a ride partner?",
+            "message": "You can contact the rider/seeker by Call/Chat/SMS by clicking on the contact icon\n\nNOTE:\n\nMode of contact depends on the user profile settings"
+          },
+          {
+            "tittle": "Location accuracy is inaccurate / Unable to see rider location on map ",
+            "message": "The functionality of live visibility of rider on the map depends on the individual user settings such as GPS Settings, Network Settings, etc.,\n\nFor ride-givers vehicle location to be visible to you and other ride takers, certain prerequisites need to be met on the ride-givers device:\n\n1. Location services should be enabled in his/her device\n\n2. He/She should give permission to Quick Ride app to use the location service(depends on handset models)\n\n3. His/Her device, as well as your device, should be connected to a working network\n\n4. His/Her device battery level should be more than 30% (if it is less, we do not initiate location updates since this will drain the battery quickly).\n\n5. In Quick Ride app, in their ride preferences (Settings >> Ride), Location Update Accuracy setting should be Balanced or High (With High, battery and data consumption will increase drastically; so we recommend Balanced and this is also the default value)\n\n6. If his/her app is closed after he/she starts the ride (a service will, however, be running in the background) then he/she need to enable background location updates in Location Accuracy settings of the specific ride.\n\nTo enable this:\n\n● Open the ride view for the ride\n● Select Location Accuracy in the 3 dot context menu at the top right corner\n● Enable Background Location Updates. If the app is not closed, then this setting will have no consequence\n\nIf all these prerequisites are already met and you still see that his/her location is not visible to you or is not accurate, request you and ride giver to write a mail to support@quickride.in from the Help menu.\n\nWe will receive logs and we will analyze and let you know the issue. If there is any software issue we will be glad to fix it."
+          },
+          {
+            "tittle": "I am not finding matches",
+            "message": "There are various factors that go into ride matching. Some of them are listed below:\n\n1. Fare set by the rider\n2. Ride timings and ride route\n3. User settings in rider profile like ‘%’ match etc\n4. Type of vehicle\n5. Availability of ride seekers on the route\n6. Verification status. Check if it has expired recently\n\nAlternatively in order to improve the ride matches, please check the settings of your profile.\n\nSelect SETTINGS\n\n     Under SECURITY\n     Share rides with\n\nUnder RIDE\n\n     ● Minimum Route Match %\n     ● Route Match Window\n     ● Offer Ride Price\n\nClick on SAVE once have made the changes.\n\nNOTE:\nYou can alternatively also select ‘Set to Default’ Settings by selecting Security option from your profile "
+          },
+          {
+            "tittle": "How to edit pickup and drop points for my ride?",
+            "message": "You can edit a pick-up or drop point on a route for the ride.\n\nThis has to be done before accepting a ride request or sending a ride request. It is possible on the common route of both rider and seeker.\n\nIn order to edit the pick-up or drop point, you need to do the following:\n\n● Click on the profile/invite image (Do not click on INVITE or ACCEPT)\n● The map shows the route of both rider & seeker\n● Select the CHANGE RIDE PICK UP AND DROP option on the top right\n● Tap on the + symbol.\n● Move the map, till the tip of the pointer, is on the desired place(For better\naccuracy/location you can expand or enlarge the map)\n● Tap the + symbol again\n● Click on SAVE\n● Click on INVITE to send an invite"
+          },
+          {
+            "tittle": "Unable to post a Ride/Says network not found while I am able to use other apps",
+            "message": "This can happen when your network restricts the Quick Ride domain\n\nIf you are using WIFI (particularly at your office), please check by turning on Mobile data\n\nIf the problem persists, please write a mail to us at support@quickride.in"
+          },
+          {
+            "tittle": "Why I am getting calls even after ride is full",
+            "message": "At times ride takers join for a partial distance of the rider’s route\n\nTo make full use of the capacity for the full distance, the ride will still be shown as an option to ride takers\n\nIn the case you don’t want to receive requests after your ride is filled, you can freeze the ride through the option present in ride view\n\nFreezing the ride will ensure the ride is not shown as a match to anyone else."
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Customization",
+        "customerSupportElement": [
+          {
+            "tittle": "Fare modification ",
+            "message": "● We believe in giving complete flexibility to the ride offerers by allowing them to set the\nfare within the range.\n● The ride giver(vehicle owner) can change fare within 0-6 points per Km.\n● Each point has Rs 1 value on redemption.\nTo update fare:\n● Go to Profile through the navigation bar\n● Click on the Vehicle\n● Update Fare per Km\n\nNOTE:\n\nThe updated fare will be applicable only for future rides, already created rides will consider the previous fare.\n\nPlease be informed that ride takers can request for a lesser fare through fare bidding feature.\n\nHowever, as ride giver, you can choose not to offer rides at discounted prices by disabling the option:\n\nSETTINGS >> RIDES >> ALLOW FARE CHANGE >> SAVE"
+          },
+          {
+            "tittle": "How to define Home and Office location once and for all?",
+            "message": "You can store frequently used locations which can be selected easily while raising a ride request.\n\n● Ensure GPS is enabled to get the current location\n● Go to the SETTINGS, then select FAVOURITE\n● Click on ADD and select the location as per google map\n● Move the map so that the pin points to the exact location.\n● The best practice is to zoom the map to its maximum capacity.\n● Enter a name that you want to give to this location eg. home or office\n● Click on SAVE\n\nIn the same way, you can add multiple locations which can be selected easily during ride creation. "
+          },
+          {
+            "tittle": "How to change the number of seats offered?",
+            "message": "You can specify the number of seats offered in your vehicle by updating the vehicle configuration permanently or by updating the ride\n\nTo update Vehicle details:\n\n● Go to Profile through the navigation bar\n● Click on Vehicle\n● Update Offering Seat number"
+          },
+          {
+            "tittle": "How do I avoid bike ride options/How to choose my preferred vehicle as to the car only?",
+            "message": "As a ride taker you can choose which type of vehicles you would prefer to share a ride in:\n\nYou can set your preference by going to\n\nSettings -> Ride Preferences -> Preferred Vehicle"
+          },
+          {
+            "tittle": "How do I add/update my vehicle details? ",
+            "message": "You can configure one or more vehicles information for your profile. One of them you can make it as default.\n\nYou can switch the vehicle for the ride while creating a new ride every time.\n\nAdd your vehicles by going to Profile."
+          },
+          {
+            "tittle": "I am going on vacation/out of the country for some time",
+            "message": "You can set Vacation period by configuring at Settings>>Vacation, through your app\n\nDuring the set vacation period, you will not receive any notification/messages about ride sharing activities.\n\nYour rides will not be created during for the Vacation period"
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Referrals and Offers",
+        "customerSupportElement": [
+          {
+            "tittle": "How can I get a free ride?",
+            "message": "Thank you for joining Quick Ride! Your free ride is valid as per ongoing offers and promotions.\n\nFree ride can be utilized for the ride between your home to office or vice versa.\n\nTo avail the free ride you should have a verified profile.\nOnce the profile is verified, to take a free ride, create a ride request, find a matching rider and send an invite.\n\nOnce you join the ride, complete the shared ride by checking in and then checking out at the end of the ride.\n\nQuick Ride will cover your ride charges on your behalf as per ongoing offers and promotions.\nNOTE:\nPlease refer to Terms and Conditions"
+          },
+          {
+            "tittle": "I was charged for my first ride. Isn’t it free?",
+            "message": "It could be because of one of the following reasons:\n\n1. Your free ride has already expired. Freeride is valid only for 30 days from the day of registration. We encourage you to take your free ride as soon as you sign up with Quick Ride\n\n2. Your profile is not yet verified. To avail the free ride you need to have a verified profile.\nThe ride taken immediately after the verification will be free (within 30 days)\n\n3. You have already taken your free ride"
+          },
+          {
+            "tittle": "What is Refer Once - Earn Every day offer / How can I be a revenue sharing partner for Quick Ride? ",
+            "message": "You can help Quick Ride build a larger ride sharing network by referring Quick Ride to your friends and colleagues.\nFor each referral, you get referral bonus and get 2% commission for every ride* taken by your referral for a certain duration (within 24 hrs)\n\nSelect on SHARE & EARN, then select an appropriate mode and then the recipient.\n\nTo get the referral benefit, your friend should enter the referral code on the sign-up page itself.\n\nFor more details refer: https://quickride.in/offers/refer-once.php"
+          },
+          {
+            "tittle": "I referred a friend but have not received referral benefits/My Friend forgot to enter referral code, how to update now?",
+            "message": "Your friend might not have entered the referral code during the sign-up process.\n\nThe code has to be entered during the sign up process.\n\nThe referral code cannot be updated later."
+          },
+          {
+            "tittle": "I have completed 100 rides - is there any cash back offer? ",
+            "message": "Congratulations on completing your first 100 rides with Quick Ride!\nThere is no cash back, however, for your contribution, you are eligible for a Digital Memento from Quick Ride for successfully completing 100 Rides. Please refer https://quickride.in/offers.php\n\nShare your Eco meter on your Facebook profile with feedback and tag Quick Ride\n(@QuickRidein).\n\nMake the post public\n\nPost about Quick Ride through (Share & Earn option) to a WhatsApp group of your residential community or company colleagues (minimum 50 members should be part of the group)\n\nSend screenshots to support@quickride.in and we will credit the points to your wallet.\n\nThank you for helping Quick Ride build a bigger carpooling network. Please refer more to earn\n\nFree Quick Ride points and other eligible offers."
+          },
+          {
+            "tittle": "Offers and Benefits",
+            "message": "Various referal schemes are floated from time to time. Refer the web site https://quickride.in/offers.php for latest referral policy with details."
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Account Subscription Fee",
+        "customerSupportElement": [
+          {
+            "tittle": "What is Quick Ride account Subscription Fee?",
+            "message": "Subscription Fee is a small fee of Rs.50/month applied for the maintenance of Quick Ride account for users who have a positive balance in their Quick Ride account and have been inactive for a period of more than 60 days. \nPlease Note: There is no charge for users who have been active on Quick Ride App within the last 60 days."
+          },
+          {
+            "tittle": " How can I avoid this Subscription Fees?",
+            "message": "Subscription Fees is only applied to users who have not done any activity in the last 60 days on Quick Ride App. These activities include paying for a ride, receiving payment for ride or redemption to your favourite wallet. In order to avoid the subscription fee, you need to either restart using Quick Ride to offer/request rides from other members of the Quick Ride community or redeem you're earned/recharged points to your favourite wallet."
+          },
+          {
+            "tittle": "How is this Subscription Fee charged?",
+            "message": "The subscription fee is auto-debited from your Quick Ride account monthly from points in Earned section which includes the points you earn from sharing carpools or by recharging/topping up your Quick Ride account.\nA maximum of Rs.50 is deducted from your account as the subscription fees."
+          },
+          {
+            "tittle": "I have been charged this Subscription Fee incorrectly?",
+            "message": "Apologize for the inconvenience, please write to us at support@quickride.in with the reason as to why do you think you have been charged this amount incorrectly and we will take your case under consideration. Rest assured any incorrect charges will be refunded in full."
+          },
+          {
+            "tittle": "What are T&C of account subscription Fee?",
+            "message": "○ A Subscription Fee of Rs.50 per month is applicable to your Quick Ride account in case of no activity (no transactions are done) in the last 60 days.\n○ The following fee is only applied to accounts with recharged/earned points.\n○ This Subscription Fee amount is inclusive of 18% GST.\n○ The company reserves the right to modify or withdraw the account subscription fee at any time."
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Security",
+        "customerSupportElement": [
+          {
+            "tittle": "I don’t want to receive calls, how do I hide my number?",
+            "message": "Quick Ride provides its users with the freedom to customize the visibility of their number. You can change the visibility of your number by the following steps:\n\n● Select SETTINGS\n● Click on SECURITY\n● Select the preferred option by clicking on ‘Allow calls from’. \n\nYou can select any option from the following as per your preference:\n\n    ○ Anyone\n    ○Joined ride-partners\n    ○ No calls, please!\n\nNOTE:\nRegardless of the option selected, you can still chat with ride partners once you make your ride"
+          },
+          {
+            "tittle": "I want to select riders only from my company. How do I limit matching riders/ride givers?",
+            "message": "You can restrict ride selection based on gender, verified/unverified users/, company by following steps:\n\n● Select SETTINGS\n● Click on SECURITY\n● Select ‘Shared Rides’.\n\nYou can change the setting now based on your preference:\n    ○ Unverified Users\n    ○ Same gender users only\n    ○ Users from the same company only\n    ○ Users from trusted companies only"
+          },
+          {
+            "tittle": "I came across an option ‘Users from Trusted companies’. Which are Trusted Companies?",
+            "message": "Companies that have been verified and added in the Quick Ride Database come under ‘Trusted Companies’ section. This usually included MNC’s and Tech Giants.\n\nHow do I update my emergency contact number?\n\n● Select SETTINGS\n● Click on SECURITY\n● Select ‘Emergency Contact Number’\n● Enter the number\n● Your Emergency contact number is now updated"
+          },
+          {
+            "tittle": "In what scenarios are emergency contacts notified?",
+            "message": "Quick Ride allows its users to select scenarios where they want their added emergency contacts to be notified. Following are the two options. You can customize the settings as per your preference:\n\n● I don’t complete ride - on time Enabling this option will send an emergency SMS to the emergency contact if you do not check-out of the ride by the time you were supposed to reach your drop point.\n● My ride -giver deviates from the scheduled route\n\nIf your ride -giver deviates from the scheduled route by more than allowed threshold, an emergency SMS will be sent to the emergency contact, if this preference is enabled."
+          },
+          {
+            "tittle": "How do I Block a user? ",
+            "message": "You can block any user if he/she is annoying.\n\nTo block a user:\n\n● Select SETTINGS\n● Click on SECURITY\n● Choose BLOCKED USER\n● Click on + symbol\n● Select the user\n● Click on CONFIRM\n● This user can no longer contact, give/take a ride with you"
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      },
+      {
+        "tittle": "Taxipool",
+        "customerSupportElement": [
+          {
+            "tittle": "What is Quick Ride Taxipool?",
+            "message": "It is a door to door shared taxi service where you can schedule and get a confirmed taxi ride where you commute with other Quick Ride verified professionals."
+          },
+          {
+            "tittle": "Why Taxipool?",
+            "message": "We have built Taxipool keeping your day to day commute problems in mind. With Quick Ride Taxipool, you get following benefits: \n\n> Doorstep Pick up and Drop\n> Minimum Route Deviation\n> Save Money & Environment\n> Travel with Verified Professionals"
+          },
+          {
+            "tittle": "How does Taxipool work?",
+            "message": "● Find Ride\nSelect the Start and End locations along with the time of travel and Find a Ride.\n\n● Join Taxipool\n1) After clicking on Find Ride, You will find Taxipool option in available matching rides page\n2) Presently, Taxipool option will be shown atleast 1 hour before start time.\n3) If there is already an existing Taxipool on your route at the same time, you can join it.\n4) If there is no existing Taxipool, you can join a new one by choosing from 2, 3 or 4 sharing type.\n\nQuick Ride's route match algorithm will take care of the min deviation that can happen for a faster & convenient travel for all.\n\n● Taxipool confirmation\nOnce minimum seats are filled as per the sharing type alteast before 1 hour of start time, the pool gets confirmed. Else, the Pool is Cancelled.\n\n● Taxi Allotment\nA Taxi is allotted for a confirmed Taxipool and driver details are shared with you around 30 mins before the first pick up time.\n\n● Ride and Save more than 50% on each Ride\nThe driver picks and drops all users at their respective locations and bill is generated after ride completion."
+          },
+          {
+            "tittle": "What are different Taxipool Sharing options?",
+            "message": "You can choose to join a 2, 3 or 4 sharing Taxipool in addition to choosing an exclusive Taxi.\nPlease note that if you choose 2 sharing, the pool will get confirmed only after 2 riders join and so on.\nWe recommend a 3 sharing Taxipool for an economical and convenient ride. In case where the minimum seats are not occupied atleast 1 hour before scheduled start time,  the pool will be cancelled."
+          },
+          {
+            "tittle": "Who will be my Co-riders in Taxipool?",
+            "message": "Your Co-riders will be people from your existing Quick Ride Verified Professional Community Itself."
+          },
+          {
+            "tittle": "When and where can I find Taxipool Rides?",
+            "message": "At present, taxipool option will be available for joining when you are finding a ride atleast 1 hour in advance from your scheduled start time for rides more than 5 kms.\nWe have currently launched only in Bangalore, will be expanding to other cities soon."
+          },
+          {
+            "tittle": "How is the Taxipool fare calculated?",
+            "message": "Enjoy the benefit of Fixed Fares. No Surge or Time charges. You will save more 50% on each ride compared to regular Taxi Rides.\n\nThe fare of your ride depends on 2 parameters:\n1. Your Route Distance (km)\n2. Sharing Type (2,3 or 4 sharing) of Taxipool.\n\nWe recommend choosing a 3 sharing Taxipool for an economical and convenient ride."
+          },
+          {
+            "tittle": "How do I track my Taxi and board at the pick up point?",
+            "message": "Once the Taxi is allotted, you will receive a notification along with driver details. You can also find the driver details (Name, Car Number, Car Model, Option to Call) on the app itself in your Ride Details View.\n\nYou will also be able to track the car movement in the app updated once every 30 secs. Please co-ordinate with your Driver to ensure you board at your pick up point without any delay.\n\nIn case you are unable to track the Taxi or reach out to the driver, you can coordinate with your co-riders for any updates."
+          },
+          {
+            "tittle": "How long will the taxi wait at my pick up point?",
+            "message": "To ensure no rider's time is wasted, the taxi will not wait for more then 3 minutes at every pick up point. In case your co-rider has not reached his/her pick up point on time, feel free to call them and hurry them up.\n\nIn case of no show after 3 minutes, the Taxi will move on towards the next pick up/drop. No refund will be issued in such cases as per our cancellation policy."
+          },
+          {
+            "tittle": "I have paid upfront through UPI and booked a Taxipool and now it cancelled, How will I get a refund?",
+            "message": "1. In case where Taxipool is auto cancelled by the system due to not meeting the minimum seats criteria, the amount is still reserved for the ride so that you can choose from other matching carpool/bikepool option. Once the ride is also cancelled, the refund will be initiated and credited to your account within 2 days.\n\n2. If you have cancelled the Taxipool ride yourself the refund will be initiated immediately and credited to your account within 2 days."
+          },
+          {
+            "tittle": "I have different issue / Need help"
+          }
+        ]
+      }
+    ]
+  }
+}
+

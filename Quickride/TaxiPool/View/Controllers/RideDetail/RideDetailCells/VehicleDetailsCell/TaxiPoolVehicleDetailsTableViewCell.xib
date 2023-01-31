@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaxiPoolVehicleDetailsTableViewCell" rowHeight="116" id="KGk-i7-Jjw" customClass="TaxiPoolVehicleDetailsTableViewCell" customModule="G_Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvk-Xx-Ism" customClass="QuickRideCardView" customModule="G_Ride" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="309" height="106"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAXI DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy0-zv-q8U">
+                                <rect key="frame" x="10" y="15" width="284" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="DAs-9T-vlm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIa-Gz-dH5">
+                                <rect key="frame" x="0.0" y="40" width="309" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_grey_new" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-CA-jOW">
+                                        <rect key="frame" x="10" y="15" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Qt9-2Z-X8v"/>
+                                            <constraint firstAttribute="width" constant="15" id="aZe-3l-AfM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxi Details will be shared 1 hour before start time after the pool is confirmed." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRx-xo-Vnz">
+                                        <rect key="frame" x="35" y="10" width="264" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.35686274509803922" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="r7I-CA-jOW" firstAttribute="leading" secondItem="HIa-Gz-dH5" secondAttribute="leading" constant="10" id="7fc-cc-LJA"/>
+                                    <constraint firstAttribute="trailing" secondItem="zRx-xo-Vnz" secondAttribute="trailing" constant="10" id="EbN-xt-bLD"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ibl-An-K0d"/>
+                                    <constraint firstItem="zRx-xo-Vnz" firstAttribute="top" secondItem="HIa-Gz-dH5" secondAttribute="top" constant="10" id="JU5-2u-VXp"/>
+                                    <constraint firstItem="r7I-CA-jOW" firstAttribute="top" secondItem="HIa-Gz-dH5" secondAttribute="top" constant="15" id="RSx-mt-4e4"/>
+                                    <constraint firstAttribute="bottom" secondItem="zRx-xo-Vnz" secondAttribute="bottom" constant="10" id="r0I-w4-uUh"/>
+                                    <constraint firstItem="zRx-xo-Vnz" firstAttribute="leading" secondItem="r7I-CA-jOW" secondAttribute="trailing" constant="10" id="u4e-lB-XwO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xy0-zv-q8U" secondAttribute="trailing" constant="15" id="Gt9-aT-BXI"/>
+                            <constraint firstItem="HIa-Gz-dH5" firstAttribute="top" secondItem="xy0-zv-q8U" secondAttribute="bottom" constant="5" id="SRc-LH-24D"/>
+                            <constraint firstAttribute="bottom" secondItem="HIa-Gz-dH5" secondAttribute="bottom" constant="6" id="a5I-4b-Jis"/>
+                            <constraint firstItem="xy0-zv-q8U" firstAttribute="top" secondItem="lvk-Xx-Ism" secondAttribute="top" constant="15" id="cbT-Ac-019"/>
+                            <constraint firstAttribute="trailing" secondItem="HIa-Gz-dH5" secondAttribute="trailing" id="p5a-VX-rvI"/>
+                            <constraint firstItem="xy0-zv-q8U" firstAttribute="leading" secondItem="lvk-Xx-Ism" secondAttribute="leading" constant="10" id="w2k-sJ-jX7"/>
+                            <constraint firstItem="HIa-Gz-dH5" firstAttribute="leading" secondItem="lvk-Xx-Ism" secondAttribute="leading" id="xRQ-Qs-4ZT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lvk-Xx-Ism" secondAttribute="trailing" constant="10" id="RYk-rH-h9Z"/>
+                    <constraint firstItem="lvk-Xx-Ism" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="b5E-aE-OFq"/>
+                    <constraint firstAttribute="bottom" secondItem="lvk-Xx-Ism" secondAttribute="bottom" constant="5" id="jRn-qT-zug"/>
+                    <constraint firstItem="lvk-Xx-Ism" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xcZ-jp-dSn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="vehicleDetailsNotAvailableView" destination="HIa-Gz-dH5" id="6i7-NN-IZi"/>
+            </connections>
+            <point key="canvasLocation" x="144.20289855072465" y="112.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock_grey_new" width="24" height="24"/>
+    </resources>
+</document>

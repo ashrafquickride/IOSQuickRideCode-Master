@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarpoolFifthOnBoardingCollectionViewCell" id="O8f-C9-NGF" customClass="CarpoolFifthOnBoardingCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-Pv-gpx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpool_fifth_onboarding_img" translatesAutoresizingMaskIntoConstraints="NO" id="Nrn-dL-CxT">
+                                <rect key="frame" x="32.5" y="80" width="310" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="Rr2-sk-J3g"/>
+                                    <constraint firstAttribute="height" constant="420" id="sfo-DC-iy1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmw-k7-9mx">
+                                <rect key="frame" x="30" y="30" width="265.5" height="131"/>
+                                <string key="text">Join India's
+Largest Carpoolin
+Community</string>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="32"/>
+                                <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-zO-diE">
+                                <rect key="frame" x="30" y="510" width="315" height="68"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Commute with interesting people around you while saving time, money and environment">
+                                        <attributes>
+                                            <color key="NSColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LgU-zO-diE" firstAttribute="leading" secondItem="zmw-k7-9mx" secondAttribute="leading" id="0BY-3l-80R"/>
+                            <constraint firstItem="zmw-k7-9mx" firstAttribute="leading" secondItem="uyF-Pv-gpx" secondAttribute="leading" constant="30" id="45j-Fd-OqP"/>
+                            <constraint firstItem="zmw-k7-9mx" firstAttribute="top" secondItem="uyF-Pv-gpx" secondAttribute="top" constant="30" id="S3e-GA-6jj"/>
+                            <constraint firstAttribute="trailing" secondItem="LgU-zO-diE" secondAttribute="trailing" constant="30" id="lun-CJ-iAm"/>
+                            <constraint firstItem="LgU-zO-diE" firstAttribute="top" secondItem="Nrn-dL-CxT" secondAttribute="bottom" constant="10" id="wO2-zc-z8i"/>
+                            <constraint firstItem="Nrn-dL-CxT" firstAttribute="top" secondItem="zmw-k7-9mx" secondAttribute="top" constant="50" id="xQJ-bt-tbC"/>
+                            <constraint firstItem="Nrn-dL-CxT" firstAttribute="centerX" secondItem="uyF-Pv-gpx" secondAttribute="centerX" id="zTu-DR-Fjd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="VBX-VB-Adj"/>
+            <constraints>
+                <constraint firstItem="uyF-Pv-gpx" firstAttribute="leading" secondItem="O8f-C9-NGF" secondAttribute="leading" id="5TZ-Hg-rWz"/>
+                <constraint firstAttribute="trailing" secondItem="uyF-Pv-gpx" secondAttribute="trailing" id="O3r-Ic-77B"/>
+                <constraint firstItem="uyF-Pv-gpx" firstAttribute="top" secondItem="O8f-C9-NGF" secondAttribute="top" id="gjX-dM-g08"/>
+                <constraint firstAttribute="bottom" secondItem="uyF-Pv-gpx" secondAttribute="bottom" id="tKq-hY-qGu"/>
+            </constraints>
+            <size key="customSize" width="375" height="616"/>
+            <point key="canvasLocation" x="16.666666666666668" y="183.48214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="carpool_fifth_onboarding_img" width="468" height="669"/>
+    </resources>
+</document>

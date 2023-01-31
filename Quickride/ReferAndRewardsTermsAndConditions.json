@@ -1,0 +1,16 @@
+{
+    "ReferAndRewardsTermsAndConditions": [
+        {
+            "type": "REFER_FRIENDS",
+            "terms and conditions": ["The offer is applicable for all users.","The referring user will get upto 50pts for every referral.","25pts on verification of referred user profile and becomes verified user.","25pts when the referred user completes the first ride.","In addition the referring user gets 2% commission for every ride shared (taken/given) by referred user.","Sharing of service fees happen for period of 3 months.","Service fee sharing doesn't happen, when you are also part of the ride with referred user","The referral bonus is credited as Reward points to the referring user account.","Quick Ride reserves the right to modify or withdraw the offer at any time.","For any queries on this offer you can write to support@quickride.in."]
+        },
+        {
+            "type": "REFER_ORGANIZATION",
+            "terms and conditions": ["You can win ride points of upto Rs.3000","The Ride points are allocated based on the size of the company. (Typically 1Rs. for 1employee as per strength and with max. cap of Rs. 3000).","To be eligible for referral bonus, You should be the first referrer and we shall get the approval within 2 months from the date of referring your organization.","The referral bonus is credited to you after completing the Go-GREEN campaign by Quick Ride successfully.","Quick Ride reserves the right to modify or withdraw the offer at any time.","For any queries on this offer you can write to sales@quickride.in"]
+        },
+        {
+            "type": "REFER_COMMUNITY",
+            "terms and conditions": ["You can refer your community for Quick Ride to do Go Green Carpooling Awareness Campaign.","You need to provide details of relevant authority who gives permission to do the campaign.","You will be eligible for referral bonus upto Rs. 500 depends on size of the complex. (Typically 1Rs. for 1 Flat, with minimum of Rs. 100 and maximum of Rs. 500).","Referral bonus is credited once the campaign is completed with the permission.","To be eligible for referral bonus, You should be the first referrer and we shall get the approval within 2 weeks from the date of referring.","Quick Ride reserves the right to modify or withdraw the offer at any time","For any queries on this offer you can write to sales@quickride.in"]
+        }
+    ]
+}

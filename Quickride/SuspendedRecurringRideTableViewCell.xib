@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="SuspendedRecurringRideTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-jw-kvH">
+                        <rect key="frame" x="25" y="15" width="166" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="QNL-bC-bUm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <state key="normal" title="9 AM, Morning Ride"/>
+                        <connections>
+                            <action selector="changeTimeTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mMZ-Bf-W6W"/>
+                        </connections>
+                    </button>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sD5-cN-jco">
+                        <rect key="frame" x="246" y="12" width="51" height="31"/>
+                        <connections>
+                            <action selector="rideStatusChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="DOe-55-XtP"/>
+                        </connections>
+                    </switch>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow_edit" translatesAutoresizingMaskIntoConstraints="NO" id="VMM-UB-q3M">
+                        <rect key="frame" x="25" y="50" width="6" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="Nkq-w3-uia"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domlur, Bangalore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-O4-BEJ">
+                        <rect key="frame" x="36" y="50" width="234" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITPL Road, Main Campus..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f67-TL-OLg">
+                        <rect key="frame" x="36" y="74.5" width="234" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Dpb-qD-zZF">
+                        <rect key="frame" x="287" y="64" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="liS-2u-iFI"/>
+                            <constraint firstAttribute="height" constant="13" id="yPF-e6-NTK"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWc-nV-19d">
+                        <rect key="frame" x="0.0" y="114" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Lbe-JU-Q64"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6d8-O4-BEJ" firstAttribute="leading" secondItem="VMM-UB-q3M" secondAttribute="trailing" constant="5" id="1Z5-Nw-4Ad"/>
+                    <constraint firstItem="0A8-jw-kvH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="7Gv-eu-jE1"/>
+                    <constraint firstItem="Dpb-qD-zZF" firstAttribute="centerY" secondItem="VMM-UB-q3M" secondAttribute="centerY" id="8FZ-EG-7r9"/>
+                    <constraint firstAttribute="trailing" secondItem="sD5-cN-jco" secondAttribute="trailing" constant="25" id="8JX-Do-bvc"/>
+                    <constraint firstItem="VMM-UB-q3M" firstAttribute="top" secondItem="0A8-jw-kvH" secondAttribute="bottom" constant="10" id="8Y9-gP-iad"/>
+                    <constraint firstItem="LWc-nV-19d" firstAttribute="top" secondItem="VMM-UB-q3M" secondAttribute="bottom" constant="23" id="AO0-oO-6l2"/>
+                    <constraint firstAttribute="trailing" secondItem="Dpb-qD-zZF" secondAttribute="trailing" constant="25" id="DaG-ff-Clz"/>
+                    <constraint firstItem="f67-TL-OLg" firstAttribute="leading" secondItem="6d8-O4-BEJ" secondAttribute="leading" id="Hzt-c6-sTh"/>
+                    <constraint firstItem="0A8-jw-kvH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="IZP-s9-vOa"/>
+                    <constraint firstAttribute="trailing" secondItem="6d8-O4-BEJ" secondAttribute="trailing" constant="50" id="LOb-De-Ca2"/>
+                    <constraint firstItem="VMM-UB-q3M" firstAttribute="bottom" secondItem="f67-TL-OLg" secondAttribute="bottom" id="R6w-TV-mhj"/>
+                    <constraint firstItem="sD5-cN-jco" firstAttribute="centerY" secondItem="0A8-jw-kvH" secondAttribute="centerY" id="Y9y-Cp-wcD"/>
+                    <constraint firstAttribute="trailing" secondItem="LWc-nV-19d" secondAttribute="trailing" id="Zmn-U6-iFe"/>
+                    <constraint firstItem="f67-TL-OLg" firstAttribute="top" secondItem="6d8-O4-BEJ" secondAttribute="bottom" constant="8" id="cbq-Cz-QYk"/>
+                    <constraint firstItem="LWc-nV-19d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mNX-5B-NMS"/>
+                    <constraint firstAttribute="bottom" secondItem="LWc-nV-19d" secondAttribute="bottom" id="n7R-Gn-18K"/>
+                    <constraint firstItem="6d8-O4-BEJ" firstAttribute="top" secondItem="VMM-UB-q3M" secondAttribute="top" id="o4s-Uo-IbJ"/>
+                    <constraint firstItem="VMM-UB-q3M" firstAttribute="leading" secondItem="0A8-jw-kvH" secondAttribute="leading" id="owF-f7-F3W"/>
+                    <constraint firstItem="f67-TL-OLg" firstAttribute="trailing" secondItem="6d8-O4-BEJ" secondAttribute="trailing" id="xE4-mC-c5d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fromLabel" destination="6d8-O4-BEJ" id="Ev4-5Z-jQJ"/>
+                <outlet property="rideSwitch" destination="sD5-cN-jco" id="7ZC-YU-wFP"/>
+                <outlet property="rideTimingLabel" destination="0A8-jw-kvH" id="NDM-yb-19K"/>
+                <outlet property="toLabel" destination="f67-TL-OLg" id="eye-hQ-DcO"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="176.45089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down_arrow_edit" width="7" height="31"/>
+        <image name="front_arrow" width="25" height="40"/>
+    </resources>
+</document>

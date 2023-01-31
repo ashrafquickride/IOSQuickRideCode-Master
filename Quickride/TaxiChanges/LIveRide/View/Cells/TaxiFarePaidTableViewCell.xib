@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="TaxiFarePaidTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aqj-wI-UoO">
+                        <rect key="frame" x="20" y="10" width="280" height="20"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rgm-OD-8mR">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fare paid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-p8-FEz">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4aw-13-eo2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9i-Dm-Vp1">
+                                        <rect key="frame" x="179" y="0.0" width="80" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Eva-WD-IeM"/>
+                                            <constraint firstAttribute="width" constant="80" id="yWx-Dx-2TP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="156">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="taxiFareBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uf1-wM-MX6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaQ-SC-aMw">
+                                        <rect key="frame" x="260" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="WN4-LR-YDd"/>
+                                            <constraint firstAttribute="height" constant="20" id="lGh-LE-xWK"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                        <state key="normal" image="info_icon_blue">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="taxiFareBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gzM-5Q-RHz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aaQ-SC-aMw" firstAttribute="leading" secondItem="U9i-Dm-Vp1" secondAttribute="trailing" constant="1" id="BMd-kz-57I"/>
+                                    <constraint firstAttribute="height" constant="20" id="UDI-Xl-KUS"/>
+                                    <constraint firstItem="U9i-Dm-Vp1" firstAttribute="centerY" secondItem="Ud3-p8-FEz" secondAttribute="centerY" id="d3u-Ur-Dwt"/>
+                                    <constraint firstAttribute="trailing" secondItem="aaQ-SC-aMw" secondAttribute="trailing" id="g8d-JG-9Bm"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g1h-Ia-pej">
+                                <rect key="frame" x="0.0" y="20" width="280" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAt-Zl-pWJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By UPI - naveenxxxx@icici" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKM-ee-2ef">
+                                                <rect key="frame" x="0.0" y="3.5" width="166.5" height="16.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16.5" id="B71-iW-n0A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="78q-z5-gys"/>
+                                            <constraint firstAttribute="bottom" secondItem="rKM-ee-2ef" secondAttribute="bottom" id="c5t-wE-hP7"/>
+                                            <constraint firstItem="rKM-ee-2ef" firstAttribute="leading" secondItem="aAt-Zl-pWJ" secondAttribute="leading" id="cpO-NN-4YO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="YAA-cU-2hC"/>
+                                    <constraint firstItem="aAt-Zl-pWJ" firstAttribute="leading" secondItem="g1h-Ia-pej" secondAttribute="leading" id="o9F-mp-NXl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="g1h-Ia-pej" firstAttribute="leading" secondItem="aqj-wI-UoO" secondAttribute="leading" id="HY2-mH-qEl"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aqj-wI-UoO" secondAttribute="bottom" constant="10" id="5j1-Po-bgd"/>
+                    <constraint firstAttribute="trailing" secondItem="aqj-wI-UoO" secondAttribute="trailing" constant="20" id="N4B-aM-YWs"/>
+                    <constraint firstItem="aqj-wI-UoO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UYz-o6-zAW"/>
+                    <constraint firstItem="aqj-wI-UoO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vG0-B3-8gi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="paidByWallet" destination="rKM-ee-2ef" id="hsz-TF-k4z"/>
+                <outlet property="paymentDetailsStackView" destination="g1h-Ia-pej" id="JmI-LL-KZZ"/>
+                <outlet property="taxiFareBtn" destination="U9i-Dm-Vp1" id="DAz-iR-7WK"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="104.79910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="info_icon_blue" width="54" height="54"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

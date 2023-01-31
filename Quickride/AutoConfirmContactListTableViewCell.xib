@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="AutoConfirmationListTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="AutoConfirmContactListTableViewCell" rowHeight="77" id="KGk-i7-Jjw" customClass="AutoConfirmContactListTableViewCell" customModule="G_Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_contact" translatesAutoresizingMaskIntoConstraints="NO" id="1xT-dL-GBN" customClass="CircularImageView" customModule="G_Ride" customModuleProvider="target">
+                        <rect key="frame" x="12" y="16" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="0kx-FW-DIx"/>
+                            <constraint firstAttribute="width" constant="45" id="tqV-0s-hs8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-rE-ugq">
+                        <rect key="frame" x="67" y="26.5" width="194" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="ZUR-z9-pXN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Match" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMJ-2i-f11">
+                        <rect key="frame" x="266" y="31" width="75" height="15.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="p9p-eR-cMP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-97-CXM">
+                        <rect key="frame" x="346" y="18.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="H2r-po-Gyx"/>
+                            <constraint firstAttribute="width" constant="40" id="XkO-fq-51U"/>
+                        </constraints>
+                        <state key="normal" image="icon_overflow_pressed"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsW-fa-s6G">
+                        <rect key="frame" x="0.0" y="76" width="401" height="1"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6QR-xf-nyF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE0-WR-S8x">
+                        <rect key="frame" x="40" y="36.5" width="20" height="20"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MYn-cb-D5a">
+                                <rect key="frame" x="2.5" y="2.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="ban-Yz-46O"/>
+                                    <constraint firstAttribute="height" constant="15" id="s7j-AC-gij"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="F8M-Rb-sRj"/>
+                            <constraint firstItem="MYn-cb-D5a" firstAttribute="centerY" secondItem="aE0-WR-S8x" secondAttribute="centerY" id="MOQ-b9-qRg"/>
+                            <constraint firstAttribute="height" constant="20" id="QNW-X6-UKu"/>
+                            <constraint firstItem="MYn-cb-D5a" firstAttribute="centerX" secondItem="aE0-WR-S8x" secondAttribute="centerX" id="fiV-ci-evB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kM7-97-CXM" firstAttribute="leading" secondItem="iMJ-2i-f11" secondAttribute="trailing" constant="5" id="1ty-xT-2Br"/>
+                    <constraint firstItem="aE0-WR-S8x" firstAttribute="trailing" secondItem="1xT-dL-GBN" secondAttribute="trailing" constant="3" id="3DU-TN-cWH"/>
+                    <constraint firstItem="6cI-rE-ugq" firstAttribute="centerY" secondItem="1xT-dL-GBN" secondAttribute="centerY" id="5LN-Jp-KkD"/>
+                    <constraint firstItem="iMJ-2i-f11" firstAttribute="centerY" secondItem="kM7-97-CXM" secondAttribute="centerY" id="5UI-UX-8uh"/>
+                    <constraint firstItem="aE0-WR-S8x" firstAttribute="centerY" secondItem="1xT-dL-GBN" secondAttribute="centerY" constant="8" id="6VF-r4-cOR"/>
+                    <constraint firstAttribute="trailing" secondItem="JsW-fa-s6G" secondAttribute="trailing" id="OSe-Yw-rpl"/>
+                    <constraint firstItem="1xT-dL-GBN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="gBI-XS-VZN"/>
+                    <constraint firstAttribute="trailing" secondItem="kM7-97-CXM" secondAttribute="trailing" constant="15" id="hWw-Jv-o8s"/>
+                    <constraint firstItem="6cI-rE-ugq" firstAttribute="leading" secondItem="1xT-dL-GBN" secondAttribute="trailing" constant="10" id="hr7-Kl-kBj"/>
+                    <constraint firstItem="iMJ-2i-f11" firstAttribute="leading" secondItem="6cI-rE-ugq" secondAttribute="trailing" constant="5" id="ire-d6-aF7"/>
+                    <constraint firstItem="JsW-fa-s6G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mFf-vj-dc0"/>
+                    <constraint firstItem="1xT-dL-GBN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="o7d-wz-zIx"/>
+                    <constraint firstAttribute="bottom" secondItem="JsW-fa-s6G" secondAttribute="bottom" id="uqz-BL-uab"/>
+                    <constraint firstItem="kM7-97-CXM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="v2g-8O-yq4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="circularView" destination="aE0-WR-S8x" id="tpV-uH-Tum"/>
+                <outlet property="detailsButton" destination="kM7-97-CXM" id="moY-JS-pUa"/>
+                <outlet property="favoriteImageView" destination="MYn-cb-D5a" id="hMQ-Bu-FS7"/>
+                <outlet property="matchLabel" destination="iMJ-2i-f11" id="iyr-JL-Tv5"/>
+                <outlet property="nameLabel" destination="6cI-rE-ugq" id="xzT-Td-3Q6"/>
+                <outlet property="userProfileImageView" destination="1xT-dL-GBN" id="Axd-Mj-a7F"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="165.06696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_contact" width="150" height="150"/>
+        <image name="icon_overflow_pressed" width="48" height="48"/>
+    </resources>
+</document>

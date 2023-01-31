@@ -1,0 +1,40 @@
+//
+//  TaxiEditDistancewithTollsInfoMarker.swift
+//  Quickride
+//
+//  Created by Quick Ride on 5/5/22.
+//  Copyright © 2014-2020. Quick Ride (www.quickride.in). All rights reserved.
+//  iDisha Info Labs Pvt Ltd. proprietary.
+//
+
+import Foundation
+import UIKit
+class TaxiEditDistancewithTollsInfoMarker : UIView {
+    @IBOutlet weak var durationLable: UILabel!
+    
+    @IBOutlet weak var distanceAndTollLabel: UILabel!
+        
+    
+    func initializeView(distance : Double?, duration: Double?, noOfTolls : Int? = nil){
+        if let duration = duration {
+            durationLable.text = TaxiUtils.getDurationDisplay(duration: Int(duration))
+            durationLable.isHidden = false
+        }else{
+            durationLable.isHidden = true
+        }
+        var distanceAndTolls = ""
+        if distance != nil {
+            let roundedDistance = Int(distance!.rounded())
+            distanceAndTolls = String(roundedDistance) + " KM"
+        }
+        
+        if let noOfTolls = noOfTolls , noOfTolls > 0 {
+            distanceAndTolls = distanceAndTolls + "  Tolls " + String(noOfTolls)
+        }
+       
+            distanceAndTollLabel.isHidden = false
+            distanceAndTollLabel.text = distanceAndTolls
+            
+
+    }
+}

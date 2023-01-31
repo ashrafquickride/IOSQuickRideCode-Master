@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepeatRecurringRideTableViewCell" rowHeight="79" id="KGk-i7-Jjw" customClass="RepeatRecurringRideTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEZ-jt-ORz">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mo, Tu, We, Th, Fr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxU-PS-AWt">
+                                <rect key="frame" x="60" y="45" width="98" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat this ride" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-Yq-0Tv">
+                                <rect key="frame" x="60" y="20" width="117" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recurring_ride_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rYI-Gs-VeI">
+                                <rect key="frame" x="20" y="25" width="25" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HO1-Ic-6o3"/>
+                                    <constraint firstAttribute="width" constant="25" id="f8b-qX-cjE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="TMD-8M-eWO">
+                                <rect key="frame" x="292" y="32.5" width="12" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="DUc-iL-MGx"/>
+                                    <constraint firstAttribute="height" constant="15" id="KSx-n3-PzR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydo-w6-sC8">
+                                <rect key="frame" x="0.0" y="0.0" width="324" height="80"/>
+                                <connections>
+                                    <action selector="createRecurringRide:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dym-oq-3B5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ydo-w6-sC8" secondAttribute="trailing" id="0dO-zg-0OD"/>
+                            <constraint firstItem="fxU-PS-AWt" firstAttribute="top" secondItem="XbC-Yq-0Tv" secondAttribute="bottom" constant="5" id="1S5-MS-caK"/>
+                            <constraint firstItem="TMD-8M-eWO" firstAttribute="centerY" secondItem="rYI-Gs-VeI" secondAttribute="centerY" id="8Ao-Y4-JPw"/>
+                            <constraint firstItem="rYI-Gs-VeI" firstAttribute="leading" secondItem="BEZ-jt-ORz" secondAttribute="leading" constant="20" id="8DH-rA-eBC"/>
+                            <constraint firstItem="XbC-Yq-0Tv" firstAttribute="top" secondItem="rYI-Gs-VeI" secondAttribute="top" constant="-5" id="H5J-Pl-VOP"/>
+                            <constraint firstItem="XbC-Yq-0Tv" firstAttribute="leading" secondItem="rYI-Gs-VeI" secondAttribute="trailing" constant="15" id="NYh-5a-9eb"/>
+                            <constraint firstAttribute="bottom" secondItem="ydo-w6-sC8" secondAttribute="bottom" id="VKw-dK-cao"/>
+                            <constraint firstItem="ydo-w6-sC8" firstAttribute="top" secondItem="BEZ-jt-ORz" secondAttribute="top" id="mfO-wp-ryT"/>
+                            <constraint firstAttribute="height" constant="80" id="nXh-he-GYG"/>
+                            <constraint firstItem="ydo-w6-sC8" firstAttribute="leading" secondItem="BEZ-jt-ORz" secondAttribute="leading" id="nmz-eZ-Xey"/>
+                            <constraint firstItem="rYI-Gs-VeI" firstAttribute="centerY" secondItem="BEZ-jt-ORz" secondAttribute="centerY" id="pA5-9S-2NO"/>
+                            <constraint firstAttribute="trailing" secondItem="TMD-8M-eWO" secondAttribute="trailing" constant="20" id="vft-Cj-Eeu"/>
+                            <constraint firstItem="fxU-PS-AWt" firstAttribute="leading" secondItem="XbC-Yq-0Tv" secondAttribute="leading" id="vkU-fa-4g9"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-7V-IaN">
+                        <rect key="frame" x="0.0" y="79" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="IEJ-V1-xhb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yE6-7V-IaN" secondAttribute="bottom" id="F8E-Tk-cWN"/>
+                    <constraint firstAttribute="bottom" secondItem="BEZ-jt-ORz" secondAttribute="bottom" id="OHa-e9-0qu"/>
+                    <constraint firstItem="yE6-7V-IaN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UyB-gj-bwq"/>
+                    <constraint firstAttribute="trailing" secondItem="BEZ-jt-ORz" secondAttribute="trailing" id="Ytz-YZ-BR9"/>
+                    <constraint firstAttribute="trailing" secondItem="yE6-7V-IaN" secondAttribute="trailing" id="aPV-Yb-gkb"/>
+                    <constraint firstItem="BEZ-jt-ORz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dnM-IQ-cMg"/>
+                    <constraint firstItem="BEZ-jt-ORz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hE8-5t-kA6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="recurringRideDaysLabel" destination="fxU-PS-AWt" id="TCe-vM-VGg"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="147.99107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="front_arrow" width="25" height="40"/>
+        <image name="recurring_ride_icon" width="36" height="45"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

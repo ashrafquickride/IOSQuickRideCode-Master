@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="WhatsAppUpdateCardTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h97-8a-VwC">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="73"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Updates on WhatsApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-UQ-fdK">
+                                <rect key="frame" x="56" y="15" width="190" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow to receive important ride updates" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-M9-bxN">
+                                <rect key="frame" x="56" y="32" width="190" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp_icon_small" translatesAutoresizingMaskIntoConstraints="NO" id="IKh-GK-MQ1">
+                                <rect key="frame" x="20" y="23" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="1wE-dh-Dcz"/>
+                                    <constraint firstAttribute="width" constant="26" id="b8X-IT-aPV"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-jZ-az9">
+                                <rect key="frame" x="256" y="21" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchTapped:" destination="KGk-i7-Jjw" eventType="valueChanged" id="2Al-Lq-f56"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C9i-UQ-fdK" firstAttribute="leading" secondItem="IKh-GK-MQ1" secondAttribute="trailing" constant="10" id="GU6-HO-Bo9"/>
+                            <constraint firstItem="C9i-UQ-fdK" firstAttribute="top" secondItem="h97-8a-VwC" secondAttribute="top" constant="15" id="GeA-FK-bNe"/>
+                            <constraint firstItem="IKh-GK-MQ1" firstAttribute="leading" secondItem="h97-8a-VwC" secondAttribute="leading" constant="20" id="GeV-Rk-jPI"/>
+                            <constraint firstItem="IKh-GK-MQ1" firstAttribute="centerY" secondItem="h97-8a-VwC" secondAttribute="centerY" id="ROQ-g9-iVb"/>
+                            <constraint firstItem="Ebb-M9-bxN" firstAttribute="trailing" secondItem="C9i-UQ-fdK" secondAttribute="trailing" id="Sma-cK-vmm"/>
+                            <constraint firstItem="Ebb-M9-bxN" firstAttribute="top" secondItem="C9i-UQ-fdK" secondAttribute="bottom" id="Urb-6J-Jwt"/>
+                            <constraint firstItem="1EP-jZ-az9" firstAttribute="centerY" secondItem="h97-8a-VwC" secondAttribute="centerY" id="Vbz-a5-IYR"/>
+                            <constraint firstItem="1EP-jZ-az9" firstAttribute="leading" secondItem="C9i-UQ-fdK" secondAttribute="trailing" constant="10" id="WhP-KY-Vlz"/>
+                            <constraint firstItem="IKh-GK-MQ1" firstAttribute="top" secondItem="C9i-UQ-fdK" secondAttribute="top" constant="8" id="fK7-Fr-JrU"/>
+                            <constraint firstAttribute="bottom" secondItem="Ebb-M9-bxN" secondAttribute="bottom" constant="13" id="gCK-pE-Kbi"/>
+                            <constraint firstAttribute="trailing" secondItem="1EP-jZ-az9" secondAttribute="trailing" constant="20" id="hpf-rf-PuR"/>
+                            <constraint firstItem="Ebb-M9-bxN" firstAttribute="leading" secondItem="C9i-UQ-fdK" secondAttribute="leading" id="icH-xI-hZP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="h97-8a-VwC" secondAttribute="bottom" id="6zD-Gy-swt"/>
+                    <constraint firstAttribute="trailing" secondItem="h97-8a-VwC" secondAttribute="trailing" id="Sxa-FW-THx"/>
+                    <constraint firstItem="h97-8a-VwC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="a1Y-j2-2AS"/>
+                    <constraint firstItem="h97-8a-VwC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bJs-XV-dBD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="allowUpdatesLabel" destination="Ebb-M9-bxN" id="f5y-9k-0fr"/>
+                <outlet property="getUpdatesLabel" destination="C9i-UQ-fdK" id="GIv-9n-gbk"/>
+                <outlet property="iconImage" destination="IKh-GK-MQ1" id="mEy-2B-Akl"/>
+                <outlet property="whatsAppUpdateView" destination="h97-8a-VwC" id="gA1-Cc-JqE"/>
+                <outlet property="whatsappSwitch" destination="1EP-jZ-az9" id="iTZ-Ko-M5u"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="114.17410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="whatsapp_icon_small" width="26" height="26"/>
+    </resources>
+</document>

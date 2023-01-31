@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FourthOnBoardingCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGa-OB-dpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-aR-v4Q">
+                                <rect key="frame" x="31" y="15" width="163" height="44"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="32"/>
+                                <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jume the Queue . Get hired via referrals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmZ-SM-kwL">
+                                <rect key="frame" x="31" y="64" width="314" height="24"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="18"/>
+                                <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Quickjobs_image-1" translatesAutoresizingMaskIntoConstraints="NO" id="kpY-T0-QJr">
+                                <rect key="frame" x="30" y="108" width="345" height="491"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mmZ-SM-kwL" secondAttribute="trailing" constant="30" id="2De-Rl-Ofe"/>
+                            <constraint firstItem="mmZ-SM-kwL" firstAttribute="leading" secondItem="uGa-OB-dpg" secondAttribute="leading" constant="31" id="Q9g-Ks-XgN"/>
+                            <constraint firstAttribute="bottom" secondItem="kpY-T0-QJr" secondAttribute="bottom" constant="15" id="STh-Rr-4BK"/>
+                            <constraint firstItem="kpY-T0-QJr" firstAttribute="top" secondItem="mmZ-SM-kwL" secondAttribute="bottom" constant="20" id="WKc-vl-q5v"/>
+                            <constraint firstAttribute="trailing" secondItem="kpY-T0-QJr" secondAttribute="trailing" id="e9a-4q-OFa"/>
+                            <constraint firstItem="mmZ-SM-kwL" firstAttribute="top" secondItem="y8y-aR-v4Q" secondAttribute="bottom" constant="5" id="hjh-9f-Jd7"/>
+                            <constraint firstItem="y8y-aR-v4Q" firstAttribute="top" secondItem="uGa-OB-dpg" secondAttribute="top" constant="15" id="m22-qS-i4L"/>
+                            <constraint firstItem="y8y-aR-v4Q" firstAttribute="centerX" secondItem="uGa-OB-dpg" secondAttribute="centerX" multiplier="0.6" id="o5J-dl-CXC"/>
+                            <constraint firstItem="kpY-T0-QJr" firstAttribute="leading" secondItem="uGa-OB-dpg" secondAttribute="leading" constant="30" id="vKp-9t-5Rz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uGa-OB-dpg" secondAttribute="trailing" id="FnB-xd-rqa"/>
+                <constraint firstItem="uGa-OB-dpg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HZW-sl-Jci"/>
+                <constraint firstAttribute="bottom" secondItem="uGa-OB-dpg" secondAttribute="bottom" id="YLq-we-jvH"/>
+                <constraint firstItem="uGa-OB-dpg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gJI-cr-I6h"/>
+            </constraints>
+            <size key="customSize" width="375" height="614"/>
+            <point key="canvasLocation" x="373.1884057971015" y="333.48214285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Quickjobs_image-1" width="456" height="597.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

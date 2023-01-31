@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="KGk-i7-Jjw" customClass="AddProductSuccessTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge1" translatesAutoresizingMaskIntoConstraints="NO" id="4ra-no-4iy">
+                        <rect key="frame" x="137.5" y="35" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="T7i-MS-x7I"/>
+                            <constraint firstAttribute="height" constant="45" id="bTl-kh-oQg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Posted Successfully" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gV-mp-zZc">
+                        <rect key="frame" x="40" y="95" width="240" height="22"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-cd-hHL">
+                        <rect key="frame" x="30" y="127" width="260" height="36"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Our team is reviewing the product details and will make it live shortly">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prK-zf-7Le" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="190" width="320" height="40"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="x1e-7d-fta"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.29803921568627451" green="0.81568627450980391" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="prK-zf-7Le" secondAttribute="bottom" constant="-20" id="7Sx-T4-3Vf"/>
+                    <constraint firstItem="prK-zf-7Le" firstAttribute="top" secondItem="Dz3-cd-hHL" secondAttribute="bottom" constant="27" id="B8j-AB-N2C"/>
+                    <constraint firstItem="4gV-mp-zZc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NZJ-6Q-NTI"/>
+                    <constraint firstAttribute="trailing" secondItem="prK-zf-7Le" secondAttribute="trailing" id="Ttd-BR-UkO"/>
+                    <constraint firstAttribute="trailing" secondItem="Dz3-cd-hHL" secondAttribute="trailing" constant="30" id="Z4E-SQ-1Bx"/>
+                    <constraint firstItem="4ra-no-4iy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="dQC-tz-Wk3"/>
+                    <constraint firstItem="prK-zf-7Le" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="diA-f3-X7y"/>
+                    <constraint firstItem="Dz3-cd-hHL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="nSR-5k-GWf"/>
+                    <constraint firstItem="4gV-mp-zZc" firstAttribute="top" secondItem="4ra-no-4iy" secondAttribute="bottom" constant="15" id="nou-0h-0Ey"/>
+                    <constraint firstItem="Dz3-cd-hHL" firstAttribute="top" secondItem="4gV-mp-zZc" secondAttribute="bottom" constant="10" id="wyh-NR-jOy"/>
+                    <constraint firstItem="4ra-no-4iy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="z51-zq-gji"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="infoLabel" destination="Dz3-cd-hHL" id="hFS-9y-097"/>
+                <outlet property="titleLabel" destination="4gV-mp-zZc" id="lhv-Z8-hrn"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="126.89732142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="badge1" width="68.5" height="68.5"/>
+    </resources>
+</document>

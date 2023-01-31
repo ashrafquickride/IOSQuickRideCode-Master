@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbiesAndSkillsHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="HobbiesAndSkillsHeaderCollectionReusableView" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbV-lf-2UJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_icon_gray" translatesAutoresizingMaskIntoConstraints="NO" id="F3N-TI-PAd">
+                            <rect key="frame" x="5" y="30" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="SkQ-We-cSZ"/>
+                                <constraint firstAttribute="height" constant="50" id="Szo-nj-Y8e"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7an-YW-C5T">
+                            <rect key="frame" x="75" y="25" width="240" height="59"/>
+                            <attributedString key="attributedText">
+                                <fragment content="We connect like minded professionals to have meaningful conversations and a fun ride">
+                                    <attributes>
+                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="7an-YW-C5T" firstAttribute="leading" secondItem="F3N-TI-PAd" secondAttribute="trailing" constant="20" id="68T-cp-8vB"/>
+                        <constraint firstItem="F3N-TI-PAd" firstAttribute="leading" secondItem="QbV-lf-2UJ" secondAttribute="leading" constant="5" id="Evp-XL-UQG"/>
+                        <constraint firstAttribute="height" id="Qad-GK-KG1"/>
+                        <constraint firstAttribute="trailing" secondItem="7an-YW-C5T" secondAttribute="trailing" constant="5" id="dQg-Ox-eaI"/>
+                        <constraint firstItem="7an-YW-C5T" firstAttribute="top" secondItem="F3N-TI-PAd" secondAttribute="top" constant="-5" id="hcr-n2-bgA"/>
+                        <constraint firstItem="F3N-TI-PAd" firstAttribute="top" secondItem="QbV-lf-2UJ" secondAttribute="top" constant="30" id="vwC-QV-eUq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x3-4I-IeT">
+                    <rect key="frame" x="0.0" y="15" width="320" height="94"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6x3-4I-IeT" firstAttribute="leading" secondItem="QbV-lf-2UJ" secondAttribute="leading" id="47F-xk-SqP"/>
+                <constraint firstItem="6x3-4I-IeT" firstAttribute="trailing" secondItem="QbV-lf-2UJ" secondAttribute="trailing" id="DJz-oC-GvY"/>
+                <constraint firstAttribute="trailing" secondItem="QbV-lf-2UJ" secondAttribute="trailing" id="JyL-1Z-ajA"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="6x3-4I-IeT" secondAttribute="bottom" constant="15" id="PEU-cS-DGM"/>
+                <constraint firstItem="QbV-lf-2UJ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Tjy-gJ-JrN"/>
+                <constraint firstItem="6x3-4I-IeT" firstAttribute="top" secondItem="QbV-lf-2UJ" secondAttribute="bottom" constant="15" id="VXx-WB-AVP"/>
+                <constraint firstItem="QbV-lf-2UJ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="gyI-Pc-LgJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="headerLabel" destination="6x3-4I-IeT" id="I50-RX-SVB"/>
+                <outlet property="infoView" destination="QbV-lf-2UJ" id="Ugu-DF-XXo"/>
+                <outlet property="infoViewHeightConstraint" destination="Qad-GK-KG1" id="27g-Q1-XZU"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="car_icon_gray" width="50.5" height="51.5"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="DriverAcceptedTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waiting_for_driver" translatesAutoresizingMaskIntoConstraints="NO" id="G8L-e0-WQq">
+                        <rect key="frame" x="137.5" y="50" width="45" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="Blg-jy-vaV"/>
+                            <constraint firstAttribute="width" constant="45" id="TnQ-Pv-h8A"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ride Accepted!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-Z5-BMJ">
+                        <rect key="frame" x="87" y="125" width="146" height="24"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_tick_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qkC-Ws-bZX">
+                        <rect key="frame" x="167" y="74.5" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="N54-2f-LUL"/>
+                            <constraint firstAttribute="height" constant="36" id="SEF-OL-5pZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G8L-e0-WQq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2Xe-aS-cOF"/>
+                    <constraint firstItem="qkC-Ws-bZX" firstAttribute="centerY" secondItem="G8L-e0-WQq" secondAttribute="centerY" constant="10" id="7JF-tT-Dy0"/>
+                    <constraint firstItem="RtS-Z5-BMJ" firstAttribute="centerX" secondItem="G8L-e0-WQq" secondAttribute="centerX" id="P1M-8R-X9L"/>
+                    <constraint firstItem="G8L-e0-WQq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="ZC0-ma-SCa"/>
+                    <constraint firstItem="qkC-Ws-bZX" firstAttribute="centerX" secondItem="G8L-e0-WQq" secondAttribute="centerX" constant="25" id="jm7-29-khO"/>
+                    <constraint firstItem="RtS-Z5-BMJ" firstAttribute="top" secondItem="G8L-e0-WQq" secondAttribute="bottom" constant="10" id="tJe-eC-Gln"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="194.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="group_tick_icon" width="64" height="64"/>
+        <image name="waiting_for_driver" width="67.5" height="95.5"/>
+    </resources>
+</document>

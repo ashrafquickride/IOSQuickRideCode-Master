@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HomeNeedHelpTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeNeedHelpTableViewCell" rowHeight="131" id="mda-1x-PHs" customClass="HomeNeedHelpTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mda-1x-PHs" id="jlg-0n-YjB">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyD-Qy-I53">
+                        <rect key="frame" x="20" y="15" width="374" height="105"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEED HELP?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA4-rK-fpd">
+                                <rect key="frame" x="0.0" y="0.0" width="86" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V21-UG-8R1">
+                                <rect key="frame" x="0.0" y="27" width="354" height="32"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You can look for answers in our help center or contact our support agents by phone or email">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fF-xD-kZ3">
+                                <rect key="frame" x="0.0" y="69" width="75" height="30"/>
+                                <state key="normal" title="Go to help "/>
+                                <connections>
+                                    <action selector="goToHelpTapped:" destination="mda-1x-PHs" eventType="touchUpInside" id="jrx-Oe-e4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8fF-xD-kZ3" firstAttribute="leading" secondItem="V21-UG-8R1" secondAttribute="leading" id="1H0-fU-r9B"/>
+                            <constraint firstItem="V21-UG-8R1" firstAttribute="top" secondItem="WA4-rK-fpd" secondAttribute="bottom" constant="10" id="5ed-f1-Xbi"/>
+                            <constraint firstItem="WA4-rK-fpd" firstAttribute="top" secondItem="PyD-Qy-I53" secondAttribute="top" id="ESc-Vc-csX"/>
+                            <constraint firstItem="WA4-rK-fpd" firstAttribute="leading" secondItem="PyD-Qy-I53" secondAttribute="leading" id="H2N-4B-EzF"/>
+                            <constraint firstAttribute="trailing" secondItem="V21-UG-8R1" secondAttribute="trailing" constant="20" id="K1P-My-UPo"/>
+                            <constraint firstItem="8fF-xD-kZ3" firstAttribute="top" secondItem="V21-UG-8R1" secondAttribute="bottom" constant="10" id="KVj-vV-ACm"/>
+                            <constraint firstAttribute="height" constant="105" id="WYA-84-fiq"/>
+                            <constraint firstItem="V21-UG-8R1" firstAttribute="leading" secondItem="WA4-rK-fpd" secondAttribute="leading" id="Z47-7U-ZK9"/>
+                            <constraint firstAttribute="bottom" secondItem="8fF-xD-kZ3" secondAttribute="bottom" constant="6" id="k2L-fq-kAo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PyD-Qy-I53" secondAttribute="trailing" constant="20" id="1yl-Zo-QWa"/>
+                    <constraint firstItem="PyD-Qy-I53" firstAttribute="leading" secondItem="jlg-0n-YjB" secondAttribute="leading" constant="20" id="RCe-3I-5Jj"/>
+                    <constraint firstItem="PyD-Qy-I53" firstAttribute="top" secondItem="jlg-0n-YjB" secondAttribute="top" constant="15" id="elg-b3-Eai"/>
+                    <constraint firstAttribute="bottom" secondItem="PyD-Qy-I53" secondAttribute="bottom" constant="11" id="iPr-jL-zW3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="V21-UG-8R1" id="c6o-80-k7I"/>
+                <outlet property="needHelpView" destination="PyD-Qy-I53" id="fwW-Dy-gFM"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="134.26339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

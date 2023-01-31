@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExclusiveTaxiCollectionViewCell" id="gTV-IL-0wX" customClass="ExclusiveTaxiCollectionViewCell" customModule="G_Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="143"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmp-Oj-m1d" customClass="QuickRideCardView" customModule="G_Ride" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="289" height="123"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exculsive_taxi_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ky1-GJ-3YO">
+                                <rect key="frame" x="15" y="24" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="E6r-cr-bl8"/>
+                                    <constraint firstAttribute="width" constant="110" id="NEz-0o-7U2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCM-9y-GFb">
+                                <rect key="frame" x="15" y="79" width="259" height="34"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exslusive_taxi_pickup_icon" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-HK-eG3">
+                                        <rect key="frame" x="0.0" y="9.5" width="15" height="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="QCe-n4-D2t"/>
+                                            <constraint firstAttribute="width" constant="15" id="Rhp-if-uUW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3P-fp-MWR">
+                                        <rect key="frame" x="20" y="17" width="129" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l66-gh-gTB" customClass="QuickRideCardView" customModule="G_Ride" customModuleProvider="target">
+                                        <rect key="frame" x="154" y="2" width="105" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEe-Wp-kQW">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="12"/>
+                                                <state key="normal" title="BOOK">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fEe-Wp-kQW" secondAttribute="bottom" id="5oZ-Tc-hoV"/>
+                                            <constraint firstItem="fEe-Wp-kQW" firstAttribute="leading" secondItem="l66-gh-gTB" secondAttribute="leading" id="7IO-Ra-Mcr"/>
+                                            <constraint firstAttribute="trailing" secondItem="fEe-Wp-kQW" secondAttribute="trailing" id="XHb-63-5DK"/>
+                                            <constraint firstAttribute="width" constant="105" id="nyB-He-Z4I"/>
+                                            <constraint firstAttribute="height" constant="30" id="sYt-dR-mBs"/>
+                                            <constraint firstItem="fEe-Wp-kQW" firstAttribute="top" secondItem="l66-gh-gTB" secondAttribute="top" id="uB1-Es-MUw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="l66-gh-gTB" firstAttribute="leading" secondItem="Q3P-fp-MWR" secondAttribute="trailing" constant="5" id="6R6-Ks-0gc"/>
+                                    <constraint firstItem="IZX-HK-eG3" firstAttribute="centerY" secondItem="Q3P-fp-MWR" secondAttribute="centerY" id="Aq0-6R-31W"/>
+                                    <constraint firstAttribute="bottom" secondItem="l66-gh-gTB" secondAttribute="bottom" constant="2" id="HiV-Iq-dfG"/>
+                                    <constraint firstItem="Q3P-fp-MWR" firstAttribute="leading" secondItem="IZX-HK-eG3" secondAttribute="trailing" constant="5" id="OHk-Pq-16y"/>
+                                    <constraint firstItem="Q3P-fp-MWR" firstAttribute="centerY" secondItem="YCM-9y-GFb" secondAttribute="centerY" id="RwU-E2-zAJ"/>
+                                    <constraint firstItem="IZX-HK-eG3" firstAttribute="leading" secondItem="YCM-9y-GFb" secondAttribute="leading" id="enu-Yi-hZG"/>
+                                    <constraint firstItem="l66-gh-gTB" firstAttribute="top" secondItem="YCM-9y-GFb" secondAttribute="top" constant="2" id="tPK-pp-qdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="l66-gh-gTB" secondAttribute="trailing" id="twM-mF-FPr"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="irC-ZM-eAL">
+                                <rect key="frame" x="224" y="34" width="50" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5p-VP-rUC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O43-25-1tK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.70980392156862748" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YCM-9y-GFb" secondAttribute="trailing" constant="15" id="3gq-YC-Njd"/>
+                            <constraint firstAttribute="trailing" secondItem="irC-ZM-eAL" secondAttribute="trailing" constant="15" id="JJt-W3-zTB"/>
+                            <constraint firstItem="YCM-9y-GFb" firstAttribute="leading" secondItem="Mmp-Oj-m1d" secondAttribute="leading" constant="15" id="QKg-gS-xrK"/>
+                            <constraint firstItem="YCM-9y-GFb" firstAttribute="top" secondItem="Ky1-GJ-3YO" secondAttribute="bottom" constant="5" id="ZI8-Vy-ayK"/>
+                            <constraint firstItem="Ky1-GJ-3YO" firstAttribute="leading" secondItem="IZX-HK-eG3" secondAttribute="leading" id="dUU-Eh-BEA"/>
+                            <constraint firstItem="irC-ZM-eAL" firstAttribute="centerY" secondItem="Ky1-GJ-3YO" secondAttribute="centerY" id="eKS-1l-IyV"/>
+                            <constraint firstAttribute="bottom" secondItem="YCM-9y-GFb" secondAttribute="bottom" constant="10" id="fLu-ID-h4g"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mmp-Oj-m1d" secondAttribute="trailing" constant="10" id="cCo-XL-ldV"/>
+                <constraint firstAttribute="bottom" secondItem="Mmp-Oj-m1d" secondAttribute="bottom" constant="15" id="cVd-Dk-nUd"/>
+                <constraint firstItem="Mmp-Oj-m1d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="drG-o7-QiR"/>
+                <constraint firstItem="Mmp-Oj-m1d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="eio-U8-YvZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="309" height="143"/>
+            <connections>
+                <outlet property="joinButton" destination="fEe-Wp-kQW" id="W4x-hM-JzM"/>
+                <outlet property="pickUpTimeShowingLabel" destination="Q3P-fp-MWR" id="Q38-9x-v1S"/>
+                <outlet property="priceLabel" destination="U5p-VP-rUC" id="4yZ-VC-tl4"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="124.21875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="exculsive_taxi_icon" width="121" height="47"/>
+        <image name="exslusive_taxi_pickup_icon" width="8.5" height="8.5"/>
+    </resources>
+</document>

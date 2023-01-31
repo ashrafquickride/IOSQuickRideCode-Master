@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="195" id="KGk-i7-Jjw" customClass="addDiscriptionTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="195"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buyers prefer the products with a clear description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvR-Wv-knl">
+                        <rect key="frame" x="20" y="37" width="328" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYY-0q-a5A">
+                        <rect key="frame" x="20" y="15" width="128" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-4G-hUQ" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="20" y="66" width="328" height="105"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZKE-f5-C44">
+                                <rect key="frame" x="15" y="15" width="298" height="75"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZKE-f5-C44" secondAttribute="bottom" constant="15" id="5Uj-yk-Epx"/>
+                            <constraint firstAttribute="trailing" secondItem="ZKE-f5-C44" secondAttribute="trailing" constant="15" id="6JL-EI-6cH"/>
+                            <constraint firstItem="ZKE-f5-C44" firstAttribute="top" secondItem="4Xu-4G-hUQ" secondAttribute="top" constant="15" id="U03-bY-xuF"/>
+                            <constraint firstAttribute="height" constant="105" id="boV-vC-eGC"/>
+                            <constraint firstItem="ZKE-f5-C44" firstAttribute="leading" secondItem="4Xu-4G-hUQ" secondAttribute="leading" constant="15" id="f1m-Ic-ydF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vYY-0q-a5A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4Gg-Z7-Mum"/>
+                    <constraint firstAttribute="trailing" secondItem="4Xu-4G-hUQ" secondAttribute="trailing" constant="20" id="BgF-pm-z6T"/>
+                    <constraint firstAttribute="bottom" secondItem="4Xu-4G-hUQ" secondAttribute="bottom" constant="24" id="BpW-ip-kyD"/>
+                    <constraint firstItem="QvR-Wv-knl" firstAttribute="leading" secondItem="vYY-0q-a5A" secondAttribute="leading" id="IUp-vP-8OG"/>
+                    <constraint firstItem="4Xu-4G-hUQ" firstAttribute="top" secondItem="QvR-Wv-knl" secondAttribute="bottom" constant="15" id="P7R-mO-D0z"/>
+                    <constraint firstItem="4Xu-4G-hUQ" firstAttribute="leading" secondItem="QvR-Wv-knl" secondAttribute="leading" id="joi-5h-wqL"/>
+                    <constraint firstItem="vYY-0q-a5A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rob-YJ-PB9"/>
+                    <constraint firstItem="QvR-Wv-knl" firstAttribute="top" secondItem="vYY-0q-a5A" secondAttribute="bottom" constant="5" id="vsc-lg-1CR"/>
+                    <constraint firstAttribute="trailing" secondItem="QvR-Wv-knl" secondAttribute="trailing" constant="20" id="xNv-Th-UWZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionTextView" destination="ZKE-f5-C44" id="fLc-iQ-Psm"/>
+                <outlet property="descriptionView" destination="4Xu-4G-hUQ" id="LC1-qZ-TBc"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="130.91517857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaxiPoolCancelReasonTableViewCell" id="KGk-i7-Jjw" customClass="TaxiPoolCancelReasonTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My plan Changed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xT-U1-z7F" userLabel="Cancel Reason Label">
+                        <rect key="frame" x="28" y="4" width="305" height="18.666666666666668"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="gXV-C1-mxa" userLabel="Cancel Image View">
+                        <rect key="frame" x="0.0" y="4.3333333333333321" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="WmM-dR-EIm"/>
+                            <constraint firstAttribute="width" constant="18" id="zuf-hw-HyY"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-xU-CXT" userLabel="Call Button">
+                        <rect key="frame" x="343" y="4" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="W0o-OY-jjE"/>
+                            <constraint firstAttribute="width" constant="30" id="rPC-JH-5hr"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_support_call_icon_blue" title=" "/>
+                        <connections>
+                            <action selector="callIconBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fGO-03-wec"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="S12-Ep-Rch">
+                        <rect key="frame" x="28" y="27.666666666666668" width="305" height="38.666666666666657"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please contact support" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDY-Ju-p25" userLabel="Please Contact">
+                                <rect key="frame" x="0.0" y="38.666666666666657" width="159" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="37K-Jw-iqt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7xT-U1-z7F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Cpj-xF-RJV"/>
+                    <constraint firstItem="S12-Ep-Rch" firstAttribute="top" secondItem="7xT-U1-z7F" secondAttribute="bottom" constant="5" id="Ihi-fg-zQu"/>
+                    <constraint firstItem="oT0-xU-CXT" firstAttribute="leading" secondItem="7xT-U1-z7F" secondAttribute="trailing" constant="10" id="Q3E-aU-oyL"/>
+                    <constraint firstItem="oT0-xU-CXT" firstAttribute="top" secondItem="7xT-U1-z7F" secondAttribute="top" id="Vow-HN-cbJ"/>
+                    <constraint firstAttribute="bottom" secondItem="S12-Ep-Rch" secondAttribute="bottom" constant="5.6699999999999999" id="cte-sw-bqj"/>
+                    <constraint firstItem="gXV-C1-mxa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f5m-xA-MtN"/>
+                    <constraint firstItem="gXV-C1-mxa" firstAttribute="centerY" secondItem="7xT-U1-z7F" secondAttribute="centerY" id="n3z-Pa-aCK"/>
+                    <constraint firstItem="7xT-U1-z7F" firstAttribute="leading" secondItem="gXV-C1-mxa" secondAttribute="trailing" constant="10" id="nkd-Vv-39N"/>
+                    <constraint firstItem="S12-Ep-Rch" firstAttribute="leading" secondItem="7xT-U1-z7F" secondAttribute="leading" id="np5-2Z-wrX"/>
+                    <constraint firstAttribute="trailing" secondItem="oT0-xU-CXT" secondAttribute="trailing" constant="5" id="p8W-7S-aOb"/>
+                    <constraint firstItem="S12-Ep-Rch" firstAttribute="trailing" secondItem="7xT-U1-z7F" secondAttribute="trailing" id="tPT-dy-dLO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="callIconBtn" destination="oT0-xU-CXT" id="z22-Qp-WIB"/>
+                <outlet property="cancelImageView" destination="gXV-C1-mxa" id="obh-uv-z9l"/>
+                <outlet property="cancelReasonLabel" destination="7xT-U1-z7F" id="3j8-3m-bSf"/>
+                <outlet property="pleaseContact" destination="bDY-Ju-p25" id="b82-4c-kUa"/>
+            </connections>
+            <point key="canvasLocation" x="-193.84615384615384" y="-16.350710900473931"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cancel" width="20" height="20"/>
+        <image name="ic_support_call_icon_blue" width="21.666666030883789" height="21.666666030883789"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

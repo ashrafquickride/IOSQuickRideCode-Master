@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WalkPathView" insetsLayoutMarginsFromSafeArea="NO" id="4Hc-X7-wG2" customClass="WalkPathView" customModule="G_Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmr-BG-osg">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1J-9k-25g">
+                            <rect key="frame" x="30" y="0.0" width="90" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walk_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4Nw-cW-eQI">
+                                    <rect key="frame" x="2" y="3" width="15" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.25 KM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVg-qI-o4l">
+                                    <rect key="frame" x="17" y="5" width="40" height="11"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="9"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_right_green" translatesAutoresizingMaskIntoConstraints="NO" id="QfH-I7-Rt0">
+                                    <rect key="frame" x="60" y="6" width="7" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_schedule" translatesAutoresizingMaskIntoConstraints="NO" id="cPy-ph-Qh2">
+                                    <rect key="frame" x="70" y="3" width="17" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_down_blue" translatesAutoresizingMaskIntoConstraints="NO" id="BLu-iX-xFn">
+                                    <rect key="frame" x="40" y="17" width="10" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdl-1S-BzJ">
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walk_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ine-7O-ri8">
+                                    <rect key="frame" x="1" y="3" width="15" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11.99 KM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEz-Rx-2tg">
+                                    <rect key="frame" x="14" y="5" width="40" height="11"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="9"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_right_green" translatesAutoresizingMaskIntoConstraints="NO" id="8Bf-wh-6ue">
+                                    <rect key="frame" x="56" y="5" width="6" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_schedule" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-1k-jaw">
+                                    <rect key="frame" x="64" y="4" width="15" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_right_green" translatesAutoresizingMaskIntoConstraints="NO" id="ALx-Z1-LSI">
+                                    <rect key="frame" x="82" y="5" width="6" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.59 KM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKt-MJ-ibD">
+                                    <rect key="frame" x="98" y="5" width="40" height="11"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="9"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walk_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DgA-ZO-2Kv">
+                                    <rect key="frame" x="86" y="2" width="15" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_down_blue" translatesAutoresizingMaskIntoConstraints="NO" id="URc-JK-iOa">
+                                    <rect key="frame" x="65" y="17" width="10" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBw-Xb-pi4">
+                            <rect key="frame" x="30" y="0.0" width="90" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_schedule" translatesAutoresizingMaskIntoConstraints="NO" id="shS-5c-etP">
+                                    <rect key="frame" x="3" y="0.0" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_right_green" translatesAutoresizingMaskIntoConstraints="NO" id="oPO-5r-Joi">
+                                    <rect key="frame" x="26" y="0.0" width="6" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walk_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-4D-vHG">
+                                    <rect key="frame" x="34" y="3" width="15" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.25 KM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O1-0F-DFE">
+                                    <rect key="frame" x="48" y="4" width="41" height="11"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="9"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_down_blue" translatesAutoresizingMaskIntoConstraints="NO" id="c3O-4V-Gjb">
+                                    <rect key="frame" x="40" y="17" width="10" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="Xdl-1S-BzJ" id="eLH-OA-tR2"/>
+                <outlet property="carIcon" destination="aRA-1k-jaw" id="6fp-iL-RQi"/>
+                <outlet property="dropToEndArrow" destination="ALx-Z1-LSI" id="xP8-D8-81W"/>
+                <outlet property="dropToEndLabel" destination="aKt-MJ-ibD" id="N77-kA-UXf"/>
+                <outlet property="dropToEndView" destination="IBw-Xb-pi4" id="F1z-7T-Yqf"/>
+                <outlet property="dropToEndViewArrowIcon" destination="oPO-5r-Joi" id="gQx-6Z-GfT"/>
+                <outlet property="dropToEndViewCarIcon" destination="shS-5c-etP" id="Bwi-3B-DXo"/>
+                <outlet property="dropToEndViewDistanceLabel" destination="9O1-0F-DFE" id="JuD-hD-QhG"/>
+                <outlet property="startToPickupArrowIcon" destination="8Bf-wh-6ue" id="Wnm-Fu-6i9"/>
+                <outlet property="startToPickupLabel" destination="pEz-Rx-2tg" id="kVk-6o-0Hx"/>
+                <outlet property="startToPickupView" destination="m1J-9k-25g" id="bFU-Db-DbN"/>
+                <outlet property="startToPickupViewArrowIcon" destination="QfH-I7-Rt0" id="jRf-Ak-pKq"/>
+                <outlet property="startToPickupViewCarIcon" destination="cPy-ph-Qh2" id="1jF-iy-X0b"/>
+                <outlet property="startToPickupViewDistanceLabel" destination="cVg-qI-o4l" id="RNI-qh-nP2"/>
+                <outlet property="walkPathView" destination="Jmr-BG-osg" id="1sJ-ol-GZM"/>
+            </connections>
+            <point key="canvasLocation" x="-107" y="-16.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_right_green" width="42" height="75"/>
+        <image name="icon_down_blue" width="64" height="64"/>
+        <image name="icon_schedule" width="75" height="59"/>
+        <image name="walk_icon" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18F132" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Account" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="earnedPoints" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="purchasedPoints" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reserved" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rewardsPoints" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="BlockedUser" syncable="YES">
+        <attribute name="blockedUserId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="ClosedPassengerRide" syncable="YES">
+        <attribute name="actualEndtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualStartTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="allowRideMatchToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dropLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expectedEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="newFare" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noOfSeats" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="overLappingDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupAndDropRoutePolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="riderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderRideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routePathPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ClosedRiderRide" syncable="YES">
+        <attribute name="actualEndtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualStartTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="additionalFacilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="allowRideMatchToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="availableSeats" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cumulativeOverlapDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expectedEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="farePerKm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="freezeRide" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="makeAndCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noOfPassengers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="promocode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderHasHelmet" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="riderPathTravelled" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routePathPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vehicleImageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Contact" syncable="YES">
+        <attribute name="contactGender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactImageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactNo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="contactType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enableChatAndCall" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="refreshedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="supportCall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Conversation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chatTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="destId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="msgType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sourceId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sourceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EventService" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupChatMessage" syncable="YES">
+        <attribute name="chatTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="groupchatmessgeid" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonenumber" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupConversationMessage" syncable="YES">
+        <attribute name="groupId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="senderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LinkedWallet" syncable="YES">
+        <attribute name="custId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Location" syncable="YES">
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="formattedAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recentUsedTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NomineeDetails" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nomineeAge" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nomineeMobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomineeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomineeRelation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="PassengerRide" syncable="YES">
+        <attribute name="actualEndtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualStartTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="allowRideMatchToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dropLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expectedEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="newFare" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noOfSeats" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="overLappingDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupAndDropRoutePolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="riderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderRideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routePathPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProfileVerificationData" syncable="YES">
+        <attribute name="emailVerified" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageVerified" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="profileVerified" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="RecentSearchedLocation" syncable="YES">
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="formattedAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentUsedTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RegularPassengerRide" syncable="YES">
+        <attribute name="actualEndtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualStartTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="allowRideMatchToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dayType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dropLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dropTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expectedEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="friday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="monday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pickupTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="regularRiderRideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="riderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routePathPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saturday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sunday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thursday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tuesday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wednesday" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RegularRiderRide" syncable="YES">
+        <attribute name="actualEndtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualStartTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="additionalFacilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="allowRideMatchToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="availableSeats" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dayType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expectedEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="farePerKm" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="friday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="monday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noOfPassengers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderHasHelmet" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routePathPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saturday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sunday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thursday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tuesday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wednesday" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RideRoute" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="overviewPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RiderRide" syncable="YES">
+        <attribute name="actualEndtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualStartTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="additionalFacilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="allowRideMatchToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="availableSeats" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cumulativeOverlapDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expectedEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="farePerKm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="freezeRide" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="makeAndCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noOfPassengers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="promocode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderHasHelmet" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="riderPathTravelled" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routePathPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeToJoinedGroups" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vehicleImageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waypoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="." syncable="YES">
+        <attribute name="alternateContactNo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="appliedPromoCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="asksCashTransactions" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="clientIosKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clientUniqueDeviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactNo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="freeRideId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iosAppVersionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primaryArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryAreaLat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primaryAreaLng" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primaryRegion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referralCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscriptionStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueDeviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" defaultValueString="&quot;&quot;" syncable="YES"/>
+    </entity>
+    <entity name="UserFavouriteLocation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="leavingTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="locationId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserFavouritePartner" syncable="YES">
+        <attribute name="favouritePartnerUserId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserGroup" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="creatorId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="currentUserStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastRefreshedTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedUserId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserGroupMember" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedUserId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportCall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verificationStatus" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserNotification" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconUri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActionRequired" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isActionTaken" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isBigPictureRequired" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="msgClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgObjectJson" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notificationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sendFrom" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserPreferredRoute" syncable="YES">
+        <attribute name="fromLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserProfile" syncable="YES">
+        <attribute name="aboutMe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmType" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailforcommunication" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emergencyContactNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchCompanyConstraint" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchGenderConstraint" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchGroupCompaniesConstraint" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="noOfReviews" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="numberOfRidesAsPassenger" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="numberOfRidesAsRider" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="preferredRole" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferredVehicle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideMatchPercentageAsPassenger" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rideMatchPercentageAsRider" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="roleAtSignup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportCall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verificationStatus" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserRecentLocation" syncable="YES">
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recentAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentAddressName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentLocationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="UserRouteGroup" syncable="YES">
+        <attribute name="appName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creatorId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLocationAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromLocationLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLocationLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memberCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLocationAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toLocationLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLocationLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="Vehicle" syncable="YES">
+        <attribute name="additionalFacilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="defaultVehicle" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fare" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="makeAndCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="registrationNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riderHasHelmet" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vehicleModel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicleType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WalkRoute" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="overviewPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeId" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="18" positionY="63" width="128" height="30"/>
+        <element name="BlockedUser" positionX="-18" positionY="27" width="128" height="135"/>
+        <element name="ClosedPassengerRide" positionX="18" positionY="63" width="128" height="615"/>
+        <element name="ClosedRiderRide" positionX="45" positionY="90" width="128" height="615"/>
+        <element name="Contact" positionX="-9" positionY="36" width="128" height="195"/>
+        <element name="Conversation" positionX="36" positionY="81" width="128" height="255"/>
+        <element name="EventService" positionX="9" positionY="54" width="128" height="75"/>
+        <element name="GroupChatMessage" positionX="45" positionY="90" width="128" height="135"/>
+        <element name="GroupConversationMessage" positionX="18" positionY="63" width="128" height="150"/>
+        <element name="LinkedWallet" positionX="-9" positionY="135" width="128" height="150"/>
+        <element name="Location" positionX="0" positionY="144" width="128" height="240"/>
+        <element name="NomineeDetails" positionX="-9" positionY="135" width="128" height="135"/>
+        <element name="PassengerRide" positionX="9" positionY="54" width="128" height="615"/>
+        <element name="ProfileVerificationData" positionX="9" positionY="153" width="128" height="105"/>
+        <element name="RecentSearchedLocation" positionX="-9" positionY="135" width="128" height="255"/>
+        <element name="RegularPassengerRide" positionX="-9" positionY="36" width="128" height="705"/>
+        <element name="RegularRiderRide" positionX="-9" positionY="36" width="128" height="645"/>
+        <element name="RideRoute" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="RiderRide" positionX="36" positionY="81" width="128" height="615"/>
+        <element name="User" positionX="27" positionY="72" width="128" height="418"/>
+        <element name="UserFavouriteLocation" positionX="27" positionY="72" width="128" height="225"/>
+        <element name="UserFavouritePartner" positionX="0" positionY="45" width="128" height="135"/>
+        <element name="UserGroup" positionX="36" positionY="81" width="128" height="285"/>
+        <element name="UserGroupMember" positionX="-54" positionY="-9" width="128" height="240"/>
+        <element name="UserNotification" positionX="0" positionY="45" width="128" height="300"/>
+        <element name="UserPreferredRoute" positionX="18" positionY="162" width="128" height="150"/>
+        <element name="UserProfile" positionX="9" positionY="54" width="128" height="30"/>
+        <element name="UserRecentLocation" positionX="0" positionY="45" width="128" height="210"/>
+        <element name="UserRouteGroup" positionX="0" positionY="45" width="128" height="225"/>
+        <element name="Vehicle" positionX="18" positionY="63" width="128" height="240"/>
+        <element name="WalkRoute" positionX="-36" positionY="9" width="128" height="180"/>
+    </elements>
+</model>

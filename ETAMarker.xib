@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ETAMarkerView" id="ic2-WK-DUn" customClass="ETAMarkerView" customModule="G_Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eta_marker" translatesAutoresizingMaskIntoConstraints="NO" id="0IQ-r5-b3u">
+                    <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w51-HE-MU5">
+                    <rect key="frame" x="0.0" y="2" width="25" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Ddb-jU-WTH"/>
+                        <constraint firstAttribute="width" constant="25" id="QDm-fD-OsW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-rP-kkX">
+                    <rect key="frame" x="0.0" y="15" width="25" height="4"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="2mw-uF-k4w"/>
+                        <constraint firstAttribute="height" constant="4" id="9V9-SG-x8T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="7"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0IQ-r5-b3u" secondAttribute="trailing" id="5c3-8U-dwx"/>
+                <constraint firstItem="Sf7-rP-kkX" firstAttribute="top" secondItem="w51-HE-MU5" secondAttribute="bottom" constant="-2" id="Jko-zi-951"/>
+                <constraint firstAttribute="bottom" secondItem="0IQ-r5-b3u" secondAttribute="bottom" id="Mu2-fq-YNk"/>
+                <constraint firstItem="Sf7-rP-kkX" firstAttribute="leading" secondItem="ic2-WK-DUn" secondAttribute="leading" id="c3q-Zp-N4D"/>
+                <constraint firstItem="w51-HE-MU5" firstAttribute="top" secondItem="ic2-WK-DUn" secondAttribute="top" constant="2" id="iEb-07-rmo"/>
+                <constraint firstItem="0IQ-r5-b3u" firstAttribute="top" secondItem="ic2-WK-DUn" secondAttribute="top" id="icB-8q-kdy"/>
+                <constraint firstItem="0IQ-r5-b3u" firstAttribute="leading" secondItem="ic2-WK-DUn" secondAttribute="leading" id="jgh-OF-wyq"/>
+                <constraint firstItem="w51-HE-MU5" firstAttribute="leading" secondItem="ic2-WK-DUn" secondAttribute="leading" id="thr-tu-5Kw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="etaLabel" destination="w51-HE-MU5" id="pPB-f6-Ar4"/>
+                <outlet property="etaMarkerImage" destination="0IQ-r5-b3u" id="q0V-lg-erY"/>
+                <outlet property="etaSubtitle" destination="Sf7-rP-kkX" id="YK8-Cr-NpD"/>
+            </connections>
+            <point key="canvasLocation" x="263.5" y="33"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eta_marker" width="66" height="134"/>
+    </resources>
+</document>

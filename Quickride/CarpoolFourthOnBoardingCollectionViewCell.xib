@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarpoolFourthOnBoardingCollectionViewCell" id="LA7-mP-qTh" customClass="CarpoolFourthOnBoardingCollectionViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6O-at-DCY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpool_fourth_on_boarding_img" translatesAutoresizingMaskIntoConstraints="NO" id="M7S-Zx-omD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M7S-Zx-omD" secondAttribute="height" multiplier="5:4" id="TII-rq-ZzM"/>
+                                    <constraint firstAttribute="height" constant="300" id="Xev-f8-adE"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IO3-WM-FA9">
+                                <rect key="frame" x="0.0" y="328" width="375" height="211"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaD-Bb-7Fs">
+                                        <rect key="frame" x="44" y="48" width="48" height="6"/>
+                                        <color key="backgroundColor" red="0.25098039220000001" green="0.63921568630000003" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="7vI-A7-nSZ"/>
+                                            <constraint firstAttribute="width" constant="48" id="Ngy-aB-ztM"/>
+                                            <constraint firstAttribute="width" secondItem="CaD-Bb-7Fs" secondAttribute="height" multiplier="8:1" id="n6b-sH-KDR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Safely" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaZ-e3-t9i">
+                                        <rect key="frame" x="44" y="0.0" width="189" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="189" id="L2X-fA-BCI"/>
+                                            <constraint firstAttribute="width" secondItem="YaZ-e3-t9i" secondAttribute="height" multiplier="189:44" id="NOn-Rk-V8q"/>
+                                            <constraint firstAttribute="height" constant="44" id="ed5-DD-0Ko"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="32"/>
+                                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHg-Dc-aVT">
+                                        <rect key="frame" x="44" y="103" width="329" height="103"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="103" id="aLR-gD-GeI"/>
+                                            <constraint firstAttribute="width" constant="329" id="fGe-wC-5uv"/>
+                                            <constraint firstAttribute="width" secondItem="CHg-Dc-aVT" secondAttribute="height" multiplier="329:103" id="tE8-XS-iEQ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Create your own commute bubbles with in company and community and travel safely">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="CaD-Bb-7Fs" firstAttribute="leading" secondItem="YaZ-e3-t9i" secondAttribute="leading" id="2tl-Bs-2nv"/>
+                                    <constraint firstItem="CHg-Dc-aVT" firstAttribute="leading" secondItem="YaZ-e3-t9i" secondAttribute="leading" id="8Av-Qy-S2C"/>
+                                    <constraint firstItem="YaZ-e3-t9i" firstAttribute="leading" secondItem="IO3-WM-FA9" secondAttribute="leading" constant="44" id="Frd-CE-uNR"/>
+                                    <constraint firstAttribute="width" secondItem="IO3-WM-FA9" secondAttribute="height" multiplier="375:211" id="LJ2-40-VCG"/>
+                                    <constraint firstAttribute="trailing" secondItem="CHg-Dc-aVT" secondAttribute="trailing" constant="2" id="hdu-uQ-6es"/>
+                                    <constraint firstItem="YaZ-e3-t9i" firstAttribute="top" secondItem="IO3-WM-FA9" secondAttribute="top" id="oyG-1O-1Zc"/>
+                                    <constraint firstAttribute="bottom" secondItem="CHg-Dc-aVT" secondAttribute="bottom" constant="5" id="x9i-Sy-CH5"/>
+                                    <constraint firstItem="CaD-Bb-7Fs" firstAttribute="top" secondItem="YaZ-e3-t9i" secondAttribute="bottom" constant="4" id="xgZ-DS-ZJ7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M7S-Zx-omD" firstAttribute="top" secondItem="L6O-at-DCY" secondAttribute="top" constant="20" id="3sb-67-y0y"/>
+                            <constraint firstAttribute="bottom" secondItem="IO3-WM-FA9" secondAttribute="bottom" id="KuS-0p-wdB"/>
+                            <constraint firstItem="IO3-WM-FA9" firstAttribute="leading" secondItem="L6O-at-DCY" secondAttribute="leading" id="KvJ-WA-LHi"/>
+                            <constraint firstAttribute="trailing" secondItem="IO3-WM-FA9" secondAttribute="trailing" id="V4m-P3-NcZ"/>
+                            <constraint firstAttribute="trailing" secondItem="M7S-Zx-omD" secondAttribute="trailing" id="vFU-eV-3RH"/>
+                            <constraint firstItem="M7S-Zx-omD" firstAttribute="leading" secondItem="L6O-at-DCY" secondAttribute="leading" id="vcx-FG-N3l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="U0H-ae-KaL"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="L6O-at-DCY" secondAttribute="bottom" id="F8k-ub-ixx"/>
+                <constraint firstItem="L6O-at-DCY" firstAttribute="leading" secondItem="LA7-mP-qTh" secondAttribute="leading" id="RCi-7k-YQW"/>
+                <constraint firstAttribute="trailing" secondItem="L6O-at-DCY" secondAttribute="trailing" id="Ss4-HH-tPE"/>
+                <constraint firstItem="L6O-at-DCY" firstAttribute="top" secondItem="LA7-mP-qTh" secondAttribute="top" id="zDm-CC-G13"/>
+            </constraints>
+            <size key="customSize" width="375" height="539"/>
+            <point key="canvasLocation" x="19.565217391304348" y="136.94196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="carpool_fourth_on_boarding_img" width="540" height="495"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RiskResolveTableViewCell" rowHeight="77" id="KGk-i7-Jjw" customClass="RiskResolveTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMZ-23-hpy">
+                        <rect key="frame" x="249" y="8.5" width="51" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="7hz-zg-Zgt"/>
+                            <constraint firstAttribute="height" constant="19" id="dEW-Mv-JYI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OwH-8c-eln">
+                        <rect key="frame" x="20" y="42" width="300" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fh-M0-sSH">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7vK-xr-Yso"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Mark as Resolve">
+                                    <color key="titleColor" systemColor="tintColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="markAsResolveTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y1F-7T-Is9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="uwubciwcqc" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-Hg-YTS">
+                        <rect key="frame" x="20" y="4" width="219" height="28"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OwH-8c-eln" secondAttribute="bottom" constant="10" id="0M4-OO-6pG"/>
+                    <constraint firstAttribute="trailing" secondItem="OwH-8c-eln" secondAttribute="trailing" id="5gC-me-weJ"/>
+                    <constraint firstItem="l4Y-Hg-YTS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8lq-JE-EDu"/>
+                    <constraint firstItem="OwH-8c-eln" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Dg7-hH-ABg"/>
+                    <constraint firstItem="l4Y-Hg-YTS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="RIA-wn-vaP"/>
+                    <constraint firstItem="PMZ-23-hpy" firstAttribute="leading" secondItem="l4Y-Hg-YTS" secondAttribute="trailing" constant="10" id="VvF-Za-Sr4"/>
+                    <constraint firstAttribute="trailing" secondItem="PMZ-23-hpy" secondAttribute="trailing" constant="20" id="fcE-UE-akg"/>
+                    <constraint firstItem="OwH-8c-eln" firstAttribute="top" secondItem="l4Y-Hg-YTS" secondAttribute="bottom" constant="10" id="nQS-KN-nua"/>
+                    <constraint firstItem="PMZ-23-hpy" firstAttribute="centerY" secondItem="l4Y-Hg-YTS" secondAttribute="centerY" id="wLZ-Dc-hsK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customerRiskReasons" destination="l4Y-Hg-YTS" id="xGH-2c-G7i"/>
+                <outlet property="markAsResolveBtn" destination="9Fh-M0-sSH" id="jod-Z4-4Rr"/>
+                <outlet property="markAsResolveHeightCon" destination="7vK-xr-Yso" id="sia-Za-eXq"/>
+                <outlet property="riskResolveType" destination="PMZ-23-hpy" id="QdC-zL-bqs"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="76.674107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

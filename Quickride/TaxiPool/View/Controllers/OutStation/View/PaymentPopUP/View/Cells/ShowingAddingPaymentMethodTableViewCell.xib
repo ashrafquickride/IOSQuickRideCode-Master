@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Segoe UI Bold(1).ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShowingAddingPaymentMethodTableViewCell" id="KGk-i7-Jjw" customClass="ShowingAddingPaymentMethodTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gM1-y2-X89" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4Lr-1h-hLp" customClass="CircularImageView" customModule="Quickride" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4a4-7z-63P"/>
+                                    <constraint firstAttribute="height" constant="20" id="7cy-sz-eef"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Lr-1h-hLp" firstAttribute="centerX" secondItem="gM1-y2-X89" secondAttribute="centerX" id="63m-Ei-OM1"/>
+                            <constraint firstItem="4Lr-1h-hLp" firstAttribute="centerY" secondItem="gM1-y2-X89" secondAttribute="centerY" id="JOL-lW-dr3"/>
+                            <constraint firstAttribute="height" constant="40" id="Kbm-fO-sQa"/>
+                            <constraint firstAttribute="width" constant="40" id="iby-5N-h8w"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HP-Ru-xXT">
+                        <rect key="frame" x="60" y="22" width="140" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBJ-AD-K4B" customClass="QRCustomButton" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="205" y="15" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.0" green="0.70980392156862748" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GN4-4q-1ol"/>
+                            <constraint firstAttribute="width" constant="100" id="Kbs-ac-Myp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
+                        <state key="normal" title="ADD">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="addBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="k4Q-Wr-jxa"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EBJ-AD-K4B" secondAttribute="trailing" constant="15" id="1Mh-XJ-Sbg"/>
+                    <constraint firstItem="gM1-y2-X89" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6ek-cD-I4J"/>
+                    <constraint firstItem="gM1-y2-X89" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="72R-yK-mWr"/>
+                    <constraint firstItem="5HP-Ru-xXT" firstAttribute="centerY" secondItem="4Lr-1h-hLp" secondAttribute="centerY" id="7Ki-SC-hNp"/>
+                    <constraint firstItem="EBJ-AD-K4B" firstAttribute="leading" secondItem="5HP-Ru-xXT" secondAttribute="trailing" constant="5" id="GCO-TY-Kgt"/>
+                    <constraint firstItem="gM1-y2-X89" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="XFe-pc-vdO"/>
+                    <constraint firstItem="5HP-Ru-xXT" firstAttribute="leading" secondItem="gM1-y2-X89" secondAttribute="trailing" constant="5" id="c6J-kH-RAB"/>
+                    <constraint firstItem="EBJ-AD-K4B" firstAttribute="centerY" secondItem="4Lr-1h-hLp" secondAttribute="centerY" id="v02-cD-DZH"/>
+                    <constraint firstAttribute="bottom" secondItem="gM1-y2-X89" secondAttribute="bottom" constant="10" id="zyn-h3-tNN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="EBJ-AD-K4B" id="bCh-r1-xnT"/>
+            </connections>
+            <point key="canvasLocation" x="-146.37681159420291" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="EBJ-AD-K4B">
+            <size key="intrinsicContentSize" width="31" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="wallet_icon" width="20.5" height="15.5"/>
+    </resources>
+</document>

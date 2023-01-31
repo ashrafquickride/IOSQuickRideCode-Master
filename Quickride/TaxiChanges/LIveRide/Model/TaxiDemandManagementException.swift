@@ -1,0 +1,48 @@
+//
+//  TaxiDemandManagementException.swift
+//  Quickride
+//
+//  Created by Ashutos on 23/12/20.
+//  Copyright © 2014-2020. Quick Ride (www.quickride.in). All rights reserved.
+//  iDisha Info Labs Pvt Ltd. proprietary.
+//
+
+import Foundation
+import ObjectMapper
+
+struct TaxiDemandManagementException : Mappable {
+    static let TAXI_DEMAND_EXCEPTION_STARTER = 2000
+    static let SAVING_TAXI_GROUP_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 1
+    static let UPDATING_TAXI_GROUP_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 2
+    static let GETTING_TAXI_GROUP_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 3
+    static let SAVING_TAXI_RIDE_PASSENGER_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 4
+    static let UPDATING_TAXI_RIDE_PASSENGER_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 5
+    static let GETTING_TAXI_RIDE_PASSENGER_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 6
+    static let ROUND_TRIP_RIDES_REQUIRED_END_TIME_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 7
+    static let TAXI_BOOKING_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 8
+    static let OPERATING_CITY_NOT_FOUND = TAXI_DEMAND_EXCEPTION_STARTER + 9
+    static let SAVING_DRIVER_BOOKING_REQUEST_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 10
+    static let UPDATE_DRIVER_BOOKING_REQUEST_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 11
+    static let GET_DRIVER_BOOKING_REQUEST_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 12
+    static let CANNOT_JOIN_EXCLUSIVE_TAXI = TAXI_DEMAND_EXCEPTION_STARTER + 13
+    static let NOT_ENOUGH_SEATS_IN_SHARED_TAXI = TAXI_DEMAND_EXCEPTION_STARTER + 14
+    static let TAXI_RIDE_GROUP_DOESNT_MATCH_ANYMORE = TAXI_DEMAND_EXCEPTION_STARTER + 15
+    static let TAXI_RIDE_GROUP_CANCELLED_OR_FROZEN = TAXI_DEMAND_EXCEPTION_STARTER + 16
+    static let PAYMENT_REQUIRED_BEFORE_JOIN_TAXI = TAXI_DEMAND_EXCEPTION_STARTER + 17
+    static let INVALID_INPUT_PARAMS = TAXI_DEMAND_EXCEPTION_STARTER + 18
+    static let CANNOT_CANCEL_COMPLETED_TAXI = TAXI_DEMAND_EXCEPTION_STARTER + 19
+    static let CANNOT_CANCEL_STARTED_TAXI = TAXI_DEMAND_EXCEPTION_STARTER + 20
+    static let CANCEL_TAXI_FAILED = TAXI_DEMAND_EXCEPTION_STARTER + 21
+    var error : ResponseError?
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        self.error <- map["error"]
+    }
+    var description: String {
+        return "error: \(String(describing: self.error))"
+    }
+}

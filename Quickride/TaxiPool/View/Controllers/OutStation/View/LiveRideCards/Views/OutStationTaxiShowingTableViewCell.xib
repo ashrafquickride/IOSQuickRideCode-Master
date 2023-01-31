@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OutStationTaxiShowingTableViewCell" rowHeight="127" id="KGk-i7-Jjw" customClass="OutStationTaxiShowingTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJz-Ox-crx">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="126"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cj-qq-beN">
+                                <rect key="frame" x="0.0" y="0.0" width="429" height="118"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Booking Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-si-sew">
+                                        <rect key="frame" x="20" y="20" width="227" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver details will be shared by 7:45 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySG-25-Rfq">
+                                        <rect key="frame" x="20" y="42.5" width="227" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTs-cS-Fb4">
+                                        <rect key="frame" x="20" y="84" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="W40-xO-KOa"/>
+                                            <constraint firstAttribute="width" constant="25" id="pQI-tp-JWd"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="call_help"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="callButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5VN-Z7-yai"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outstation_taxi_booked" translatesAutoresizingMaskIntoConstraints="NO" id="UVG-TL-hpx">
+                                        <rect key="frame" x="259" y="20" width="150" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="105" id="C7C-pO-fEL"/>
+                                            <constraint firstAttribute="width" constant="150" id="qHe-aV-i42"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75K-T8-CXu">
+                                        <rect key="frame" x="53" y="86" width="98" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="c2Q-6m-iUy"/>
+                                            <constraint firstAttribute="width" constant="98" id="y3U-HU-MSu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dF3-si-sew" firstAttribute="top" secondItem="UVG-TL-hpx" secondAttribute="top" id="FXg-sY-JJH"/>
+                                    <constraint firstItem="bTs-cS-Fb4" firstAttribute="top" secondItem="ySG-25-Rfq" secondAttribute="bottom" constant="4" id="G8X-w9-JdL"/>
+                                    <constraint firstAttribute="bottom" secondItem="UVG-TL-hpx" secondAttribute="bottom" id="Jl4-zs-Gfd"/>
+                                    <constraint firstItem="75K-T8-CXu" firstAttribute="top" secondItem="ySG-25-Rfq" secondAttribute="bottom" constant="6" id="LwO-LO-s3g"/>
+                                    <constraint firstAttribute="trailing" secondItem="UVG-TL-hpx" secondAttribute="trailing" constant="20" id="TUc-CH-hWw"/>
+                                    <constraint firstItem="bTs-cS-Fb4" firstAttribute="leading" secondItem="ySG-25-Rfq" secondAttribute="leading" id="X6k-8Y-Kiw"/>
+                                    <constraint firstItem="ySG-25-Rfq" firstAttribute="trailing" secondItem="dF3-si-sew" secondAttribute="trailing" id="YMp-3w-5cv"/>
+                                    <constraint firstAttribute="bottom" secondItem="bTs-cS-Fb4" secondAttribute="bottom" constant="9" id="c4G-Gx-qSX"/>
+                                    <constraint firstItem="ySG-25-Rfq" firstAttribute="top" secondItem="dF3-si-sew" secondAttribute="bottom" constant="3" id="g9J-HT-DKp"/>
+                                    <constraint firstItem="75K-T8-CXu" firstAttribute="leading" secondItem="bTs-cS-Fb4" secondAttribute="trailing" constant="8" id="jJJ-TV-Eh9"/>
+                                    <constraint firstItem="dF3-si-sew" firstAttribute="leading" secondItem="7cj-qq-beN" secondAttribute="leading" constant="20" id="mJ3-vh-BTT"/>
+                                    <constraint firstItem="ySG-25-Rfq" firstAttribute="leading" secondItem="dF3-si-sew" secondAttribute="leading" id="thG-Oa-LhU"/>
+                                    <constraint firstItem="UVG-TL-hpx" firstAttribute="leading" secondItem="ySG-25-Rfq" secondAttribute="trailing" constant="12" id="ubo-Mb-c76"/>
+                                    <constraint firstItem="UVG-TL-hpx" firstAttribute="top" secondItem="7cj-qq-beN" secondAttribute="top" constant="20" id="z2z-mk-PvQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7cj-qq-beN" secondAttribute="bottom" constant="8" id="34X-66-34G"/>
+                            <constraint firstItem="7cj-qq-beN" firstAttribute="leading" secondItem="SJz-Ox-crx" secondAttribute="leading" id="JiN-DH-vyZ"/>
+                            <constraint firstAttribute="trailing" secondItem="7cj-qq-beN" secondAttribute="trailing" id="KGa-mq-X2x"/>
+                            <constraint firstItem="7cj-qq-beN" firstAttribute="top" secondItem="SJz-Ox-crx" secondAttribute="top" id="cBP-7V-d4K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SJz-Ox-crx" secondAttribute="bottom" id="D7Q-sL-3QJ"/>
+                    <constraint firstAttribute="trailing" secondItem="SJz-Ox-crx" secondAttribute="trailing" id="Gf7-LK-GGF"/>
+                    <constraint firstItem="SJz-Ox-crx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pvo-9s-swH"/>
+                    <constraint firstItem="SJz-Ox-crx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qfU-So-0Bw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="timeInfoLabel" destination="ySG-25-Rfq" id="efk-YS-jOj"/>
+            </connections>
+            <point key="canvasLocation" x="216.66666666666669" y="102.79017857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="call_help" width="24" height="24"/>
+        <image name="outstation_taxi_booked" width="225" height="155.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

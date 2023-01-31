@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="QuickShareAssuranceTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bazaary Assurance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SY-38-1is">
+                        <rect key="frame" x="77.5" y="25" width="165.5" height="22"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NE-Ne-ACW" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="40" y="72" width="66" height="66"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="agL-9c-VUl"/>
+                            <constraint firstAttribute="width" constant="66" id="pfa-Oq-vwf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="33"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verified_blue" translatesAutoresizingMaskIntoConstraints="NO" id="UB9-Em-QaI">
+                        <rect key="frame" x="44.5" y="70.5" width="57" height="69"/>
+                    </imageView>
+                    <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-aj-7Hh" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="127" y="72" width="66" height="66"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="Amg-kv-hbq"/>
+                            <constraint firstAttribute="height" constant="66" id="vkp-wI-60Q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="33"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genuine_products" translatesAutoresizingMaskIntoConstraints="NO" id="WoV-s4-azp">
+                        <rect key="frame" x="128" y="76.5" width="64" height="57"/>
+                    </imageView>
+                    <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2m-Vd-Kaq" customClass="QuickRideCardView" customModule="Quickride" customModuleProvider="target">
+                        <rect key="frame" x="214" y="72" width="66" height="66"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="68D-UC-4pb"/>
+                            <constraint firstAttribute="width" constant="66" id="zRN-Km-2C0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="33"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_Ic" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ3-zS-3VA">
+                        <rect key="frame" x="222.5" y="74.5" width="49" height="61"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verified Community" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-x2-uqB">
+                        <rect key="frame" x="40" y="148" width="66" height="28"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genuine Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0b-aW-ECX">
+                        <rect key="frame" x="125" y="148" width="70" height="28"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Protection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmN-1z-pez">
+                        <rect key="frame" x="214" y="148" width="66" height="28"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H0b-aW-ECX" firstAttribute="centerY" secondItem="Rsq-x2-uqB" secondAttribute="centerY" id="3hv-dG-eGH"/>
+                    <constraint firstItem="ZQ3-zS-3VA" firstAttribute="centerY" secondItem="S2m-Vd-Kaq" secondAttribute="centerY" id="5nf-U4-zaM"/>
+                    <constraint firstItem="ZQ3-zS-3VA" firstAttribute="centerX" secondItem="S2m-Vd-Kaq" secondAttribute="centerX" id="84q-aQ-3ml"/>
+                    <constraint firstItem="WoV-s4-azp" firstAttribute="centerY" secondItem="VTP-aj-7Hh" secondAttribute="centerY" id="8aG-Du-R0w"/>
+                    <constraint firstItem="VTP-aj-7Hh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="9hM-ul-cOx"/>
+                    <constraint firstItem="WoV-s4-azp" firstAttribute="centerX" secondItem="VTP-aj-7Hh" secondAttribute="centerX" id="CBm-Hh-EJ8"/>
+                    <constraint firstItem="8SY-38-1is" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Dym-dj-FDJ"/>
+                    <constraint firstItem="UB9-Em-QaI" firstAttribute="centerY" secondItem="1NE-Ne-ACW" secondAttribute="centerY" id="GkL-Or-ss1"/>
+                    <constraint firstItem="UB9-Em-QaI" firstAttribute="centerX" secondItem="1NE-Ne-ACW" secondAttribute="centerX" id="HMt-oV-oEl"/>
+                    <constraint firstAttribute="trailing" secondItem="S2m-Vd-Kaq" secondAttribute="trailing" constant="40" id="KPA-Cv-0Ay"/>
+                    <constraint firstItem="Rsq-x2-uqB" firstAttribute="centerX" secondItem="1NE-Ne-ACW" secondAttribute="centerX" id="Mxe-f3-fln"/>
+                    <constraint firstItem="S2m-Vd-Kaq" firstAttribute="centerY" secondItem="VTP-aj-7Hh" secondAttribute="centerY" id="N0q-qq-OHs"/>
+                    <constraint firstItem="hmN-1z-pez" firstAttribute="leading" secondItem="S2m-Vd-Kaq" secondAttribute="leading" id="Nfp-qa-NdS"/>
+                    <constraint firstItem="hmN-1z-pez" firstAttribute="centerY" secondItem="H0b-aW-ECX" secondAttribute="centerY" id="OGS-7L-vK6"/>
+                    <constraint firstItem="1NE-Ne-ACW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="Tn8-sC-Yg7"/>
+                    <constraint firstItem="Rsq-x2-uqB" firstAttribute="leading" secondItem="1NE-Ne-ACW" secondAttribute="leading" id="VpS-0w-Khf"/>
+                    <constraint firstItem="8SY-38-1is" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="Zqm-Bq-w5A"/>
+                    <constraint firstItem="VTP-aj-7Hh" firstAttribute="centerY" secondItem="1NE-Ne-ACW" secondAttribute="centerY" id="bwZ-Zw-xOE"/>
+                    <constraint firstItem="1NE-Ne-ACW" firstAttribute="top" secondItem="8SY-38-1is" secondAttribute="bottom" constant="25" id="c3M-km-5S7"/>
+                    <constraint firstItem="H0b-aW-ECX" firstAttribute="trailing" secondItem="VTP-aj-7Hh" secondAttribute="trailing" constant="2" id="h7X-ZW-nv6"/>
+                    <constraint firstItem="Rsq-x2-uqB" firstAttribute="top" secondItem="1NE-Ne-ACW" secondAttribute="bottom" constant="10" id="mcP-kR-bca"/>
+                    <constraint firstItem="hmN-1z-pez" firstAttribute="trailing" secondItem="S2m-Vd-Kaq" secondAttribute="trailing" id="oaJ-MT-Qwt"/>
+                    <constraint firstAttribute="bottom" secondItem="VTP-aj-7Hh" secondAttribute="bottom" constant="70" id="wJh-Lh-ruD"/>
+                    <constraint firstItem="H0b-aW-ECX" firstAttribute="leading" secondItem="VTP-aj-7Hh" secondAttribute="leading" constant="-2" id="yyh-Um-H3L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="genuine_products" width="32" height="28.5"/>
+        <image name="lock_Ic" width="24.5" height="30.5"/>
+        <image name="verified_blue" width="28.5" height="34.5"/>
+    </resources>
+</document>

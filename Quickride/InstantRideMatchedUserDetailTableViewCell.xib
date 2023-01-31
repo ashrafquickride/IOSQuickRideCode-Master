@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InstantRideMatchedUserDetailTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="309"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="309"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next 15 mins rides" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-U5-Og9">
+                        <rect key="frame" x="15" y="10" width="137.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.60737864176432299" green="0.60737864176432299" blue="0.60737864176432299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JPY-8N-QYN">
+                        <rect key="frame" x="0.0" y="29.5" width="436" height="270"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="270" id="i8h-82-FXd"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="QPp-zh-UfE">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="30" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmU-au-O5N">
+                        <rect key="frame" x="0.0" y="299.5" width="436" height="9.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JPY-8N-QYN" secondAttribute="trailing" id="8nm-eF-0Gb"/>
+                    <constraint firstAttribute="trailing" secondItem="rmU-au-O5N" secondAttribute="trailing" id="Es7-Mg-QB2"/>
+                    <constraint firstItem="hRh-U5-Og9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="F31-BV-Kgk"/>
+                    <constraint firstAttribute="bottom" secondItem="JPY-8N-QYN" secondAttribute="bottom" constant="9.5" id="JCB-2g-GPG"/>
+                    <constraint firstItem="JPY-8N-QYN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jkb-yT-Ffl"/>
+                    <constraint firstItem="JPY-8N-QYN" firstAttribute="top" secondItem="hRh-U5-Og9" secondAttribute="bottom" id="f3m-AC-e9m"/>
+                    <constraint firstItem="rmU-au-O5N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g7l-jU-oLe"/>
+                    <constraint firstItem="JPY-8N-QYN" firstAttribute="bottom" secondItem="rmU-au-O5N" secondAttribute="top" id="mhw-UL-HOz"/>
+                    <constraint firstAttribute="bottom" secondItem="rmU-au-O5N" secondAttribute="bottom" id="moW-OD-w9r"/>
+                    <constraint firstItem="hRh-U5-Og9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="og2-2L-0DN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="matchedUsersCollectionView" destination="JPY-8N-QYN" id="M9h-7V-WtX"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="155.69196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

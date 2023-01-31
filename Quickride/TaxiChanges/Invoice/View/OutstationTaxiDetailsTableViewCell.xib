@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="223" id="KGk-i7-Jjw" customClass="OutstationTaxiDetailsTableViewCell" customModule="Quickride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddi-Jf-7bw">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="148"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outstation_trip_review" translatesAutoresizingMaskIntoConstraints="NO" id="vej-9j-Jlh">
+                                <rect key="frame" x="0.0" y="20" width="345" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="f2b-Z3-MoH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edk-Eg-nqL">
+                                <rect key="frame" x="12" y="5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="T4R-9s-5Go"/>
+                                    <constraint firstAttribute="height" constant="35" id="y5D-K0-WRr"/>
+                                </constraints>
+                                <state key="normal" image="back_new"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sg8-SS-93B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Booking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfk-vf-taZ">
+                                <rect key="frame" x="47" y="12" width="251" height="21"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vej-9j-Jlh" secondAttribute="bottom" id="1b8-Kt-ZqG"/>
+                            <constraint firstItem="Edk-Eg-nqL" firstAttribute="top" secondItem="Ddi-Jf-7bw" secondAttribute="top" constant="5" id="5YW-ds-wwF"/>
+                            <constraint firstItem="yfk-vf-taZ" firstAttribute="centerY" secondItem="Edk-Eg-nqL" secondAttribute="centerY" id="C4M-q2-sV5"/>
+                            <constraint firstAttribute="trailing" secondItem="vej-9j-Jlh" secondAttribute="trailing" id="Emb-qg-DYi"/>
+                            <constraint firstItem="Edk-Eg-nqL" firstAttribute="leading" secondItem="Ddi-Jf-7bw" secondAttribute="leading" constant="12" id="GQ4-fR-NT1"/>
+                            <constraint firstItem="vej-9j-Jlh" firstAttribute="leading" secondItem="Ddi-Jf-7bw" secondAttribute="leading" id="LyJ-yH-GQY"/>
+                            <constraint firstItem="vej-9j-Jlh" firstAttribute="top" secondItem="Ddi-Jf-7bw" secondAttribute="top" constant="20" symbolic="YES" id="VGZ-AG-QD0"/>
+                            <constraint firstItem="yfk-vf-taZ" firstAttribute="centerX" secondItem="Ddi-Jf-7bw" secondAttribute="centerX" id="Vjl-jR-fcZ"/>
+                            <constraint firstItem="yfk-vf-taZ" firstAttribute="leading" secondItem="Edk-Eg-nqL" secondAttribute="trailing" id="ZYl-4K-ea7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-Wa-nhm">
+                        <rect key="frame" x="20" y="160" width="23" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outstation_SUV" translatesAutoresizingMaskIntoConstraints="NO" id="GzQ-0m-Iwt">
+                        <rect key="frame" x="20" y="182" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="vxc-cp-S0S"/>
+                            <constraint firstAttribute="height" constant="30" id="z81-ME-uyU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f53-Jm-1rP">
+                        <rect key="frame" x="70" y="197" width="175" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Re-7g-ukh">
+                        <rect key="frame" x="255" y="197" width="70" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="5P3-EK-ye7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f53-Jm-1rP" firstAttribute="leading" secondItem="GzQ-0m-Iwt" secondAttribute="trailing" constant="10" id="3ae-dZ-l4k"/>
+                    <constraint firstItem="XqK-Wa-nhm" firstAttribute="top" secondItem="Ddi-Jf-7bw" secondAttribute="bottom" constant="12" id="F4F-vA-Dt6"/>
+                    <constraint firstItem="7Re-7g-ukh" firstAttribute="centerY" secondItem="f53-Jm-1rP" secondAttribute="centerY" id="Mj0-s3-gJ6"/>
+                    <constraint firstAttribute="trailing" secondItem="7Re-7g-ukh" secondAttribute="trailing" constant="20" id="Nd5-R7-jGm"/>
+                    <constraint firstItem="XqK-Wa-nhm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="TSh-S7-vpi"/>
+                    <constraint firstItem="GzQ-0m-Iwt" firstAttribute="leading" secondItem="XqK-Wa-nhm" secondAttribute="leading" id="UYz-de-Kc6"/>
+                    <constraint firstItem="GzQ-0m-Iwt" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Wsn-gh-qAZ"/>
+                    <constraint firstItem="f53-Jm-1rP" firstAttribute="centerY" secondItem="GzQ-0m-Iwt" secondAttribute="centerY" id="ZUn-Hb-ttN"/>
+                    <constraint firstItem="7Re-7g-ukh" firstAttribute="leading" secondItem="f53-Jm-1rP" secondAttribute="trailing" constant="10" id="fFO-nn-caM"/>
+                    <constraint firstItem="Ddi-Jf-7bw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hYO-Ea-bC5"/>
+                    <constraint firstAttribute="trailing" secondItem="Ddi-Jf-7bw" secondAttribute="trailing" id="mzA-PE-dRY"/>
+                    <constraint firstItem="GzQ-0m-Iwt" firstAttribute="top" secondItem="XqK-Wa-nhm" secondAttribute="bottom" constant="5" id="qDk-Ky-edo"/>
+                    <constraint firstItem="Ddi-Jf-7bw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wqD-A7-PqJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerLabel" destination="yfk-vf-taZ" id="aGO-Zg-UTW"/>
+                <outlet property="taxiImageView" destination="GzQ-0m-Iwt" id="Bne-KA-tbI"/>
+                <outlet property="taxiModelNameLabel" destination="f53-Jm-1rP" id="TF4-9q-wEO"/>
+                <outlet property="taxiNameLabel" destination="XqK-Wa-nhm" id="m0n-3G-hp2"/>
+                <outlet property="taxiSeatesLabel" destination="7Re-7g-ukh" id="Z4U-vc-W0Y"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="118.19196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="back_new" width="9" height="15"/>
+        <image name="outstation_SUV" width="58.666667938232422" height="22.666666030883789"/>
+        <image name="outstation_trip_review" width="541" height="190"/>
+    </resources>
+</document>
